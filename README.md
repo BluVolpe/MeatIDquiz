@@ -1,4 +1,4 @@
-# Coding Quiz
+# Meat ID Quiz
 
 ## Description
 The Coding Quiz is a timed and scored quiz that tests your knowledge of HTML, CSS, and JavaScript basics. Press the "Start Quiz" button to begin. You will be presented with a series of multiple-choice questions, one by one. Each incorrect answer will deduct 10 seconds from the timer, and your final score will be the time remaining on the clock.
@@ -27,8 +27,7 @@ No additional execution steps are required. The quiz runs directly in the browse
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
-This project was built during the UCF Coding Bootcamp.
+
 
 ---
 
