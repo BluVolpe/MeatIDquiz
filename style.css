@@ -159,44 +159,45 @@ footer {
 /* Media Queries for responsiveness */
 @media (max-width: 600px) {
   body {
-      padding: 10px;
+    padding: 10px;
   }
 
   #quiz-container {
-      margin-top: 50px; /* Adjust for header */
-      margin-bottom: 50px; /* Adjust for footer */
-      padding: 10px;
+    margin-top: 50px; /* Adjust for header */
+    margin-bottom: 50px; /* Adjust for footer */
+    padding: 10px;
   }
 
   #question {
-      font-size: 22px; /* Increase font size for questions */
+    font-size: 22px; /* Increase font size for questions */
   }
 
   #choices button {
-      font-size: 16px;
-      padding: 8px;
-      margin: 12px 0; /* Add more space between choices for phones */
+    font-size: 16px;
+    padding: 8px;
+    margin: 12px 0; /* Add more space between choices for phones */
   }
 
   #timer {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-  header, footer {
-      padding: 5px 0;
+  header,
+  footer {
+    padding: 5px 0;
   }
 
   #question-tally span {
-      width: 12px;
-      height: 12px;
+    width: 12px;
+    height: 12px;
   }
 
   .modern-button {
-      font-size: 16px;
-      padding: 8px 16px;
+    font-size: 16px;
+    padding: 8px 16px;
   }
 
   .big-score {
-      font-size: 36px;
+    font-size: 36px;
   }
 }

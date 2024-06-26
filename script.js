@@ -4,17 +4,17 @@ let timeLeft = 600; // 10 minutes in seconds
 let timerInterval;
 let questionsAnswered = 0;
 
-const quizContainer = document.getElementById('quiz-container');
-const questionElement = document.getElementById('question');
-const choicesElement = document.getElementById('choices');
-const timerElement = document.getElementById('timer');
-const scoreContainer = document.getElementById('score-container');
-const scoreElement = document.getElementById('score');
-const restartButton = document.getElementById('restart-button');
-const questionTracker = document.getElementById('question-tally');
-const questionCounter = document.getElementById('question-counter');
+const quizContainer = document.getElementById("quiz-container");
+const questionElement = document.getElementById("question");
+const choicesElement = document.getElementById("choices");
+const timerElement = document.getElementById("timer");
+const scoreContainer = document.getElementById("score-container");
+const scoreElement = document.getElementById("score");
+const restartButton = document.getElementById("restart-button");
+const questionTracker = document.getElementById("question-tally");
+const questionCounter = document.getElementById("question-counter");
 
-restartButton.addEventListener('click', restartQuiz);
+restartButton.addEventListener("click", restartQuiz);
 
 function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
@@ -28,7 +28,9 @@ function startTimer() {
     timeLeft--;
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
-    timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+    timerElement.textContent = `${minutes}:${
+      seconds < 10 ? "0" : ""
+    }${seconds}`;
     if (timeLeft <= 0) {
       clearInterval(timerInterval);
       endQuiz();
@@ -41,16 +43,18 @@ function displayQuestion() {
   const currentQuestion = questions[currentQuestionIndex];
   questionElement.textContent = currentQuestion.question;
   if (currentQuestion.image) {
-    const img = document.createElement('img');
+    const img = document.createElement("img");
     img.src = currentQuestion.image;
     img.alt = "Question image";
     questionElement.appendChild(img);
   }
   shuffleArray(currentQuestion.choice);
   currentQuestion.choice.forEach((choice, index) => {
-    const button = document.createElement('button');
+    const button = document.createElement("button");
     button.textContent = choice;
-    button.addEventListener('click', () => selectAnswer(button, currentQuestion.answer));
+    button.addEventListener("click", () =>
+      selectAnswer(button, currentQuestion.answer)
+    );
     choicesElement.appendChild(button);
   });
 }
@@ -59,7 +63,7 @@ function resetState() {
   while (choicesElement.firstChild) {
     choicesElement.removeChild(choicesElement.firstChild);
   }
-  const img = questionElement.querySelector('img');
+  const img = questionElement.querySelector("img");
   if (img) {
     questionElement.removeChild(img);
   }
@@ -67,18 +71,18 @@ function resetState() {
 
 function selectAnswer(button, correctAnswer) {
   if (button.textContent === correctAnswer) {
-    button.classList.add('correct');
+    button.classList.add("correct");
     score++;
-    playSound('Sounds/correct.mp3');
+    playSound("Sounds/correct.mp3");
   } else {
-    button.classList.add('wrong');
+    button.classList.add("wrong");
     highlightCorrectAnswer(correctAnswer);
-    playSound('Sounds/incorrect.mp3');
+    playSound("Sounds/incorrect.mp3");
   }
-  Array.from(choicesElement.children).forEach(btn => {
+  Array.from(choicesElement.children).forEach((btn) => {
     btn.disabled = true;
   });
-  updateTracker(button.classList.contains('correct'));
+  updateTracker(button.classList.contains("correct"));
   setTimeout(() => {
     currentQuestionIndex++;
     if (currentQuestionIndex < 20) {
@@ -96,16 +100,16 @@ function playSound(soundFile) {
 }
 
 function highlightCorrectAnswer(correctAnswer) {
-  Array.from(choicesElement.children).forEach(button => {
+  Array.from(choicesElement.children).forEach((button) => {
     if (button.textContent === correctAnswer) {
-      button.classList.add('correct');
+      button.classList.add("correct");
     }
   });
 }
 
 function updateTracker(isCorrect) {
-  const span = document.createElement('span');
-  span.classList.add(isCorrect ? 'correct' : 'wrong');
+  const span = document.createElement("span");
+  span.classList.add(isCorrect ? "correct" : "wrong");
   questionTracker.appendChild(span);
   questionsAnswered++;
   questionCounter.textContent = `${questionsAnswered}/20`;
@@ -113,8 +117,8 @@ function updateTracker(isCorrect) {
 
 function endQuiz() {
   clearInterval(timerInterval);
-  quizContainer.style.display = 'none';
-  scoreContainer.style.display = 'block';
+  quizContainer.style.display = "none";
+  scoreContainer.style.display = "block";
   const percentageScore = (score / 20) * 100;
   scoreElement.textContent = `${percentageScore}%`;
 }
@@ -124,16 +128,16 @@ function restartQuiz() {
   score = 0;
   timeLeft = 600;
   questionsAnswered = 0;
-  questionTracker.innerHTML = '';
+  questionTracker.innerHTML = "";
   questionCounter.textContent = `${questionsAnswered}/20`;
-  quizContainer.style.display = 'block';
-  scoreContainer.style.display = 'none';
+  quizContainer.style.display = "block";
+  scoreContainer.style.display = "none";
   shuffleArray(questions);
   displayQuestion();
   startTimer();
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener("DOMContentLoaded", () => {
   shuffleArray(questions);
   displayQuestion();
   startTimer();
