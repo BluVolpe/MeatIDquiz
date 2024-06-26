@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Meat Industry Knowledge Quiz</title>
+    <title>Interactive Quiz</title>
     <style>
       body {
         font-family: Arial, sans-serif;
@@ -36,7 +36,7 @@
   </head>
   <body>
     <div class="container">
-      <h2>Test Your Knowledge: Meat Industry Quiz</h2>
+      <h2>Interactive Quiz</h2>
       <div id="quiz"></div>
       <button onclick="submitQuiz()">Submit Quiz</button>
       <div id="result"></div>
@@ -542,92 +542,102 @@
           correct: "a",
         },
         {
-        question: "Which type of meat is 'Hot house lamb'?",
-        a: "Lamb that is raised in a controlled, indoor environment",
-        b: "A very small, very young lamb meant to be roasted whole",
-        c: "Lamb that is seasoned and cooked at high temperatures",
-        d: "Lamb processed in a greenhouse setting",
-        correct: "b"
-    },
-    {
-        question: "What is 'in-house grading'?",
-        a: "Grading performed by external inspectors at the farm",
-        b: "A standard set by meat distributors for internal quality control",
-        c: "Grading assessed by a packaging plant, not regulated by the USDA",
-        d: "Consumer grading provided in-house at grocery stores",
-        correct: "c"
-    },
-    {
-        question: "What does 'bob veal' refer to?",
-        a: "Veal from calves aged 3-5 months old",
-        b: "Veal from very young calves, less than one month old",
-        c: "Veal that has been specially branded",
-        d: "A cut of veal used primarily for stews",
-        correct: "b"
-    },
-    {
-        question: "What are the primary cuts of a market style hog?",
-        a: "Ham, loin, boston butt, picnic, belly with spare ribs",
-        b: "Shoulder, belly, jowl, neck bones, back ribs",
-        c: "Loin, shank, rib, cheek, tail",
-        d: "Brisket, round, chuck, plate",
-        correct: "a"
-    },
-    {
-        question: "Why might a chef choose to fabricate portion cuts in the kitchen?",
-        a: "To ensure higher quality and customization",
-        b: "To comply with local health regulations",
-        c: "Because it is less expensive than pre-cut portions",
-        d: "To reduce the need for skilled labor",
-        correct: "a"
-    },
-    {
-        question: "What is a primary benefit of using 'natural casings' for sausages?",
-        a: "They are more cost-effective than synthetic casings",
-        b: "They can be produced in larger quantities",
-        c: "They offer better flavor and texture",
-        d: "They last longer on the shelf",
-        correct: "c"
-    },
-    {
-        question: "What does 'TCM' refer to in meat processing?",
-        a: "Total Cured Meat",
-        b: "Thermal Curing Method",
-        c: "Treated Cured Meat",
-        d: "A group of sodium-based curing agents",
-        correct: "d"
-    },
-    {
-        question: "Why is 'yield grading' important in lamb purchasing?",
-        a: "It determines the flavor profile",
-        b: "It assesses the economic value based on the amount of usable meat",
-        c: "It is a regulatory requirement for all lamb products",
-        d: "It indicates the age of the lamb",
-        correct: "b"
-    },
-    {
-        question: "What does the term 'frenched' indicate about a meat cut?",
-        a: "The bone ends have been trimmed and cleaned of meat",
-        b: "It has been marinated with French herbs",
-        c: "The meat has been sliced thinly and layered",
-        d: "It has been ground and reformed into a patty",
-        correct: "a"
-    },
-    {
-        question: "What is the purpose of 'dry cure' in meat processing?",
-        a: "To enhance the meat's natural moisture content",
-        b: "To add bulk to the meat",
-        c: "To cure the meat by applying salt and other seasonings directly",
-        d: "To cook the meat slowly using a dry heat method",
-        correct: "c"
-    },
-        // Additional questions can be added here in the same format.
+          question: "Which type of meat is 'Hot house lamb'?",
+          a: "Lamb that is raised in a controlled, indoor environment",
+          b: "A very small, very young lamb meant to be roasted whole",
+          c: "Lamb that is seasoned and cooked at high temperatures",
+          d: "Lamb processed in a greenhouse setting",
+          correct: "b",
+        },
+        {
+          question: "What is 'in-house grading'?",
+          a: "Grading performed by external inspectors at the farm",
+          b: "A standard set by meat distributors for internal quality control",
+          c: "Grading assessed by a packaging plant, not regulated by the USDA",
+          d: "Consumer grading provided in-house at grocery stores",
+          correct: "c",
+        },
+        {
+          question: "What does 'bob veal' refer to?",
+          a: "Veal from calves aged 3-5 months old",
+          b: "Veal from very young calves, less than one month old",
+          c: "Veal that has been specially branded",
+          d: "A cut of veal used primarily for stews",
+          correct: "b",
+        },
+        {
+          question: "What are the primary cuts of a market style hog?",
+          a: "Ham, loin, boston butt, picnic, belly with spare ribs",
+          b: "Shoulder, belly, jowl, neck bones, back ribs",
+          c: "Loin, shank, rib, cheek, tail",
+          d: "Brisket, round, chuck, plate",
+          correct: "a",
+        },
+        {
+          question:
+            "Why might a chef choose to fabricate portion cuts in the kitchen?",
+          a: "To ensure higher quality and customization",
+          b: "To comply with local health regulations",
+          c: "Because it is less expensive than pre-cut portions",
+          d: "To reduce the need for skilled labor",
+          correct: "a",
+        },
+        {
+          question:
+            "What is a primary benefit of using 'natural casings' for sausages?",
+          a: "They are more cost-effective than synthetic casings",
+          b: "They can be produced in larger quantities",
+          c: "They offer better flavor and texture",
+          d: "They last longer on the shelf",
+          correct: "c",
+        },
+        {
+          question: "What does 'TCM' refer to in meat processing?",
+          a: "Total Cured Meat",
+          b: "Thermal Curing Method",
+          c: "Treated Cured Meat",
+          d: "A group of sodium-based curing agents",
+          correct: "d",
+        },
+        {
+          question: "Why is 'yield grading' important in lamb purchasing?",
+          a: "It determines the flavor profile",
+          b: "It assesses the economic value based on the amount of usable meat",
+          c: "It is a regulatory requirement for all lamb products",
+          d: "It indicates the age of the lamb",
+          correct: "b",
+        },
+        {
+          question: "What does the term 'frenched' indicate about a meat cut?",
+          a: "The bone ends have been trimmed and cleaned of meat",
+          b: "It has been marinated with French herbs",
+          c: "The meat has been sliced thinly and layered",
+          d: "It has been ground and reformed into a patty",
+          correct: "a",
+        },
+        {
+          question: "What is the purpose of 'dry cure' in meat processing?",
+          a: "To enhance the meat's natural moisture content",
+          b: "To add bulk to the meat",
+          c: "To cure the meat by applying salt and other seasonings directly",
+          d: "To cook the meat slowly using a dry heat method",
+          correct: "c",
+        },
       ];
+
+      function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]]; // Swap elements
+        }
+      }
 
       function buildQuiz() {
         const quizContainer = document.getElementById("quiz");
         quizContainer.innerHTML = "";
-        quizData.forEach((item, index) => {
+        shuffleArray(quizData); // Shuffle the questions
+        let displayedQuestions = quizData.slice(0, 15); // Take only the first 15 questions
+        displayedQuestions.forEach((item, index) => {
           const questionDiv = document.createElement("div");
           questionDiv.className = "question";
           questionDiv.innerHTML = `
@@ -651,16 +661,17 @@
 
       function submitQuiz() {
         let score = 0;
-        quizData.forEach((item, index) => {
+        let answers = document.querySelectorAll(".question");
+        answers.forEach((question, index) => {
           const selected = document.querySelector(
             `input[name="question${index}"]:checked`
           );
-          if (selected && selected.value === item.correct) {
+          if (selected && selected.value === quizData[index].correct) {
             score++;
           }
         });
         const resultDiv = document.getElementById("result");
-        resultDiv.innerHTML = `<h3>Your score: ${score}/${quizData.length}</h3>`;
+        resultDiv.innerHTML = `<h3>Your score: ${score}/${displayedQuestions.length}</h3>`;
       }
 
       window.onload = buildQuiz;
