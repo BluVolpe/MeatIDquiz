@@ -900,4 +900,564 @@ const questions = [
     choice: ["Top Round", "Eye of Round", "Bottom Round", "Flank Steak"],
     answer: "Eye of Round",
   },
+  // Cattle
+  {
+    question:
+      "Which breed of cattle is known for its high marbling and tenderness?",
+    choice: ["Angus", "Hereford", "Wagyu", "Charolais"],
+    answer: "Wagyu",
+  },
+  {
+    question: "Which breed of cattle is known for its marbling and flavor?",
+    choice: ["Hereford", "Angus", "Texas Longhorn", "Galloway"],
+    answer: "Angus",
+  },
+  {
+    question: "Which breed of cattle is known for lean meat and large size?",
+    choice: ["Charolais", "Limousin", "Simmental", "Hereford"],
+    answer: "Charolais",
+  },
+  {
+    question:
+      "Which breed of cattle is versatile and known for marbling and flavor?",
+    choice: ["Simmental", "Texas Longhorn", "Galloway", "Angus"],
+    answer: "Simmental",
+  },
+
+  // Pigs
+  {
+    question: "Which breed of pig is known for its juicy, flavorful meat?",
+    choice: ["Berkshire", "Duroc", "Yorkshire", "Tamworth"],
+    answer: "Berkshire",
+  },
+  {
+    question: "Which breed of pig is known for marbling and tenderness?",
+    choice: ["Duroc", "Berkshire", "Gloucestershire Old Spot", "Mangalitsa"],
+    answer: "Duroc",
+  },
+  {
+    question:
+      "Which breed of pig is known for its high fat content and rich flavor?",
+    choice: ["Landrace", "Hampshire", "Mangalitsa", "Tamworth"],
+    answer: "Mangalitsa",
+  },
+  {
+    question:
+      "Which breed of pig is known for its lean meat and good carcass quality?",
+    choice: ["Yorkshire", "Landrace", "Hampshire", "Duroc"],
+    answer: "Hampshire",
+  },
+
+  // Chicken
+  {
+    question:
+      "Which breed of chicken is known for fast growth and meat production?",
+    choice: ["Cornish Cross", "Rhode Island Red", "Plymouth Rock", "Orpington"],
+    answer: "Cornish Cross",
+  },
+  {
+    question:
+      "Which dual-purpose chicken breed is good for both meat and eggs?",
+    choice: ["Rhode Island Red", "Plymouth Rock", "Jersey Giant", "Sussex"],
+    answer: "Rhode Island Red",
+  },
+  {
+    question:
+      "Which breed of chicken is known for its flavorful meat and good egg production?",
+    choice: ["Plymouth Rock", "Orpington", "Bresse", "Cochin"],
+    answer: "Plymouth Rock",
+  },
+  {
+    question:
+      "Which breed of chicken is known for its large size and flavorful meat?",
+    choice: ["Jersey Giant", "Orpington", "Sussex", "Cochin"],
+    answer: "Jersey Giant",
+  },
+
+  // Lamb
+  {
+    question: "Which breed of lamb is known for its lean meat and mild flavor?",
+    choice: ["Suffolk", "Dorset", "Merino", "Hampshire"],
+    answer: "Suffolk",
+  },
+  {
+    question:
+      "Which breed of lamb is known for its tender meat and good carcass quality?",
+    choice: ["Dorset", "Suffolk", "Southdown", "Katahdin"],
+    answer: "Dorset",
+  },
+  {
+    question:
+      "Which breed of lamb is known for its fine wool and also good for meat?",
+    choice: ["Merino", "Hampshire", "Dorper", "Texel"],
+    answer: "Merino",
+  },
+  {
+    question:
+      "Which breed of lamb is known for its lean meat and excellent flavor?",
+    choice: ["Texel", "Dorper", "Southdown", "Merino"],
+    answer: "Texel",
+  },
+
+  // Goat
+  {
+    question:
+      "Which breed of goat is known for its rapid growth and tender meat?",
+    choice: ["Boer", "Kiko", "Spanish", "Nubian"],
+    answer: "Boer",
+  },
+  {
+    question:
+      "Which breed of goat is known for its hardiness and good meat quality?",
+    choice: ["Kiko", "Boer", "Toggenburg", "Alpine"],
+    answer: "Kiko",
+  },
+  {
+    question:
+      "Which breed of goat is known for its rich milk and also good for meat?",
+    choice: ["Nubian", "Saanen", "LaMancha", "Alpine"],
+    answer: "Nubian",
+  },
+  {
+    question:
+      "Which breed of goat is known for its high milk production and also used for meat?",
+    choice: ["Alpine", "Toggenburg", "Saanen", "Nubian"],
+    answer: "Saanen",
+  },
+
+  // Ducks
+  {
+    question:
+      "Which breed of duck is known for its tender meat and fast growth?",
+    choice: ["Pekin", "Muscovy", "Rouen", "Khaki Campbell"],
+    answer: "Pekin",
+  },
+  {
+    question: "Which breed of duck is known for its lean meat and rich flavor?",
+    choice: ["Muscovy", "Pekin", "Aylesbury", "Cayuga"],
+    answer: "Muscovy",
+  },
+  {
+    question:
+      "Which breed of duck is known for its high egg production and also used for meat?",
+    choice: ["Khaki Campbell", "Indian Runner", "Swedish Blue", "Rouen"],
+    answer: "Khaki Campbell",
+  },
+  {
+    question:
+      "Which breed of duck is known for its flavorful meat and unique plumage?",
+    choice: ["Cayuga", "Aylesbury", "Indian Runner", "Swedish Blue"],
+    answer: "Cayuga",
+  },
+  // Cattle
+  {
+    question: "Which breed of cattle is known for its tenderness and flavor?",
+    choice: ["Hereford", "Angus", "Texas Longhorn", "Charolais"],
+    answer: "Hereford",
+  },
+  {
+    question: "Which breed of cattle is known for lean meat and tenderness?",
+    choice: ["Limousin", "Simmental", "Wagyu", "Angus"],
+    answer: "Limousin",
+  },
+  {
+    question:
+      "Which breed of cattle is known for lean meat with a distinctive flavor?",
+    choice: ["Texas Longhorn", "Hereford", "Galloway", "Charolais"],
+    answer: "Texas Longhorn",
+  },
+  {
+    question: "Which breed of cattle is known for marbling and tender meat?",
+    choice: ["Galloway", "Angus", "Wagyu", "Simmental"],
+    answer: "Galloway",
+  },
+
+  // Pigs
+  {
+    question: "Which breed of pig is known for its marbled meat?",
+    choice: ["Gloucestershire Old Spot", "Berkshire", "Tamworth", "Duroc"],
+    answer: "Gloucestershire Old Spot",
+  },
+  {
+    question: "Which breed of pig is known for its bacon and flavorful meat?",
+    choice: ["Tamworth", "Berkshire", "Mangalitsa", "Yorkshire"],
+    answer: "Tamworth",
+  },
+  {
+    question: "Which breed of pig is known for its lean meat and large size?",
+    choice: ["Yorkshire", "Landrace", "Hampshire", "Duroc"],
+    answer: "Landrace",
+  },
+  {
+    question: "Which breed of pig is known for its good carcass quality?",
+    choice: ["Hampshire", "Duroc", "Landrace", "Yorkshire"],
+    answer: "Hampshire",
+  },
+
+  // Chicken
+  {
+    question:
+      "Which breed of chicken is known for its dual-purpose qualities, good for meat and eggs?",
+    choice: ["Sussex", "Rhode Island Red", "Cornish Cross", "Orpington"],
+    answer: "Sussex",
+  },
+  {
+    question:
+      "Which breed of chicken is known for its superior flavor and tender meat?",
+    choice: ["Bresse", "Jersey Giant", "Plymouth Rock", "Cochin"],
+    answer: "Bresse",
+  },
+  {
+    question:
+      "Which breed of chicken is known for its tender meat and good egg laying?",
+    choice: ["Orpington", "Cornish Cross", "Rhode Island Red", "Sussex"],
+    answer: "Orpington",
+  },
+  {
+    question:
+      "Which breed of chicken is known for its large size and flavorful meat?",
+    choice: ["Jersey Giant", "Plymouth Rock", "Cochin", "Bresse"],
+    answer: "Jersey Giant",
+  },
+
+  // Lamb
+  {
+    question:
+      "Which breed of lamb is known for its large size and flavorful meat?",
+    choice: ["Hampshire", "Dorset", "Suffolk", "Texel"],
+    answer: "Hampshire",
+  },
+  {
+    question: "Which breed of lamb is known for its tender and flavorful meat?",
+    choice: ["Southdown", "Merino", "Dorper", "Suffolk"],
+    answer: "Southdown",
+  },
+  {
+    question:
+      "Which breed of lamb is known for its good growth rate and tender meat?",
+    choice: ["Dorper", "Texel", "Hampshire", "Dorset"],
+    answer: "Dorper",
+  },
+  {
+    question:
+      "Which breed of lamb is known for its lean meat and good carcass quality?",
+    choice: ["Katahdin", "Suffolk", "Texel", "Dorset"],
+    answer: "Katahdin",
+  },
+
+  // Goat
+  {
+    question:
+      "Which breed of goat is known for its lean meat and adaptability?",
+    choice: ["Spanish", "Boer", "Nubian", "Kiko"],
+    answer: "Spanish",
+  },
+  {
+    question:
+      "Which breed of goat is known for its high milk production and also used for meat?",
+    choice: ["Toggenburg", "Saanen", "Alpine", "Nubian"],
+    answer: "Alpine",
+  },
+  {
+    question:
+      "Which breed of goat is known for its hardiness and good meat quality?",
+    choice: ["Kiko", "Boer", "Spanish", "Nubian"],
+    answer: "Kiko",
+  },
+  {
+    question:
+      "Which breed of goat is known for its versatility in portion sizes and menu applications?",
+    choice: ["Boer", "Kiko", "Spanish", "Nubian"],
+    answer: "Boer",
+  },
+
+  // Ducks
+  {
+    question:
+      "Which breed of duck is known for its tender meat and fast growth?",
+    choice: ["Pekin", "Muscovy", "Rouen", "Khaki Campbell"],
+    answer: "Pekin",
+  },
+  {
+    question: "Which breed of duck is known for its lean meat and rich flavor?",
+    choice: ["Muscovy", "Pekin", "Aylesbury", "Cayuga"],
+    answer: "Muscovy",
+  },
+  {
+    question:
+      "Which breed of duck is known for its high egg production and also used for meat?",
+    choice: ["Khaki Campbell", "Indian Runner", "Swedish Blue", "Rouen"],
+    answer: "Khaki Campbell",
+  },
+  {
+    question:
+      "Which breed of duck is known for its flavorful meat and unique plumage?",
+    choice: ["Cayuga", "Aylesbury", "Indian Runner", "Swedish Blue"],
+    answer: "Cayuga",
+  },
+  {
+    question:
+      "Which breed of duck is known for its good meat quality and hardiness?",
+    choice: ["Swedish Blue", "Cayuga", "Aylesbury", "Indian Runner"],
+    answer: "Swedish Blue",
+  },
+  {
+    question:
+      "Which breed of duck is known for its unique color and good meat quality?",
+    choice: ["Cayuga", "Swedish Blue", "Indian Runner", "Khaki Campbell"],
+    answer: "Cayuga",
+  },
+  {
+    question:
+      "Which breed of duck is known for its unique color and good meat quality?",
+    choice: ["Swedish Blue", "Aylesbury", "Khaki Campbell", "Indian Runner"],
+    answer: "Swedish Blue",
+  },
+  // Beef
+  {
+    question:
+      "What is the recommended internal temperature for cooking ground beef to ensure it is safe to eat?",
+    choice: ["145°F", "155°F", "160°F", "165°F"],
+    answer: "160°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking steaks and roasts to medium-rare?",
+    choice: ["125°F", "135°F", "145°F", "155°F"],
+    answer: "135°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking steaks and roasts to medium?",
+    choice: ["135°F", "145°F", "155°F", "165°F"],
+    answer: "145°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking steaks and roasts to well-done?",
+    choice: ["145°F", "155°F", "160°F", "170°F"],
+    answer: "160°F",
+  },
+
+  // Pork
+  {
+    question:
+      "What is the recommended internal temperature for cooking pork chops, roasts, and loins to ensure they are safe to eat?",
+    choice: ["145°F", "150°F", "155°F", "160°F"],
+    answer: "145°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking ground pork to ensure it is safe to eat?",
+    choice: ["145°F", "155°F", "160°F", "165°F"],
+    answer: "160°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking ham to reheat it?",
+    choice: ["135°F", "145°F", "155°F", "165°F"],
+    answer: "140°F",
+  },
+
+  // Chicken
+  {
+    question:
+      "What is the recommended internal temperature for cooking chicken breasts to ensure they are safe to eat?",
+    choice: ["145°F", "155°F", "160°F", "165°F"],
+    answer: "165°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking chicken thighs and drumsticks to ensure they are safe to eat?",
+    choice: ["165°F", "170°F", "175°F", "180°F"],
+    answer: "165°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking ground chicken to ensure it is safe to eat?",
+    choice: ["160°F", "165°F", "170°F", "175°F"],
+    answer: "165°F",
+  },
+
+  // Lamb
+  {
+    question:
+      "What is the recommended internal temperature for cooking lamb chops and roasts to medium-rare?",
+    choice: ["125°F", "135°F", "145°F", "155°F"],
+    answer: "135°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking lamb chops and roasts to medium?",
+    choice: ["135°F", "145°F", "155°F", "165°F"],
+    answer: "145°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking lamb chops and roasts to well-done?",
+    choice: ["145°F", "155°F", "160°F", "170°F"],
+    answer: "160°F",
+  },
+
+  // Goat
+  {
+    question:
+      "What is the recommended internal temperature for cooking goat meat to ensure it is safe to eat?",
+    choice: ["145°F", "155°F", "160°F", "165°F"],
+    answer: "160°F",
+  },
+
+  // Duck
+  {
+    question:
+      "What is the recommended internal temperature for cooking duck breasts to medium-rare?",
+    choice: ["125°F", "135°F", "145°F", "155°F"],
+    answer: "135°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking duck breasts to medium?",
+    choice: ["135°F", "145°F", "155°F", "165°F"],
+    answer: "145°F",
+  },
+  {
+    question:
+      "What is the recommended internal temperature for cooking ground duck to ensure it is safe to eat?",
+    choice: ["160°F", "165°F", "170°F", "175°F"],
+    answer: "165°F",
+  },
+  // Beef
+  {
+    question: "Which disease is commonly associated with undercooked beef?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "E. coli",
+  },
+  {
+    question:
+      "What disease, also known as 'Mad Cow Disease', affects cattle and can be transmitted to humans through contaminated beef?",
+    choice: [
+      "Bovine Spongiform Encephalopathy (BSE)",
+      "Foot and Mouth Disease",
+      "Brucellosis",
+      "Anthrax",
+    ],
+    answer: "Bovine Spongiform Encephalopathy (BSE)",
+  },
+  {
+    question:
+      "Which disease can be caused by eating beef contaminated with bovine tuberculosis?",
+    choice: [
+      "Salmonellosis",
+      "Tuberculosis",
+      "Campylobacteriosis",
+      "Hepatitis A",
+    ],
+    answer: "Tuberculosis",
+  },
+
+  // Pork
+  {
+    question: "Which disease is commonly associated with undercooked pork?",
+    choice: ["Trichinosis", "Listeriosis", "Salmonellosis", "E. coli"],
+    answer: "Trichinosis",
+  },
+  {
+    question:
+      "Which disease can be caused by pork contaminated with Yersinia enterocolitica?",
+    choice: ["Yersiniosis", "Brucellosis", "Anthrax", "Tuberculosis"],
+    answer: "Yersiniosis",
+  },
+  {
+    question:
+      "Which disease is associated with pork contaminated with hepatitis E virus?",
+    choice: ["Hepatitis E", "Hepatitis A", "Hepatitis B", "Hepatitis C"],
+    answer: "Hepatitis E",
+  },
+
+  // Chicken
+  {
+    question: "Which disease is commonly associated with undercooked chicken?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Salmonella",
+  },
+  {
+    question:
+      "Which disease can be caused by eating chicken contaminated with Campylobacter jejuni?",
+    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Trichinosis"],
+    answer: "Campylobacteriosis",
+  },
+  {
+    question:
+      "Which disease is associated with chicken contaminated with avian influenza virus?",
+    choice: [
+      "Avian Influenza",
+      "Newcastle Disease",
+      "Marek's Disease",
+      "Fowl Cholera",
+    ],
+    answer: "Avian Influenza",
+  },
+
+  // Duck
+  {
+    question: "Which disease is commonly associated with undercooked duck?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Campylobacter",
+  },
+  {
+    question:
+      "Which disease is associated with ducks infected with the avian influenza virus?",
+    choice: [
+      "Avian Influenza",
+      "Newcastle Disease",
+      "Duck Viral Enteritis",
+      "Fowl Cholera",
+    ],
+    answer: "Avian Influenza",
+  },
+  {
+    question:
+      "Which disease can be caused by eating duck contaminated with Salmonella?",
+    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
+    answer: "Salmonellosis",
+  },
+
+  // Goat
+  {
+    question:
+      "Which disease is commonly associated with undercooked goat meat?",
+    choice: ["Brucellosis", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Brucellosis",
+  },
+  {
+    question:
+      "Which disease can be caused by goat meat contaminated with Q fever?",
+    choice: ["Q fever", "Anthrax", "Tuberculosis", "Toxoplasmosis"],
+    answer: "Q fever",
+  },
+  {
+    question:
+      "Which disease is associated with goat meat contaminated with Listeria monocytogenes?",
+    choice: ["Listeriosis", "Salmonellosis", "Botulism", "Campylobacteriosis"],
+    answer: "Listeriosis",
+  },
+
+  // Lamb
+  {
+    question: "Which disease is commonly associated with undercooked lamb?",
+    choice: ["Toxoplasmosis", "Listeriosis", "Salmonellosis", "E. coli"],
+    answer: "Toxoplasmosis",
+  },
+  {
+    question:
+      "Which disease can be caused by lamb contaminated with Salmonella?",
+    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
+    answer: "Salmonellosis",
+  },
+  {
+    question:
+      "Which disease is associated with lamb meat contaminated with Campylobacter?",
+    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Brucellosis"],
+    answer: "Campylobacteriosis",
+  },
 ];

@@ -1,38 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Meat ID</title>
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meat ID Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
     <header>
-      <h1>Meat ID / Fabrication</h1>
+        <h1>Meat ID Quiz</h1>
     </header>
-    <main>
-      <section id="start-screen" class="start">
-        <div>
-          <button id="start">Start Quiz</button>
+    <div id="quiz-container">
+        <div id="question-tracker">
+            <div id="question-counter">0/20</div>
+            <div id="question-tally"></div>
         </div>
-      </section>
-      <section id="questions" class="hide">
-        <h2 id="question-number"></h2>
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-        <div id="feedback" class="hide"></div>
-      </section>
-      <section id="end-screen" class="hide">
-        <h2>ALL DONE!</h2>
-        <p>Your final score is <span id="percentage-grade"></span>%.</p>
-        <button id="restart">Take Quiz Again</button>
-      </section>
-    </main>
-    <div class="timer">Time: <span id="time">10:00</span></div>
-    <audio id="correct-sound" src="path/to/correct-sound.mp3"></audio>
-    <audio id="wrong-sound" src="path/to/wrong-sound.mp3"></audio>
-    <script src="./questions.js"></script>
-    <script src="./backend.js"></script>
-  </body>
+        <div id="question-container">
+            <div id="question"></div>
+            <div id="choices"></div>
+        </div>
+    </div>
+    <div id="score-container" style="display:none;">
+        <h2>Your Score:</h2>
+        <div id="score" class="big-score"></div>
+        <button id="restart-button" class="modern-button">Take Quiz Again</button>
+    </div>
+    <footer>
+        <div id="timer">10:00</div>
+    </footer>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
 </html>
