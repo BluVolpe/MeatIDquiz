@@ -27,6 +27,9 @@ No additional execution steps are required. The quiz runs directly in the browse
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
+## Acknowledgments
+This project was built during the UCF Coding Bootcamp.
+
 ---
 
 ### Additional Notes
