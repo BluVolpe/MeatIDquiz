@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meat Industry Knowledge Quiz</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f4f4;
+        color: #333;
+      }
+      .container {
+        width: 60%;
+        margin: 40px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+      }
+      .question {
+        margin-bottom: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #218838;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Test Your Knowledge: Meat Industry Quiz</h2>
+      <div id="quiz"></div>
+      <button onclick="submitQuiz()">Submit Quiz</button>
+      <div id="result"></div>
+    </div>
+
+    <script>
+      const quizData = [
+        {
+          question: "What is 'Bovine' commonly known as?",
+          a: "Goat",
+          b: "Cattle",
+          c: "Chicken",
+          d: "Pork",
+          correct: "b",
+        },
+        {
+          question: "What does 'HACCP' stand for?",
+          a: "Hazardous Activity Critical Control Point",
+          b: "Highly Active Common Control Plan",
+          c: "Hazard Analysis Critical Control Point",
+          d: "Health Analysis Control Production",
+          correct: "c",
+        },
+        {
+          question: "What is 'Collagen'?",
+          a: "A type of meat cut",
+          b: "A synthetic additive",
+          c: "A fibrous protein in connective tissues",
+          d: "A preservation technique",
+          correct: "c",
+        },
+        {
+          question: "Which term is used to describe yield grading?",
+          a: "Marbling",
+          b: "Cutability",
+          c: "Tenderness",
+          d: "Dryness",
+          correct: "b",
+        },
+        {
+          question: "What does 'Intramuscular fat' refer to?",
+          a: "Marbling",
+          b: "Collagen",
+          c: "External fat layer",
+          d: "Connective tissue",
+          correct: "a",
+        },
+        {
+          question: "What is 'Game' in terms of food?",
+          a: "Processed meat products",
+          b: "Poultry",
+          c: "Free roaming animals consumed as food",
+          d: "Fish and seafood",
+          correct: "c",
+        },
+        {
+          question: "Which federal agency is responsible for meat inspection?",
+          a: "FBI",
+          b: "FDA",
+          c: "USDA",
+          d: "NSA",
+          correct: "c",
+        },
+        {
+          question: "What is 'FIFO' a principle of?",
+          a: "Cooking",
+          b: "Stock rotation",
+          c: "Pricing",
+          d: "Marketing",
+          correct: "b",
+        },
+        {
+          question: "What is a natural seam in meat?",
+          a: "A synthetic division used in meat processing",
+          b: "A chemical used to tenderize meat",
+          c: "A natural break in the muscles of an animal",
+          d: "An artificial enhancement technique",
+          correct: "c",
+        },
+        {
+          question: "What does 'PSE' in pork stand for?",
+          a: "Pale, Soft, Exudative",
+          b: "Pink, Salty, Edible",
+          c: "Processed, Smoked, Enhanced",
+          d: "Packed, Sealed, Exported",
+          correct: "a",
+        },
+        {
+          question: "Which of these is not a primary cut of beef?",
+          a: "Loin",
+          b: "Chuck",
+          c: "Rib",
+          d: "Flank",
+          correct: "d",
+        },
+        {
+          question: "What is the purpose of dry aging beef?",
+          a: "To reduce the weight of the beef",
+          b: "To increase the meat's palatability traits",
+          c: "To extend the shelf life indefinitely",
+          d: "To make the meat suitable for grinding",
+          correct: "b",
+        },
+        {
+          question: "What does 'USDA' stand for?",
+          a: "United States Department of Agriculture",
+          b: "United States Department of Assembly",
+          c: "United State Domestic Agency",
+          d: "Universal Sanitary Department of Animals",
+          correct: "a",
+        },
+        {
+          question: "What is the main reason for vacuum packaging meat?",
+          a: "To add flavor",
+          b: "To increase transparency",
+          c: "To reduce storage space",
+          d: "To store meat in an oxygen-free environment",
+          correct: "d",
+        },
+        {
+          question: "Which is not a method of meat inspection?",
+          a: "Sensory evaluation",
+          b: "Chemical testing",
+          c: "Color grading",
+          d: "Pack date verification",
+          correct: "d",
+        },
+        {
+          question:
+            "What differentiates quality grading from yield grading in meat?",
+          a: "Quality grading measures tenderness, yield grading measures quantity",
+          b: "Quality grading measures fat content, yield grading measures muscle",
+          c: "Quality grading measures overall quality, yield grading measures the amount of usable meat",
+          d: "Quality grading is voluntary, yield grading is mandatory",
+          correct: "c",
+        },
+        {
+          question:
+            "What is the significance of knowing where a cut comes from on the carcass?",
+          a: "To price the meat accurately",
+          b: "To determine the appropriate cooking method",
+          c: "To simplify the packaging process",
+          d: "To ensure legal compliance",
+          correct: "b",
+        },
+        {
+          question: "Why is collagen important in cooking meats?",
+          a: "It thickens sauces naturally",
+          b: "It enhances flavor",
+          c: "It breaks down into gelatin, tenderizing the meat",
+          d: "It reduces cooking time",
+          correct: "c",
+        },
+        {
+          question: "What type of animal is referred to as 'Ovine'?",
+          a: "Cattle",
+          b: "Pig",
+          c: "Sheep",
+          d: "Goat",
+          correct: "c",
+        },
+        {
+          question: "What does the term 'Prime' refer to in meat grading?",
+          a: "The lowest quality of meat",
+          b: "The highest grade of beef",
+          c: "The most commonly sold grade of pork",
+          d: "A method of butchering",
+          correct: "b",
+        },
+        {
+          question: "What is the primary purpose of meat inspection?",
+          a: "To determine the price of meat",
+          b: "To enhance meat flavor",
+          c: "To ensure meat is safe to consume",
+          d: "To speed up the butchering process",
+          correct: "c",
+        },
+        {
+          question:
+            "Which term describes the fat that is on top of muscles and generally not edible?",
+          a: "Intramuscular fat",
+          b: "Intermuscular fat",
+          c: "Subcutaneous fat",
+          d: "Visceral fat",
+          correct: "b",
+        },
+        {
+          question:
+            "What does 'Vacuum packaging' help prevent in stored meats?",
+          a: "Overcooking",
+          b: "Freezer burn",
+          c: "Loss of color",
+          d: "Spoilage",
+          correct: "d",
+        },
+        {
+          question:
+            "Which of these is a term used to describe the quality grading of meats?",
+          a: "Packability",
+          b: "Marbling",
+          c: "Palatability",
+          d: "Cutability",
+          correct: "c",
+        },
+        {
+          question:
+            "Which term describes the fibrous protein that breaks down into gelatin?",
+          a: "Keratin",
+          b: "Elastin",
+          c: "Collagen",
+          d: "Myoglobin",
+          correct: "c",
+        },
+        {
+          question: "What does 'FIFO' stand for in food storage?",
+          a: "First In, First Out",
+          b: "Final Input, First Output",
+          c: "First In, Final Out",
+          d: "Full Input, Full Output",
+          correct: "a",
+        },
+        {
+          question:
+            "Which type of meat is referred to when using the term 'Porcine'?",
+          a: "Beef",
+          b: "Lamb",
+          c: "Pork",
+          d: "Poultry",
+          correct: "c",
+        },
+        {
+          question: "What is 'marbling' a reference to in meat quality?",
+          a: "The pattern of fat on the edge of the meat",
+          b: "The distribution of intramuscular fat",
+          c: "The color of the meat surface",
+          d: "The pattern of bones within the cut",
+          correct: "b",
+        },
+        {
+          question:
+            "What is the main concern of meat inspection by agencies like the USDA?",
+          a: "Improving the taste of meat",
+          b: "Ensuring the meat is safe to consume",
+          c: "Reducing the cost of meat production",
+          d: "Enhancing the appearance of meat",
+          correct: "b",
+        },
+        {
+          question: "What does 'HRI cuts' stand for?",
+          a: "Highly Rated Institutional cuts",
+          b: "Hotel, Restaurant, and Institution cuts",
+          c: "Health Related Issues cuts",
+          d: "High Resilience Industry cuts",
+          correct: "b",
+        },
+        {
+          question:
+            "Which of the following is not a primary purpose of vacuum packaging in the meat industry?",
+          a: "To enhance meat flavor over time",
+          b: "To extend the shelf life of meat products",
+          c: "To prevent the growth of aerobic bacteria",
+          d: "To reduce the use of chemical preservatives",
+          correct: "a",
+        },
+        {
+          question:
+            "Why is it important to know the 'Pack date' of meat products?",
+          a: "To determine the meat's cooking time",
+          b: "To understand the meat's price fluctuations",
+          c: "To know how fresh the meat is",
+          d: "To decide the seasoning for the meat",
+          correct: "c",
+        },
+        {
+          question: "What does the term 'Intermuscular fat' refer to?",
+          a: "Fat within the muscle fibers",
+          b: "Fat between different muscles",
+          c: "Fat under the skin of an animal",
+          d: "Artificially added fat",
+          correct: "b",
+        },
+        {
+          question: "What is 'marrow' in the context of meat?",
+          a: "The fat found under the skin",
+          b: "The bones used for making broth",
+          c: "The edible substance found inside bones",
+          d: "The connective tissue in joints",
+          correct: "c",
+        },
+        {
+          question: "What characterizes 'Choice' grade in beef?",
+          a: "It's the lowest quality commonly sold",
+          b: "It's considered the best quality",
+          c: "It's a middle-grade quality commonly sold",
+          d: "It's only used for ground beef",
+          correct: "c",
+        },
+        {
+          question: "What does 'No Roll' indicate in meat grading?",
+          a: "Meat that cannot be used for rolling cuts",
+          b: "Meat without any USDA grading",
+          c: "Meat that is too tough to be rolled",
+          d: "Meat that is pre-rolled for convenience",
+          correct: "b",
+        },
+        {
+          question:
+            "What is the primary function of 'intramuscular fat' in meats?",
+          a: "To prevent spoilage",
+          b: "To increase cooking speed",
+          c: "To enhance flavor and tenderness",
+          d: "To reduce cooking temperature requirements",
+          correct: "c",
+        },
+        {
+          question: "Why are 'natural casings' used in sausage making?",
+          a: "They provide a uniform shape to sausages",
+          b: "They are cheaper than synthetic casings",
+          c: "They add flavor and have a natural texture",
+          d: "They increase the shelf life of sausages",
+          correct: "c",
+        },
+        {
+          question: "What are 'sub-primal cuts' of beef?",
+          a: "The initial large sections from slaughtering",
+          b: "Cuts derived from breaking down primal cuts",
+          c: "The smallest cuts sold at retail",
+          d: "Unprocessed whole carcasses",
+          correct: "b",
+        },
+        {
+          question: "What is the purpose of 'aging beef'?",
+          a: "To comply with safety regulations",
+          b: "To increase the beef's nutrient content",
+          c: "To enhance its flavor and tenderness",
+          d: "To make it easier to transport and store",
+          correct: "c",
+        },
+        {
+          question: "What does 'Frenched' refer to in meat cuts?",
+          a: "Meat packaged without skin or bones",
+          b: "Bone-in cuts with the meat trimmed away from the bone end",
+          c: "Cuts made across the grain",
+          d: "Meat cuts rolled and tied for roasting",
+          correct: "b",
+        },
+        {
+          question: "What is 'Trichinosis'?",
+          a: "A method of meat preservation",
+          b: "A nutritional deficiency in wild game",
+          c: "A parasitic disease potentially found in pork",
+          d: "A type of meat cut",
+          correct: "c",
+        },
+        {
+          question: "Which description fits 'medallion' cuts best?",
+          a: "Long, thin slices of meat for stir-frying",
+          b: "Small, thick, round cuts typically from the loin for grilling or sautéing",
+          c: "Large, flat pieces used for roasting",
+          d: "Thinly sliced meat for sandwiches",
+          correct: "b",
+        },
+        {
+          question:
+            "What is the main benefit of 'dry curing' compared to 'wet curing'?",
+          a: "It is faster and adds more moisture to the meat",
+          b: "It produces a stronger flavor without adding extra water",
+          c: "It reduces the risk of contamination",
+          d: "It extends the shelf life longer",
+          correct: "b",
+        },
+        {
+          question:
+            "What is the significance of 'Suckling pig' in culinary terms?",
+          a: "It refers to pigs raised on organic diets",
+          b: "It describes very young pigs, often roasted whole",
+          c: "It indicates pigs used specifically for pork chops",
+          d: "It is a term for genetically modified pigs",
+          correct: "b",
+        },
+        {
+          question:
+            "Which of the following is not a typical use for 'charcuterie'?",
+          a: "As an appetizer on meat platters",
+          b: "For breakfast with eggs and toast",
+          c: "In sandwiches or on pizzas",
+          d: "As part of gourmet salads",
+          correct: "b",
+        },
+        {
+          question: "Why is 'intramuscular fat' important for meat quality?",
+          a: "It increases the weight of the meat",
+          b: "It improves the flavor and texture of the meat",
+          c: "It decreases cooking time",
+          d: "It reduces the price of the meat",
+          correct: "b",
+        },
+        {
+          question: "What does 'Mutton' refer to?",
+          a: "Meat from young lambs",
+          b: "Meat from female sheep",
+          c: "Meat from male goats",
+          d: "Meat from older sheep",
+          correct: "d",
+        },
+        {
+          question: "What characterizes 'Yearling' meat?",
+          a: "Meat from animals older than two years",
+          b: "Meat from animals slaughtered at around 12 months old",
+          c: "Meat from newborn animals",
+          d: "Meat specifically used in year-end celebrations",
+          correct: "b",
+        },
+        {
+          question:
+            "What is the primary purpose of the 'FIFO' method in meat storage?",
+          a: "To keep the most recently processed meat at the front",
+          b: "To improve the marbling of stored meat",
+          c: "To ensure older stock is used before newer stock",
+          d: "To enhance the flavor of aged meats",
+          correct: "c",
+        },
+        {
+          question:
+            "What does 'across the grain' refer to in meat preparation?",
+          a: "Cutting meat parallel to the muscle fibers",
+          b: "Cutting meat perpendicular to the muscle fibers",
+          c: "Grinding meat into a fine texture",
+          d: "Marinating meat before cooking",
+          correct: "b",
+        },
+        {
+          question: "What is a 'chop ready rack'?",
+          a: "A storage method for frozen meats",
+          b: "A cut of meat that is pre-trimmed and ready to be cut into individual chops",
+          c: "A spice rack designed for meat seasonings",
+          d: "A kitchen tool for tenderizing meat chops",
+          correct: "b",
+        },
+        {
+          question: "What does 'conformation' refer to in meat grading?",
+          a: "The flavor profile of the meat",
+          b: "The age of the animal at the time of slaughter",
+          c: "The meat to bone ratio",
+          d: "The health condition of the animal",
+          correct: "c",
+        },
+        {
+          question: "What is 'scallopine'?",
+          a: "A thick cut of meat for slow cooking",
+          b: "A very thin cut of meat, typically veal or pork, for quick cooking",
+          c: "A method of smoking meats",
+          d: "A type of seasoning for meats",
+          correct: "b",
+        },
+        {
+          question: "Describe 'frenched chop'.",
+          a: "A chop where the bone is left long and clean of meat",
+          b: "A chop cut from the rib section with no bone",
+          c: "A boneless and skinless piece of chicken",
+          d: "A pork chop with added French herbs",
+          correct: "a",
+        },
+        {
+          question: "What are 'sub-primal cuts' of a leg of veal?",
+          a: "Shank, loin, and ribs",
+          b: "Hind shank, top round, and sirloin",
+          c: "Top round, bottom round, and knuckle",
+          d: "Rib, brisket, and chuck",
+          correct: "c",
+        },
+        {
+          question:
+            "What is the main difference between beef and veal carcass division?",
+          a: "Beef is typically divided into more cuts than veal",
+          b: "Veal is divided into smaller, more numerous cuts",
+          c: "Veal is not divided into primal cuts",
+          d: "Beef and veal divisions are essentially the same",
+          correct: "b",
+        },
+        {
+          question: "What are the grades of veal determined by?",
+          a: "Color and texture of the meat",
+          b: "Weight and age of the animal",
+          c: "Marbling and fat content",
+          d: "Size, conformation, color, and muscle fiber quality",
+          correct: "d",
+        },
+        {
+          question: "What characterizes 'PSE pork'?",
+          a: "Pale, Soft, and Exudative appearance due to stress and handling",
+          b: "Prime, Select, and Excellent grades",
+          c: "Pork Specially Exported",
+          d: "Packed, Sealed, and Encased",
+          correct: "a",
+        },
+        {
+          question: "What is the purpose of curing meats?",
+          a: "To extend shelf life and change textures",
+          b: "To make meats suitable for raw consumption",
+          c: "To enhance the natural color of meats",
+          d: "To reduce the cost of meat production",
+          correct: "a",
+        },
+        {
+        question: "Which type of meat is 'Hot house lamb'?",
+        a: "Lamb that is raised in a controlled, indoor environment",
+        b: "A very small, very young lamb meant to be roasted whole",
+        c: "Lamb that is seasoned and cooked at high temperatures",
+        d: "Lamb processed in a greenhouse setting",
+        correct: "b"
+    },
+    {
+        question: "What is 'in-house grading'?",
+        a: "Grading performed by external inspectors at the farm",
+        b: "A standard set by meat distributors for internal quality control",
+        c: "Grading assessed by a packaging plant, not regulated by the USDA",
+        d: "Consumer grading provided in-house at grocery stores",
+        correct: "c"
+    },
+    {
+        question: "What does 'bob veal' refer to?",
+        a: "Veal from calves aged 3-5 months old",
+        b: "Veal from very young calves, less than one month old",
+        c: "Veal that has been specially branded",
+        d: "A cut of veal used primarily for stews",
+        correct: "b"
+    },
+    {
+        question: "What are the primary cuts of a market style hog?",
+        a: "Ham, loin, boston butt, picnic, belly with spare ribs",
+        b: "Shoulder, belly, jowl, neck bones, back ribs",
+        c: "Loin, shank, rib, cheek, tail",
+        d: "Brisket, round, chuck, plate",
+        correct: "a"
+    },
+    {
+        question: "Why might a chef choose to fabricate portion cuts in the kitchen?",
+        a: "To ensure higher quality and customization",
+        b: "To comply with local health regulations",
+        c: "Because it is less expensive than pre-cut portions",
+        d: "To reduce the need for skilled labor",
+        correct: "a"
+    },
+    {
+        question: "What is a primary benefit of using 'natural casings' for sausages?",
+        a: "They are more cost-effective than synthetic casings",
+        b: "They can be produced in larger quantities",
+        c: "They offer better flavor and texture",
+        d: "They last longer on the shelf",
+        correct: "c"
+    },
+    {
+        question: "What does 'TCM' refer to in meat processing?",
+        a: "Total Cured Meat",
+        b: "Thermal Curing Method",
+        c: "Treated Cured Meat",
+        d: "A group of sodium-based curing agents",
+        correct: "d"
+    },
+    {
+        question: "Why is 'yield grading' important in lamb purchasing?",
+        a: "It determines the flavor profile",
+        b: "It assesses the economic value based on the amount of usable meat",
+        c: "It is a regulatory requirement for all lamb products",
+        d: "It indicates the age of the lamb",
+        correct: "b"
+    },
+    {
+        question: "What does the term 'frenched' indicate about a meat cut?",
+        a: "The bone ends have been trimmed and cleaned of meat",
+        b: "It has been marinated with French herbs",
+        c: "The meat has been sliced thinly and layered",
+        d: "It has been ground and reformed into a patty",
+        correct: "a"
+    },
+    {
+        question: "What is the purpose of 'dry cure' in meat processing?",
+        a: "To enhance the meat's natural moisture content",
+        b: "To add bulk to the meat",
+        c: "To cure the meat by applying salt and other seasonings directly",
+        d: "To cook the meat slowly using a dry heat method",
+        correct: "c"
+    },
+        // Additional questions can be added here in the same format.
+      ];
+
+      function buildQuiz() {
+        const quizContainer = document.getElementById("quiz");
+        quizContainer.innerHTML = "";
+        quizData.forEach((item, index) => {
+          const questionDiv = document.createElement("div");
+          questionDiv.className = "question";
+          questionDiv.innerHTML = `
+                    <h4>Q${index + 1}: ${item.question}</h4>
+                    <label><input type="radio" name="question${index}" value="a"> ${
+            item.a
+          }</label><br>
+                    <label><input type="radio" name="question${index}" value="b"> ${
+            item.b
+          }</label><br>
+                    <label><input type="radio" name="question${index}" value="c"> ${
+            item.c
+          }</label><br>
+                    <label><input type="radio" name="question${index}" value="d"> ${
+            item.d
+          }</label><br>
+                `;
+          quizContainer.appendChild(questionDiv);
+        });
+      }
+
+      function submitQuiz() {
+        let score = 0;
+        quizData.forEach((item, index) => {
+          const selected = document.querySelector(
+            `input[name="question${index}"]:checked`
+          );
+          if (selected && selected.value === item.correct) {
+            score++;
+          }
+        });
+        const resultDiv = document.getElementById("result");
+        resultDiv.innerHTML = `<h3>Your score: ${score}/${quizData.length}</h3>`;
+      }
+
+      window.onload = buildQuiz;
+    </script>
+  </body>
+</html>
