@@ -120,8 +120,7 @@ const questions = [
     choice: ["Hock", "Clear Plate", "Back Fat", "Boston Shoulder/Butt"],
     answer: "Hock",
   },
-  
-  
+
   // Section 1-2
   // Composition of Lean Muscle Tissue
   {
@@ -189,7 +188,7 @@ const questions = [
       "Enhances Flavor",
       "Tenderizes",
       "Controls Pathogens",
-      "All of the Above",
+      "All choices mentioned",
     ],
     answer: "Controls Pathogens",
   },
@@ -1055,12 +1054,7 @@ const questions = [
   {
     question:
       "Which class of chicken is castrated male chickens, known for their tender meat?",
-    choice: [
-      "Cornish Game Hens",
-      "Broiler/Fryer",
-      "Capon",
-      "Fowl/Stewing Hen",
-    ],
+    choice: ["Cornish Game Hens", "Broiler/Fryer", "Capon", "Fowl/Stewing Hen"],
     answer: "Capon",
   },
   {
@@ -1269,8 +1263,8 @@ const questions = [
   },
   {
     question: "Which cut of lamb comes from the rack?",
-    choice: ["Neck", "Rack", "Leg", "Breast"],
-    answer: "Rack",
+    choice: ["Loin Chops", "Rack of Lamb", "Leg of Lamb", "Shoulder Roast"],
+    answer: "Rack of Lamb",
   },
   {
     question: "Which part of the lamb is typically used for osso buco?",
@@ -1356,8 +1350,8 @@ const questions = [
   },
   {
     question: "What are the kitchen uses for a boneless rack of lamb?",
-    choice: ["Grill", "Roast", "Broil", "All of the above"],
-    answer: "All of the above",
+    choice: ["Grill", "Roast", "Broil", "All choices mentioned"],
+    answer: "All choices mentioned",
   },
   {
     question: "Which cut of lamb is also known as the hotel rack?",
@@ -1372,7 +1366,7 @@ const questions = [
   },
   {
     question: "What is the kitchen use for a boneless BRT shoulder of lamb?",
-    choice: ["Roast", "Grill", "Braise", "All of the above"],
+    choice: ["Roast", "Grill", "Braise", "All choices mentioned"],
     answer: "Roast",
   },
   {
@@ -1382,8 +1376,8 @@ const questions = [
   },
   {
     question: "What is the main kitchen use for lamb breast or ribs?",
-    choice: ["Grill", "Stuff", "Braise", "All of the above"],
-    answer: "All of the above",
+    choice: ["Grill", "Stuff", "Braise", "All choices mentioned"],
+    answer: "All choices mentioned",
   },
   {
     question:
@@ -1392,9 +1386,9 @@ const questions = [
       "Bone in primal",
       "Boneless BRT",
       "Shoulder Chop",
-      "All of the above",
+      "All choices mentioned",
     ],
-    answer: "All of the above",
+    answer: "All choices mentioned",
   },
   {
     question:
@@ -1450,8 +1444,8 @@ const questions = [
   },
   {
     question: "What is a characteristic kitchen use for a lamb hotel rack?",
-    choice: ["Grill", "Roast", "Broil", "All of the above"],
-    answer: "All of the above",
+    choice: ["Grill", "Roast", "Broil", "All choices mentioned"],
+    answer: "All choices mentioned",
   },
   {
     question: "What is the typical weight range for a veal loin?",
@@ -1480,14 +1474,14 @@ const questions = [
       "Primal Shoulder",
       "Shoulder Clod",
       "Chuck Roll",
-      "All of the above",
+      "All choices mentioned",
     ],
-    answer: "All of the above",
+    answer: "All choices mentioned",
   },
   {
     question: "What is the primary use of the veal hotel rack?",
-    choice: ["Grilling", "Roasting", "Stewing", "All of the above"],
-    answer: "All of the above",
+    choice: ["Grilling", "Roasting", "Stewing", "All choices mentioned"],
+    answer: "All choices mentioned",
   },
   {
     question: "What part of the veal is the 'chined' cut taken from?",
@@ -1785,8 +1779,8 @@ const questions = [
   {
     question:
       "Which large game animal is typically raised in natural settings?",
-    choice: ["Yak", "Mouflon", "Wild Boar", "All of the above"],
-    answer: "All of the above",
+    choice: ["Yak", "Mouflon", "Wild Boar", "All choices mentioned"],
+    answer: "All choices mentioned",
   },
   {
     question: "What is a common feature of game meats regarding antibiotics?",

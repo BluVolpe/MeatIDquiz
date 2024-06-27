@@ -2,33 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Sets the character encoding of the document to UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Ensures the page is responsive by setting the viewport width to the device width and initial scale to 1.0 -->
     <title>Meat ID Quiz</title>
+    <!-- Title of the webpage, shown in the browser tab -->
     <link rel="stylesheet" href="style.css" />
+    <!-- Links to the external CSS file for styling -->
   </head>
   <body>
     <header>
+      <!-- Header section of the page -->
       <h1>Meat ID Quiz</h1>
+      <!-- Main heading of the quiz -->
     </header>
     <div id="quiz-container">
+      <!-- Container for the entire quiz -->
       <div id="question-tracker">
+        <!-- Container for tracking questions -->
         <div id="question-counter">0/20</div>
+        <!-- Displays the number of questions answered out of total -->
         <div id="question-tally"></div>
+        <!-- Container to display tally of correct and wrong answers -->
       </div>
       <div id="question-container">
+        <!-- Container for the question and choices -->
         <div id="question"></div>
+        <!-- Element to display the current question -->
         <div id="choices"></div>
+        <!-- Container for the choice buttons -->
       </div>
     </div>
     <div id="score-container" style="display: none">
+      <!-- Container for displaying the final score, initially hidden -->
       <h2>Your Score:</h2>
+      <!-- Subheading for the score display -->
       <div id="score" class="big-score"></div>
+      <!-- Element to display the percentage score -->
       <button id="restart-button" class="modern-button">Take Quiz Again</button>
+      <!-- Button to restart the quiz -->
     </div>
     <footer>
+      <!-- Footer section of the page -->
       <div id="timer">10:00</div>
+      <!-- Element to display the timer -->
     </footer>
     <script src="questions.js"></script>
+    <!-- Links to the external JavaScript file containing the questions -->
     <script src="script.js"></script>
+    <!-- Links to the external JavaScript file containing the quiz logic -->
   </body>
 </html>
