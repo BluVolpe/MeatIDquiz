@@ -1,2151 +1,2304 @@
 const questions = [
+  // Section 1-2
+  // Composition of Lean Muscle Tissue
   {
-    question: "What is 'Bovine' commonly known as?",
-    choice: ["Goat", "Cattle", "Chicken", "Pork"],
-    answer: "Cattle",
+    question: "What percentage of lean muscle tissue is composed of water?",
+    choice: ["70%", "72%", "75%", "80%"],
+    answer: "72%",
   },
   {
-    question: "What does 'HACCP' stand for?",
+    question: "What percentage of lean muscle tissue is composed of protein?",
+    choice: ["18%", "20%", "22%", "25%"],
+    answer: "20%",
+  },
+  {
+    question: "What percentage of lean muscle tissue is composed of fat?",
+    choice: ["5%", "6%", "7%", "8%"],
+    answer: "7%",
+  },
+  {
+    question: "What percentage of lean muscle tissue is composed of minerals?",
+    choice: ["0.5%", "1%", "1.5%", "2%"],
+    answer: "1%",
+  },
+
+  // What is Lean Muscle?
+  {
+    question: "What are strands of protein fibers grouped together called?",
+    choice: ["Collagen", "Myofibrillar", "Perimysium", "Lean Muscle"],
+    answer: "Lean Muscle",
+  },
+  {
+    question: "What are cable-like muscle structures known as?",
+    choice: ["Collagen", "Myofibrillar", "Perimysium", "Lean Muscle"],
+    answer: "Myofibrillar",
+  },
+  {
+    question: "What is the fiber wrapping around muscle bundles called?",
+    choice: ["Collagen", "Myofibrillar", "Perimysium", "Lean Muscle"],
+    answer: "Perimysium",
+  },
+
+  // Why are Meats Cooked?
+  {
+    question: "Which process enhances the flavor of meat during cooking?",
     choice: [
-      "Hazardous Activity Critical Control Point",
-      "Highly Active Common Control Plan",
-      "Hazard Analysis Critical Control Point",
-      "Health Analysis Control Production",
+      "Protein Coagulation",
+      "Collagen Breakdown",
+      "Maillard Reaction",
+      "Pathogen Control",
     ],
-    answer: "Hazard Analysis Critical Control Point",
+    answer: "Maillard Reaction",
   },
   {
-    question: "What is 'Collagen'?",
+    question: "Which process tenderizes meat during cooking?",
     choice: [
-      "A type of meat cut",
-      "A synthetic additive",
-      "A fibrous protein in connective tissues",
-      "A preservation technique",
+      "Maillard Reaction",
+      "Protein Coagulation",
+      "Collagen Breakdown",
+      "Pathogen Control",
     ],
-    answer: "A fibrous protein in connective tissues",
+    answer: "Protein Coagulation",
   },
   {
-    question: "Which term is used to describe yield grading?",
-    choice: ["Marbling", "Cutability", "Tenderness", "Dryness"],
-    answer: "Cutability",
-  },
-  {
-    question: "What does 'Intramuscular fat' refer to?",
-    choice: ["Marbling", "Collagen", "External fat layer", "Connective tissue"],
-    answer: "Marbling",
-  },
-  {
-    question: "What is 'Game' in terms of food?",
+    question: "What is the purpose of cooking meat in terms of safety?",
     choice: [
-      "Processed meat products",
-      "Poultry",
-      "Free roaming animals consumed as food",
-      "Fish and seafood",
+      "Enhances Flavor",
+      "Tenderizes",
+      "Controls Pathogens",
+      "All of the Above",
     ],
-    answer: "Free roaming animals consumed as food",
+    answer: "Controls Pathogens",
+  },
+
+  // Meat Cooking
+  {
+    question:
+      "At what temperature does the protein myosin begin to coagulate in meat?",
+    choice: ["100°F", "120°F", "140°F", "150°F"],
+    answer: "120°F",
   },
   {
-    question: "Which federal agency is responsible for meat inspection?",
-    choice: ["FBI", "FDA", "USDA", "NSA"],
-    answer: "USDA",
+    question:
+      "At what temperature do the remaining proteins within muscle cells coagulate, turning the meat firm and opaque?",
+    choice: ["120°F", "140°F", "160°F", "180°F"],
+    answer: "140°F",
   },
   {
-    question: "What is 'FIFO' a principle of?",
-    choice: ["Cooking", "Stock rotation", "Pricing", "Marketing"],
-    answer: "Stock rotation",
+    question:
+      "At what temperature do the proteins in the meat's sheath (mainly collagen) rapidly coagulate and contract?",
+    choice: ["130°F", "140°F", "150°F", "160°F"],
+    answer: "150°F",
   },
   {
-    question: "What is a natural seam in meat?",
+    question: "What happens to meat when it is cooked under 120°F?",
     choice: [
-      "A synthetic division used in meat processing",
-      "A chemical used to tenderize meat",
-      "A natural break in the muscles of an animal",
-      "An artificial enhancement technique",
+      "It becomes dry",
+      "It remains raw",
+      "It becomes tender",
+      "It becomes opaque",
     ],
-    answer: "A natural break in the muscles of an animal",
+    answer: "It remains raw",
+  },
+  // Section 3
+  {
+    question:
+      "What protein is responsible for the red color in muscle cells due to its iron content and oxygen attachment?",
+    choice: ["Collagen", "Elastin", "Myoglobin", "Actin"],
+    answer: "Myoglobin",
   },
   {
-    question: "What does 'PSE' in pork stand for?",
+    question:
+      "What color does lean muscle turn when it is fresh and has just been cut?",
+    choice: ["Grayish", "Dark", "Bright Red", "Yellow"],
+    answer: "Bright Red",
+  },
+  {
+    question: "What does the grayish color in lean muscle indicate?",
+    choice: ["Freshness", "Spoilage", "Freezer burn", "Initial bloom"],
+    answer: "Initial bloom",
+  },
+  {
+    question: "What does the dark color in lean muscle indicate?",
+    choice: ["Freshness", "Spoilage", "Tenderness", "Marbling"],
+    answer: "Spoilage",
+  },
+  {
+    question: "What are the three main types of connective tissues in meat?",
+    choice: [
+      "Myoglobin, Actin, Myosin",
+      "Collagen, Bone Connectives, Elastin",
+      "Keratin, Hemoglobin, Myoglobin",
+      "Fibrin, Actin, Elastin",
+    ],
+    answer: "Collagen, Bone Connectives, Elastin",
+  },
+  {
+    question:
+      "What connective tissue is described as silver, clearish, or white and forms natural seams in meat?",
+    choice: ["Elastin", "Myoglobin", "Collagen", "Bone Connectives"],
+    answer: "Collagen",
+  },
+  {
+    question: "What happens to collagen during moist cooking?",
+    choice: [
+      "It toughens",
+      "It breaks down and becomes tender",
+      "It discolors",
+      "It evaporates",
+    ],
+    answer: "It breaks down and becomes tender",
+  },
+  {
+    question: "What is the characteristic color of elastin?",
+    choice: ["Yellow", "Pink", "White", "Brown"],
+    answer: "Yellow",
+  },
+  {
+    question: "Where is elastin primarily located in the animal's body?",
+    choice: [
+      "Along the back and into the neck (Backstrap)",
+      "In the muscles",
+      "In the skin",
+      "In the bones",
+    ],
+    answer: "Along the back and into the neck (Backstrap)",
+  },
+  {
+    question: "What type of fat is found under the skin?",
+    choice: ["Intermuscular", "Intramuscular", "Lumbar", "Subcutaneous"],
+    answer: "Subcutaneous",
+  },
+  {
+    question: "What type of fat is referred to as marbling?",
+    choice: ["Subcutaneous", "Intermuscular", "Intramuscular", "Lumbar"],
+    answer: "Intramuscular",
+  },
+  {
+    question: "What is the purpose of barding in meat preparation?",
+    choice: [
+      "Placing fat inside lean muscle tissue",
+      "Wrapping with fat",
+      "Rendering fat",
+      "Removing fat",
+    ],
+    answer: "Wrapping with fat",
+  },
+  {
+    question: "What are offals or variety meats?",
+    choice: [
+      "External muscle fibers",
+      "Internal edible organs",
+      "Connective tissues",
+      "Marbled fat",
+    ],
+    answer: "Internal edible organs",
+  },
+  {
+    question:
+      "Which of the following is NOT considered an offal or variety meat?",
+    choice: ["Heart", "Liver", "Kidneys", "Tenderloin"],
+    answer: "Tenderloin",
+  },
+  {
+    question: "Which offal is commonly used for sweetbreads?",
+    choice: ["Heart", "Liver", "Thymus or pancreas", "Kidneys"],
+    answer: "Thymus or pancreas",
+  },
+
+  // Block 3
+  {
+    question: "What are the main sections of the beef loin?",
+    choice: [
+      "Sirloin, Striploin/Shell, Tenderloin, Flank, Shortloin",
+      "Chuck, Rib, Brisket, Plate, Flank",
+      "Round, Shank, Chuck, Rib, Loin",
+      "Brisket, Plate, Shank, Flank, Sirloin",
+    ],
+    answer: "Sirloin, Striploin/Shell, Tenderloin, Flank, Shortloin",
+  },
+  {
+    question:
+      "Which bones are found in the beef loin, and what are their specific parts?",
+    choice: [
+      "Tail, Feather, Finger, Hip Bone, Chine, 13th Rib",
+      "Tail, Wing, Finger, Hip Bone, Spine, 12th Rib",
+      "Tail, Feather, Hand, Hip Bone, Back, 11th Rib",
+      "Tail, Wing, Foot, Hip Bone, Neck, 10th Rib",
+    ],
+    answer: "Tail, Feather, Finger, Hip Bone, Chine, 13th Rib",
+  },
+  {
+    question: "Identify the cuts of beef loin and their characteristics.",
+    choice: [
+      "Top sirloin, Striploin bone-in and boneless, Flank steak, Tri-tip, Tenderloin cuts, Primal loin, Subprimal and Portion cuts",
+      "Top sirloin, Striploin boneless, Flank steak, Brisket, Chuck, Tenderloin cuts, Primal rib, Subprimal and Portion cuts",
+      "Top sirloin, Striploin bone-in, Flank steak, Round, Shank, Tenderloin cuts, Primal rib, Subprimal and Portion cuts",
+      "Top sirloin, Striploin shell, Flank steak, Ribeye, Tenderloin cuts, Primal chuck, Subprimal and Portion cuts",
+    ],
+    answer:
+      "Top sirloin, Striploin bone-in and boneless, Flank steak, Tri-tip, Tenderloin cuts, Primal loin, Subprimal and Portion cuts",
+  },
+  {
+    question: "What is the ideal temperature range for dry aging beef?",
+    choice: ["35-38°F", "30-34°F", "32-35°F", "36-39°F"],
+    answer: "35-38°F",
+  },
+  {
+    question: "What is the ideal humidity range for dry aging beef?",
+    choice: ["65-90%", "55-75%", "60-85%", "70-95%"],
+    answer: "65-90%",
+  },
+  {
+    question: "How long is the minimum time required for dry aging beef?",
+    choice: ["21 days", "14 days", "18 days", "20 days"],
+    answer: "21 days",
+  },
+  {
+    question: "How long can dry aging beef be extended to?",
+    choice: [
+      "Up to 60 days",
+      "Up to 45 days",
+      "Up to 50 days",
+      "Up to 55 days",
+    ],
+    answer: "Up to 60 days",
+  },
+  {
+    question:
+      "What tool is commonly used to circulate air during the dry aging process?",
+    choice: ["Large fans", "Small fans", "Medium fans", "Dehumidifiers"],
+    answer: "Large fans",
+  },
+  {
+    question:
+      "How often should the meat be turned during the dry aging process?",
+    choice: ["Every few days", "Every day", "Once a week", "Every other day"],
+    answer: "Every few days",
+  },
+
+  // Section 5 Pork
+
+  {
+    question: "What are the four classes of pork listed in the image?",
+    choice: [
+      "Suckling Pig, Roasting Pigs, Market Style Hogs, Sow/Boar",
+      "Piglets, Adult Pigs, Market Pigs, Breeding Pigs",
+      "Young Pigs, Old Pigs, Meat Pigs, Breeding Pigs",
+      "Suckling Pig, Roasting Pigs, Bacon Hogs, Breeding Hogs",
+    ],
+    answer: "Suckling Pig, Roasting Pigs, Market Style Hogs, Sow/Boar",
+  },
+  {
+    question: "What is the weight range for roasting pigs?",
+    choice: ["18-35 lbs", "40-150 lbs", "170-200 lbs", "200-300 lbs"],
+    answer: "40-150 lbs",
+  },
+  {
+    question: "Which class of pork is used for breeding?",
+    choice: ["Suckling Pig", "Roasting Pigs", "Market Style Hogs", "Sow/Boar"],
+    answer: "Sow/Boar",
+  },
+  {
+    question: "Which class of pork is cut for pork primals?",
+    choice: ["Suckling Pig", "Roasting Pigs", "Market Style Hogs", "Sow/Boar"],
+    answer: "Market Style Hogs",
+  },
+  {
+    question: "What is the ideal color for high-quality pork?",
+    choice: ["Bright Pink", "Dark Red", "Grayish", "Light Brown"],
+    answer: "Bright Pink",
+  },
+  {
+    question: "What does P.S.E. stand for in terms of pork quality?",
     choice: [
       "Pale, Soft, Exudative",
-      "Pink, Salty, Edible",
-      "Processed, Smoked, Enhanced",
-      "Packed, Sealed, Exported",
+      "Pink, Strong, Elastic",
+      "Perfect, Succulent, Edible",
+      "Pungent, Soft, Evasive",
     ],
     answer: "Pale, Soft, Exudative",
   },
   {
-    question: "Which of these is not a primary cut of beef?",
-    choice: ["Loin", "Chuck", "Rib", "Boston Butt"],
-    answer: "Boston Butt",
-  },
-  {
-    question: "What is the purpose of dry aging beef?",
-    choice: [
-      "To reduce the weight of the beef",
-      "To increase the meat's palatability traits",
-      "To extend the shelf life indefinitely",
-      "To make the meat suitable for grinding",
-    ],
-    answer: "To increase the meat's palatability traits",
-  },
-  {
-    question: "What does 'USDA' stand for?",
-    choice: [
-      "United States Department of Agriculture",
-      "United States Department of Assembly",
-      "United State Domestic Agency",
-      "Universal Sanitary Department of Animals",
-    ],
-    answer: "United States Department of Agriculture",
-  },
-  {
-    question: "What is the main reason for vacuum packaging meat?",
-    choice: [
-      "To add flavor",
-      "To increase transparency",
-      "To reduce storage space",
-      "To store meat in an oxygen-free environment",
-    ],
-    answer: "To store meat in an oxygen-free environment",
-  },
-  {
-    question: "Which is not a method of meat inspection?",
-    choice: [
-      "Sensory evaluation",
-      "Chemical testing",
-      "Color grading",
-      "Pack date verification",
-    ],
-    answer: "Pack date verification",
-  },
-  {
-    question: "What differentiates quality grading from yield grading in meat?",
-    choice: [
-      "Quality grading measures tenderness, yield grading measures quantity",
-      "Quality grading measures fat content, yield grading measures muscle",
-      "Quality grading measures overall quality, yield grading measures the amount of usable meat",
-      "Quality grading is voluntary, yield grading is mandatory",
-    ],
-    answer:
-      "Quality grading measures overall quality, yield grading measures the amount of usable meat",
-  },
-  {
-    question:
-      "What is the significance of knowing where a cut comes from on the carcass?",
-    choice: [
-      "To price the meat accurately",
-      "To determine the appropriate cooking method",
-      "To simplify the packaging process",
-      "To ensure legal compliance",
-    ],
-    answer: "To determine the appropriate cooking method",
-  },
-  {
-    question: "Why is collagen important in cooking meats?",
-    choice: [
-      "It thickens sauces naturally",
-      "It enhances flavor",
-      "It breaks down into gelatin, tenderizing the meat",
-      "It reduces cooking time",
-    ],
-    answer: "It breaks down into gelatin, tenderizing the meat",
-  },
-  {
-    question: "What type of animal is referred to as 'Ovine'?",
-    choice: ["Cattle", "Pig", "Sheep", "Goat"],
-    answer: "Sheep",
-  },
-  {
-    question: "What does the term 'Prime' refer to in meat grading?",
-    choice: [
-      "The lowest quality of meat",
-      "The highest grade of beef",
-      "The most commonly sold grade of pork",
-      "A method of butchering",
-    ],
-    answer: "The highest grade of beef",
-  },
-  {
-    question: "What is the primary purpose of meat inspection?",
-    choice: [
-      "To determine the price of meat",
-      "To enhance meat flavor",
-      "To ensure meat is safe to consume",
-      "To speed up the butchering process",
-    ],
-    answer: "To ensure meat is safe to consume",
-  },
-  {
-    question:
-      "Which term describes the fat that is on top of muscles and generally not edible?",
-    choice: [
-      "Intramuscular fat",
-      "Intermuscular fat",
-      "Subcutaneous fat",
-      "Visceral fat",
-    ],
-    answer: "Intermuscular fat",
-  },
-  {
-    question: "What does 'Vacuum packaging' help prevent in stored meats?",
-    choice: ["Overcooking", "Freezer burn", "Loss of color", "Spoilage"],
-    answer: "Spoilage",
-  },
-  {
-    question:
-      "Which of these is a term used to describe the quality grading of meats?",
-    choice: ["Packability", "Marbling", "Palatability", "Cutability"],
-    answer: "Palatability",
-  },
-  {
-    question:
-      "Which term describes the fibrous protein that breaks down into gelatin?",
-    choice: ["Keratin", "Elastin", "Collagen", "Myoglobin"],
-    answer: "Collagen",
-  },
-  {
-    question: "What does 'FIFO' stand for in food storage?",
-    choice: [
-      "First In, First Out",
-      "Final Input, First Output",
-      "First In, Final Out",
-      "Full Input, Full Output",
-    ],
-    answer: "First In, First Out",
-  },
-  {
-    question:
-      "Which type of meat is referred to when using the term 'Porcine'?",
-    choice: ["Beef", "Lamb", "Pork", "Poultry"],
-    answer: "Pork",
-  },
-  {
-    question: "What is 'marbling' a reference to in meat quality?",
-    choice: [
-      "The pattern of fat on the edge of the meat",
-      "The distribution of intramuscular fat",
-      "The color of the meat surface",
-      "The pattern of bones within the cut",
-    ],
-    answer: "The distribution of intramuscular fat",
-  },
-  {
-    question:
-      "What is the main concern of meat inspection by agencies like the USDA?",
-    choice: [
-      "Improving the taste of meat",
-      "Ensuring the meat is safe to consume",
-      "Reducing the cost of meat production",
-      "Enhancing the appearance of meat",
-    ],
-    answer: "Ensuring the meat is safe to consume",
-  },
-  {
-    question: "What does 'HRI cuts' stand for?",
-    choice: [
-      "Highly Rated Institutional cuts",
-      "Hotel, Restaurant, and Institution cuts",
-      "Health Related Issues cuts",
-      "High Resilience Industry cuts",
-    ],
-    answer: "Hotel, Restaurant, and Institution cuts",
-  },
-  {
-    question:
-      "Which of the following is not a primary purpose of vacuum packaging in the meat industry?",
-    choice: [
-      "To enhance meat flavor over time",
-      "To extend the shelf life of meat products",
-      "To prevent the growth of aerobic bacteria",
-      "To reduce the use of chemical preservatives",
-    ],
-    answer: "To enhance meat flavor over time",
-  },
-  {
-    question: "Why is it important to know the 'Pack date' of meat products?",
-    choice: [
-      "To determine the meat's cooking time",
-      "To understand the meat's price fluctuations",
-      "To know how fresh the meat is",
-      "To decide the seasoning for the meat",
-    ],
-    answer: "To know how fresh the meat is",
-  },
-  {
-    question: "What does the term 'Intermuscular fat' refer to?",
-    choice: [
-      "Fat within the muscle fibers",
-      "Fat between different muscles",
-      "Fat under the skin of an animal",
-      "Artificially added fat",
-    ],
-    answer: "Fat between different muscles",
-  },
-  {
-    question: "What is 'marrow' in the context of meat?",
-    choice: [
-      "The fat found under the skin",
-      "The bones used for making broth",
-      "The edible substance found inside bones",
-      "The connective tissue in joints",
-    ],
-    answer: "The edible substance found inside bones",
-  },
-  {
-    question: "What characterizes 'Choice' grade in beef?",
-    choice: [
-      "It's the lowest quality commonly sold",
-      "It's considered the best quality",
-      "It's a middle-grade quality commonly sold",
-      "It's only used for ground beef",
-    ],
-    answer: "It's a middle-grade quality commonly sold",
-  },
-  {
-    question: "What does 'No Roll' indicate in meat grading?",
-    choice: [
-      "Meat that cannot be used for rolling cuts",
-      "Meat without any USDA grading",
-      "Meat that is too tough to be rolled",
-      "Meat that is pre-rolled for convenience",
-    ],
-    answer: "Meat without any USDA grading",
-  },
-  {
-    question: "What is the primary function of 'intramuscular fat' in meats?",
-    choice: [
-      "To prevent spoilage",
-      "To increase cooking speed",
-      "To enhance flavor and tenderness",
-      "To reduce cooking temperature requirements",
-    ],
-    answer: "To enhance flavor and tenderness",
-  },
-  {
-    question: "Why are 'natural casings' used in sausage making?",
-    choice: [
-      "They provide a uniform shape to sausages",
-      "They are cheaper than synthetic casings",
-      "They add flavor and have a natural texture",
-      "They increase the shelf life of sausages",
-    ],
-    answer: "They add flavor and have a natural texture",
-  },
-  {
-    question: "What are 'sub-primal cuts' of beef?",
-    choice: [
-      "The initial large sections from slaughtering",
-      "Cuts derived from breaking down primal cuts",
-      "The smallest cuts sold at retail",
-      "Unprocessed whole carcasses",
-    ],
-    answer: "Cuts derived from breaking down primal cuts",
-  },
-  {
-    question: "What is the purpose of 'aging beef'?",
-    choice: [
-      "To comply with safety regulations",
-      "To increase the beef's nutrient content",
-      "To enhance its flavor and tenderness",
-      "To make it easier to transport and store",
-    ],
-    answer: "To enhance its flavor and tenderness",
-  },
-  {
-    question: "What does 'Frenched' refer to in meat cuts?",
-    choice: [
-      "Meat packaged without skin or bones",
-      "Bone-in cuts with the meat trimmed away from the bone end",
-      "Cuts made across the grain",
-      "Meat cuts rolled and tied for roasting",
-    ],
-    answer: "Bone-in cuts with the meat trimmed away from the bone end",
-  },
-  {
-    question: "What is 'Trichinosis'?",
-    choice: [
-      "A method of meat preservation",
-      "A nutritional deficiency in wild game",
-      "A parasitic disease potentially found in pork",
-      "A type of meat cut",
-    ],
-    answer: "A parasitic disease potentially found in pork",
-  },
-  {
-    question: "Which description fits 'medallion' cuts best?",
-    choice: [
-      "Long, thin slices of meat for stir-frying",
-      "Small, thick, round cuts typically from the loin for grilling or sautéing",
-      "Large, flat pieces used for roasting",
-      "Thinly sliced meat for sandwiches",
-    ],
-    answer:
-      "Small, thick, round cuts typically from the loin for grilling or sautéing",
-  },
-  {
-    question:
-      "What is the main benefit of 'dry curing' compared to 'wet curing'?",
-    choice: [
-      "It is faster and adds more moisture to the meat",
-      "It produces a stronger flavor without adding extra water",
-      "It reduces the risk of contamination",
-      "It extends the shelf life longer",
-    ],
-    answer: "It produces a stronger flavor without adding extra water",
-  },
-  {
-    question: "What is the significance of 'Suckling pig' in culinary terms?",
-    choice: [
-      "It refers to pigs raised on organic diets",
-      "It describes very young pigs, often roasted whole",
-      "It indicates pigs used specifically for pork chops",
-      "It is a term for genetically modified pigs",
-    ],
-    answer: "It describes very young pigs, often roasted whole",
-  },
-  {
-    question: "Which of the following is not a typical use for 'charcuterie'?",
-    choice: [
-      "As an appetizer on meat platters",
-      "For breakfast with eggs and toast",
-      "In sandwiches or on pizzas",
-      "As part of gourmet salads",
-    ],
-    answer: "For breakfast with eggs and toast",
-  },
-  {
-    question: "Why is 'intramuscular fat' important for meat quality?",
-    choice: [
-      "It increases the weight of the meat",
-      "It improves the flavor and texture of the meat",
-      "It decreases cooking time",
-      "It reduces the price of the meat",
-    ],
-    answer: "It improves the flavor and texture of the meat",
-  },
-  {
-    question: "What does 'Mutton' refer to?",
-    choice: [
-      "Meat from young lambs",
-      "Meat from female sheep",
-      "Meat from male goats",
-      "Meat from older sheep",
-    ],
-    answer: "Meat from older sheep",
-  },
-  {
-    question: "What characterizes 'Yearling' meat?",
-    choice: [
-      "Meat from animals older than two years",
-      "Meat from animals slaughtered at around 12 months old",
-      "Meat from newborn animals",
-      "Meat specifically used in year-end celebrations",
-    ],
-    answer: "Meat from animals slaughtered at around 12 months old",
-  },
-  {
-    question:
-      "What is the primary purpose of the 'FIFO' method in meat storage?",
-    choice: [
-      "To keep the most recently processed meat at the front",
-      "To improve the marbling of stored meat",
-      "To ensure older stock is used before newer stock",
-      "To enhance the flavor of aged meats",
-    ],
-    answer: "To ensure older stock is used before newer stock",
-  },
-  {
-    question: "What does 'across the grain' refer to in meat preparation?",
-    choice: [
-      "Cutting meat parallel to the muscle fibers",
-      "Cutting meat perpendicular to the muscle fibers",
-      "Grinding meat into a fine texture",
-      "Marinating meat before cooking",
-    ],
-    answer: "Cutting meat perpendicular to the muscle fibers",
-  },
-  {
-    question: "What is a 'chop ready rack'?",
-    choice: [
-      "A storage method for frozen meats",
-      "A cut of meat that is pre-trimmed and ready to be cut into individual chops",
-      "A spice rack designed for meat seasonings",
-      "A kitchen tool for tenderizing meat chops",
-    ],
-    answer:
-      "A cut of meat that is pre-trimmed and ready to be cut into individual chops",
-  },
-  {
-    question: "What does 'conformation' refer to in meat grading?",
-    choice: [
-      "The flavor profile of the meat",
-      "The age of the animal at the time of slaughter",
-      "The meat to bone ratio",
-      "The health condition of the animal",
-    ],
-    answer: "The meat to bone ratio",
-  },
-  {
-    question: "What is 'scallopine'?",
-    choice: [
-      "A thick cut of meat for slow cooking",
-      "A very thin cut of meat, typically veal or pork, for quick cooking",
-      "A method of smoking meats",
-      "A type of seasoning for meats",
-    ],
-    answer:
-      "A very thin cut of meat, typically veal or pork, for quick cooking",
-  },
-  {
-    question: "Describe 'frenched chop'.",
-    choice: [
-      "A chop where the bone is left long and clean of meat",
-      "A chop cut from the rib section with no bone",
-      "A boneless and skinless piece of chicken",
-      "A pork chop with added French herbs",
-    ],
-    answer: "A chop where the bone is left long and clean of meat",
-  },
-  {
-    question: "What are 'sub-primal cuts' of a leg of veal?",
-    choice: [
-      "Shank, loin, and ribs",
-      "Hind shank, top round, and sirloin",
-      "Top round, bottom round, and knuckle",
-      "Rib, brisket, and chuck",
-    ],
-    answer: "Top round, bottom round, and knuckle",
-  },
-  {
-    question:
-      "What is the main difference between beef and veal carcass division?",
-    choice: [
-      "Beef is typically divided into more cuts than veal",
-      "Veal is divided into smaller, more numerous cuts",
-      "Veal is not divided into primal cuts",
-      "Beef and veal divisions are essentially the same",
-    ],
-    answer: "Veal is divided into smaller, more numerous cuts",
-  },
-  {
-    question: "What are the grades of veal determined by?",
-    choice: [
-      "Color and texture of the meat",
-      "Weight and age of the animal",
-      "Marbling and fat content",
-      "Size, conformation, color, and muscle fiber quality",
-    ],
-    answer: "Size, conformation, color, and muscle fiber quality",
-  },
-  {
-    question: "What characterizes 'PSE pork'?",
-    choice: [
-      "Pale, Soft, and Exudative appearance due to stress and handling",
-      "Prime, Select, and Excellent grades",
-      "Pork Specially Exported",
-      "Packed, Sealed, and Encased",
-    ],
-    answer: "Pale, Soft, and Exudative appearance due to stress and handling",
-  },
-  {
-    question: "What is the purpose of curing meats?",
-    choice: [
-      "To extend shelf life and change textures",
-      "To make meats suitable for raw consumption",
-      "To enhance the natural color of meats",
-      "To reduce the cost of meat production",
-    ],
-    answer: "To extend shelf life and change textures",
-  },
-  {
-    question: "Which type of meat is 'Hot house lamb'?",
-    choice: [
-      "Lamb that is raised in a controlled, indoor environment",
-      "A very small, very young lamb meant to be roasted whole",
-      "Lamb that is seasoned and cooked at high temperatures",
-      "Lamb processed in a greenhouse setting",
-    ],
-    answer: "A very small, very young lamb meant to be roasted whole",
-  },
-  {
-    question: "What is 'in-house grading'?",
-    choice: [
-      "Grading performed by external inspectors at the farm",
-      "A standard set by meat distributors for internal quality control",
-      "Grading assessed by a packaging plant, not regulated by the USDA",
-      "Consumer grading provided in-house at grocery stores",
-    ],
-    answer: "Grading assessed by a packaging plant, not regulated by the USDA",
-  },
-  {
-    question: "What does 'bob veal' refer to?",
-    choice: [
-      "Veal from calves aged 3-5 months old",
-      "Veal from very young calves, less than one month old",
-      "Veal that has been specially branded",
-      "A cut of veal used primarily for stews",
-    ],
-    answer: "Veal from very young calves, less than one month old",
-  },
-  {
-    question: "What are the primary cuts of a market style hog?",
-    choice: [
-      "Ham, loin, boston butt, picnic, belly with spare ribs",
-      "Shoulder, belly, jowl, neck bones, back ribs",
-      "Loin, shank, rib, cheek, tail",
-      "Brisket, round, chuck, plate",
-    ],
-    answer: "Ham, loin, boston butt, picnic, belly with spare ribs",
-  },
-  {
-    question:
-      "Why might a chef choose to fabricate portion cuts in the kitchen?",
-    choice: [
-      "To ensure higher quality and customization",
-      "To comply with local health regulations",
-      "Because it is less expensive than pre-cut portions",
-      "To reduce the need for skilled labor",
-    ],
-    answer: "To ensure higher quality and customization",
-  },
-  {
-    question:
-      "What is a primary benefit of using 'natural casings' for sausages?",
-    choice: [
-      "They are more cost-effective than synthetic casings",
-      "They can be produced in larger quantities",
-      "They offer better flavor and texture",
-      "They last longer on the shelf",
-    ],
-    answer: "They offer better flavor and texture",
-  },
-  {
-    question: "What does 'TCM' refer to in meat processing?",
-    choice: [
-      "Total Cured Meat",
-      "Thermal Curing Method",
-      "Treated Cured Meat",
-      "A group of sodium-based curing agents",
-    ],
-    answer: "A group of sodium-based curing agents",
-  },
-  {
-    question: "Why is 'yield grading' important in lamb purchasing?",
-    choice: [
-      "It determines the flavor profile",
-      "It assesses the economic value based on the amount of usable meat",
-      "It is a regulatory requirement for all lamb products",
-      "It indicates the age of the lamb",
-    ],
-    answer: "It assesses the economic value based on the amount of usable meat",
-  },
-  {
-    question: "What does the term 'frenched' indicate about a meat cut?",
-    choice: [
-      "The bone ends have been trimmed and cleaned of meat",
-      "It has been marinated with French herbs",
-      "The meat has been sliced thinly and layered",
-      "It has been ground and reformed into a patty",
-    ],
-    answer: "The bone ends have been trimmed and cleaned of meat",
-  },
-  {
-    question: "What is the purpose of 'dry cure' in meat processing?",
-    choice: [
-      "To enhance the meat's natural moisture content",
-      "To add bulk to the meat",
-      "To cure the meat by applying salt and other seasonings directly",
-      "To cook the meat slowly using a dry heat method",
-    ],
-    answer: "To cure the meat by applying salt and other seasonings directly",
-  },
-  {
-    question:
-      "Which cut of beef is known for its fine-grained and full-flavored meat with generous marbling?",
-    choice: ["Ribeye", "Cap of Ribeye", "Prime Rib Roast", "NY Strip"],
-    answer: "Ribeye",
-  },
-  {
-    question:
-      "Which cut from the beef rib region is also known as Spinalis Dorsi or Deckle Steak?",
-    choice: ["Ribeye", "Cap of Ribeye", "Prime Rib Roast", "NY Strip"],
-    answer: "Cap of Ribeye",
-  },
-  {
-    question: "What is another name for Prime Rib Roast?",
-    choice: ["English Cut", "King Cut", "Queen Cut", "All of the above"],
-    answer: "All of the above",
-  },
-  {
-    question:
-      "Which cut of beef loin is also known as Kansas City Steak or Delmonico Steak?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Tenderloin Roast"],
-    answer: "NY Strip",
-  },
-  {
-    question: "What is another name for the Tenderloin Filet?",
-    choice: ["Filet Mignon", "NY Strip", "T-Bone", "Tri-Tip"],
-    answer: "Filet Mignon",
-  },
-  {
-    question:
-      "Which cut combines a Strip Steak and a Tenderloin Steak connected by a T-shaped bone?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Top Sirloin"],
-    answer: "T-Bone",
-  },
-  {
-    question:
-      "Which cut from the beef loin region is cut from the most tender muscle and is easy to prepare?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Tenderloin Roast"],
-    answer: "Tenderloin Roast",
-  },
-  {
-    question: "What is another name for the Top Sirloin?",
-    choice: [
-      "Baseball Cut",
-      "Sirloin Steak",
-      "Both of the above",
-      "None of the above",
-    ],
-    answer: "Both of the above",
-  },
-  {
-    question:
-      "Which triangular-shaped muscle cut from the beef sirloin region is also known as Beef Loin, Bottom Sirloin Butt, Bottom Sirloin Roast, or Triangle Roast?",
-    choice: ["Top Sirloin", "Tri-Tip", "Flat Iron", "Teres Major"],
-    answer: "Tri-Tip",
-  },
-  {
-    question:
-      "Which cut from the beef chuck is the second most tender beef muscle?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Flat Iron",
-  },
-  {
-    question:
-      "Which cut from the beef chuck offers versatility and upscale plate presentation similar to Beef Tenderloin (Filet Mignon)?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Teres Major",
-  },
-  {
-    question:
-      "Which boneless cut from the beef brisket is typically used for regional barbecue items, pot roast, and corned beef?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Brisket",
-  },
-  {
-    question:
-      "Which cut from the beef plate consists of the rib section from any rib and/or plate item and is ideal for signature rubs and sauces?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Plate Ribs",
-  },
-  {
-    question:
-      "Which cut from the beef plate is a long, flat muscle commonly used for fajitas?",
-    choice: ["Flat Iron", "Skirt Steak", "Brisket", "Plate Ribs"],
-    answer: "Skirt Steak",
-  },
-  {
-    question: "Which cut from the beef flank is also known as Hanging Tender?",
-    choice: ["Hanger Steak", "Flank Steak", "Top Round", "Eye of Round"],
-    answer: "Hanger Steak",
-  },
-  {
-    question:
-      "Which single flat muscle cut from the flank region is known for its robust, beefy flavor?",
-    choice: ["Hanger Steak", "Flank Steak", "Top Round", "Eye of Round"],
-    answer: "Flank Steak",
-  },
-  {
-    question:
-      "Which cut from the shank region is tough but can be used for crockpot recipes that call for low and slow cooking?",
-    choice: ["Fore Shank", "Ground Beef", "Top Round", "Bottom Round"],
-    answer: "Fore Shank",
-  },
-  {
-    question: "Which cut from the shank region is often used for Ground Beef?",
-    choice: ["Fore Shank", "Ground Beef", "Top Round", "Bottom Round"],
-    answer: "Ground Beef",
-  },
-  {
-    question:
-      "Which large subprimal cut from the round region is lean and flavorful, often used for roast beef?",
-    choice: ["Top Round", "Eye of Round", "Bottom Round", "Flank Steak"],
-    answer: "Top Round",
-  },
-  {
-    question:
-      "Which cut from the round region is a cheaper and tougher cut ideal for hearty stews?",
-    choice: ["Top Round", "Eye of Round", "Bottom Round", "Flank Steak"],
-    answer: "Eye of Round",
-  },
-  {
-    question:
-      "Which cut of beef is known for its fine-grained and full-flavored meat with generous marbling?",
-    choice: ["Ribeye", "Cap of Ribeye", "Prime Rib Roast", "NY Strip"],
-    answer: "Ribeye",
-  },
-  {
-    question:
-      "Which cut from the beef rib region is also known as Spinalis Dorsi or Deckle Steak?",
-    choice: ["Ribeye", "Cap of Ribeye", "Prime Rib Roast", "NY Strip"],
-    answer: "Cap of Ribeye",
-  },
-  {
-    question: "What is another name for Prime Rib Roast?",
-    choice: ["English Cut", "King Cut", "Queen Cut", "All of the above"],
-    answer: "All of the above",
-  },
-  {
-    question:
-      "Which cut of beef loin is also known as Kansas City Steak or Delmonico Steak?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Tenderloin Roast"],
-    answer: "NY Strip",
-  },
-  {
-    question: "What is another name for the Tenderloin Filet?",
-    choice: ["Filet Mignon", "NY Strip", "T-Bone", "Tri-Tip"],
-    answer: "Filet Mignon",
-  },
-  {
-    question:
-      "Which cut combines a Strip Steak and a Tenderloin Steak connected by a T-shaped bone?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Top Sirloin"],
-    answer: "T-Bone",
-  },
-  {
-    question:
-      "Which cut from the beef loin region is cut from the most tender muscle and is easy to prepare?",
-    choice: ["NY Strip", "Tenderloin Filet", "T-Bone", "Tenderloin Roast"],
-    answer: "Tenderloin Roast",
-  },
-  {
-    question: "What is another name for the Top Sirloin?",
-    choice: [
-      "Baseball Cut",
-      "Sirloin Steak",
-      "Both of the above",
-      "None of the above",
-    ],
-    answer: "Both of the above",
-  },
-  {
-    question:
-      "Which triangular-shaped muscle cut from the beef sirloin region is also known as Beef Loin, Bottom Sirloin Butt, Bottom Sirloin Roast, or Triangle Roast?",
-    choice: ["Top Sirloin", "Tri-Tip", "Flat Iron", "Teres Major"],
-    answer: "Tri-Tip",
-  },
-  {
-    question:
-      "Which cut from the beef chuck is the second most tender beef muscle?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Flat Iron",
-  },
-  {
-    question:
-      "Which cut from the beef chuck offers versatility and upscale plate presentation similar to Beef Tenderloin (Filet Mignon)?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Teres Major",
-  },
-  {
-    question:
-      "Which boneless cut from the beef brisket is typically used for regional barbecue items, pot roast, and corned beef?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Brisket",
-  },
-  {
-    question:
-      "Which cut from the beef plate consists of the rib section from any rib and/or plate item and is ideal for signature rubs and sauces?",
-    choice: ["Flat Iron", "Teres Major", "Brisket", "Plate Ribs"],
-    answer: "Plate Ribs",
-  },
-  {
-    question:
-      "Which cut from the beef plate is a long, flat muscle commonly used for fajitas?",
-    choice: ["Flat Iron", "Skirt Steak", "Brisket", "Plate Ribs"],
-    answer: "Skirt Steak",
-  },
-  {
-    question: "Which cut from the beef flank is also known as Hanging Tender?",
-    choice: ["Hanger Steak", "Flank Steak", "Top Round", "Eye of Round"],
-    answer: "Hanger Steak",
-  },
-  {
-    question:
-      "Which single flat muscle cut from the flank region is known for its robust, beefy flavor?",
-    choice: ["Hanger Steak", "Flank Steak", "Top Round", "Eye of Round"],
-    answer: "Flank Steak",
-  },
-  {
-    question:
-      "Which cut from the shank region is tough but can be used for crockpot recipes that call for low and slow cooking?",
-    choice: ["Fore Shank", "Ground Beef", "Top Round", "Bottom Round"],
-    answer: "Fore Shank",
-  },
-  {
-    question: "Which cut from the shank region is often used for Ground Beef?",
-    choice: ["Fore Shank", "Ground Beef", "Top Round", "Bottom Round"],
-    answer: "Ground Beef",
-  },
-  {
-    question:
-      "Which large subprimal cut from the round region is lean and flavorful, often used for roast beef?",
-    choice: ["Top Round", "Eye of Round", "Bottom Round", "Flank Steak"],
-    answer: "Top Round",
-  },
-  {
-    question:
-      "Which cut from the round region is a cheaper and tougher cut ideal for hearty stews?",
-    choice: ["Top Round", "Eye of Round", "Bottom Round", "Flank Steak"],
-    answer: "Eye of Round",
-  },
-  {
-    question: "Cattle is commonly known as what?",
-    choice: ["Goat", "Bovine", "Chicken", "Pork"],
-    answer: "Bovine",
-  },
-  {
-    question: "Hazard Analysis Critical Control Point is abbreviated as?",
-    choice: [
-      "Hazardous Activity Critical Control Point",
-      "Highly Active Common Control Plan",
-      "HACCP",
-      "Health Analysis Control Production",
-    ],
-    answer: "HACCP",
-  },
-  {
-    question: "A fibrous protein in connective tissues is known as?",
-    choice: [
-      "A type of meat cut",
-      "A synthetic additive",
-      "Collagen",
-      "A preservation technique",
-    ],
-    answer: "Collagen",
-  },
-  {
-    question: "Cutability is a term used to describe what?",
-    choice: ["Marbling", "Yield grading", "Tenderness", "Dryness"],
-    answer: "Yield grading",
-  },
-  {
-    question: "Marbling refers to what in meat?",
+    question: "What factors cause P.S.E. in pork?",
     choice: [
-      "Intramuscular fat",
-      "Collagen",
-      "External fat layer",
-      "Connective tissue",
+      "Lack of exercise and overfeeding",
+      "Stress and genetics",
+      "Improper cooking methods",
+      "Poor hygiene and infections",
     ],
-    answer: "Intramuscular fat",
+    answer: "Stress and genetics",
   },
   {
-    question: "Free roaming animals consumed as food are known as?",
-    choice: ["Processed meat products", "Poultry", "Game", "Fish and seafood"],
-    answer: "Game",
-  },
-  {
-    question: "USDA is the federal agency responsible for what?",
-    choice: ["FBI", "FDA", "Meat inspection", "NSA"],
-    answer: "Meat inspection",
-  },
-  {
-    question: "Stock rotation principle is also known as?",
-    choice: ["Cooking", "FIFO", "Pricing", "Marketing"],
-    answer: "FIFO",
-  },
-  {
-    question: "A natural break in the muscles of an animal is called?",
-    choice: [
-      "A synthetic division used in meat processing",
-      "A chemical used to tenderize meat",
-      "A natural seam",
-      "An artificial enhancement technique",
-    ],
-    answer: "A natural seam",
-  },
-  {
-    question: "Pale, Soft, Exudative in pork is abbreviated as?",
-    choice: [
-      "Pink, Salty, Edible",
-      "Processed, Smoked, Enhanced",
-      "Packed, Sealed, Exported",
-      "PSE",
-    ],
-    answer: "PSE",
-  },
-  {
-    question: "Boston Butt is not a primary cut of what meat?",
-    choice: ["Loin", "Chuck", "Rib", "Beef"],
-    answer: "Beef",
-  },
-  {
-    question:
-      "To increase the meat's palatability traits is the purpose of what?",
-    choice: [
-      "To reduce the weight of the beef",
-      "To extend the shelf life indefinitely",
-      "Dry aging beef",
-      "To make the meat suitable for grinding",
-    ],
-    answer: "Dry aging beef",
-  },
-  {
-    question: "United States Department of Agriculture is abbreviated as?",
-    choice: [
-      "United States Department of Assembly",
-      "United State Domestic Agency",
-      "USDA",
-      "Universal Sanitary Department of Animals",
-    ],
-    answer: "USDA",
-  },
-  {
-    question:
-      "Storing meat in an oxygen-free environment is the main reason for?",
-    choice: [
-      "To add flavor",
-      "To increase transparency",
-      "Vacuum packaging",
-      "To reduce storage space",
-    ],
-    answer: "Vacuum packaging",
-  },
-  {
-    question: "Pack date verification is not a method of what?",
-    choice: [
-      "Sensory evaluation",
-      "Chemical testing",
-      "Color grading",
-      "Meat inspection",
-    ],
-    answer: "Meat inspection",
-  },
-  {
-    question:
-      "Quality grading measures overall quality, yield grading measures?",
-    choice: [
-      "Tenderness",
-      "Fat content",
-      "The amount of usable meat",
-      "Quantity",
-    ],
-    answer: "The amount of usable meat",
-  },
-  {
-    question:
-      "Determining the appropriate cooking method is the significance of knowing?",
-    choice: [
-      "To price the meat accurately",
-      "Where a cut comes from on the carcass",
-      "To simplify the packaging process",
-      "To ensure legal compliance",
-    ],
-    answer: "Where a cut comes from on the carcass",
-  },
-  {
-    question:
-      "Breaking down into gelatin, tenderizing the meat is important in cooking meats for what?",
-    choice: [
-      "It thickens sauces naturally",
-      "Collagen",
-      "It enhances flavor",
-      "It reduces cooking time",
-    ],
-    answer: "Collagen",
-  },
-  {
-    question: "Sheep is referred to as?",
-    choice: ["Cattle", "Pig", "Ovine", "Goat"],
-    answer: "Ovine",
-  },
-  {
-    question: "The highest grade of beef is referred to as?",
-    choice: [
-      "The lowest quality of meat",
-      "The highest grade of beef",
-      "The most commonly sold grade of pork",
-      "A method of butchering",
-    ],
-    answer: "The highest grade of beef",
-  },
-  {
-    question: "Ensuring meat is safe to consume is the primary purpose of?",
-    choice: [
-      "To determine the price of meat",
-      "To enhance meat flavor",
-      "Meat inspection",
-      "To speed up the butchering process",
-    ],
-    answer: "Meat inspection",
-  },
-  {
-    question: "Intermuscular fat describes what?",
-    choice: [
-      "Intramuscular fat",
-      "Intermuscular fat",
-      "Subcutaneous fat",
-      "Visceral fat",
-    ],
-    answer: "Fat that is on top of muscles and generally not edible",
-  },
-  {
-    question: "Spoilage is what vacuum packaging helps prevent in?",
-    choice: ["Overcooking", "Freezer burn", "Loss of color", "Stored meats"],
-    answer: "Stored meats",
-  },
-  {
-    question: "Palatability is a term used to describe?",
-    choice: [
-      "Packability",
-      "Marbling",
-      "Quality grading of meats",
-      "Cutability",
-    ],
-    answer: "Quality grading of meats",
-  },
-  {
-    question: "Collagen is the fibrous protein that breaks down into what?",
-    choice: ["Keratin", "Elastin", "Collagen", "Myoglobin"],
-    answer: "Gelatin",
-  },
-  {
-    question: "First In, First Out is abbreviated as?",
-    choice: [
-      "Final Input, First Output",
-      "First In, Final Out",
-      "Full Input, Full Output",
-      "FIFO",
-    ],
-    answer: "FIFO",
-  },
-  {
-    question: "Pork is referred to as?",
-    choice: ["Beef", "Lamb", "Porcine", "Poultry"],
-    answer: "Porcine",
-  },
-  {
-    question: "The distribution of intramuscular fat in meat is known as?",
-    choice: [
-      "The pattern of fat on the edge of the meat",
-      "Marbling",
-      "The color of the meat surface",
-      "The pattern of bones within the cut",
-    ],
-    answer: "Marbling",
-  },
-  {
-    question: "Ensuring the meat is safe to consume is the main concern of?",
-    choice: [
-      "Improving the taste of meat",
-      "Meat inspection by agencies like the USDA",
-      "Reducing the cost of meat production",
-      "Enhancing the appearance of meat",
-    ],
-    answer: "Meat inspection by agencies like the USDA",
-  },
-  {
-    question: "Hotel, Restaurant, and Institution cuts is abbreviated as?",
-    choice: [
-      "Highly Rated Institutional cuts",
-      "HRI cuts",
-      "Health Related Issues cuts",
-      "High Resilience Industry cuts",
-    ],
-    answer: "HRI cuts",
-  },
-  {
-    question: "Enhancing meat flavor over time is not a primary purpose of?",
-    choice: [
-      "Vacuum packaging in the meat industry",
-      "To extend the shelf life of meat products",
-      "To prevent the growth of aerobic bacteria",
-      "To reduce the use of chemical preservatives",
-    ],
-    answer: "Vacuum packaging in the meat industry",
-  },
-  {
-    question: "Knowing how fresh the meat is the importance of?",
-    choice: [
-      "Determining the meat's cooking time",
-      "Understanding the meat's price fluctuations",
-      "Knowing the 'Pack date' of meat products",
-      "Deciding the seasoning for the meat",
-    ],
-    answer: "Knowing the 'Pack date' of meat products",
-  },
-  {
-    question: "Fat between different muscles is referred to as?",
-    choice: [
-      "Fat within the muscle fibers",
-      "Intermuscular fat",
-      "Fat under the skin of an animal",
-      "Artificially added fat",
-    ],
-    answer: "Intermuscular fat",
-  },
-  {
-    question:
-      "The edible substance found inside bones in the context of meat is known as?",
-    choice: [
-      "The fat found under the skin",
-      "Bones used for making broth",
-      "Marrow",
-      "The connective tissue in joints",
-    ],
-    answer: "Marrow",
-  },
-  {
-    question:
-      "A middle-grade quality commonly sold in beef is characterized as?",
-    choice: [
-      "It's the lowest quality commonly sold",
-      "Choice grade",
-      "It's considered the best quality",
-      "It's only used for ground beef",
-    ],
-    answer: "Choice grade",
-  },
-  {
-    question: "Meat without any USDA grading is indicated by?",
-    choice: [
-      "No Roll",
-      "Meat that cannot be used for rolling cuts",
-      "Meat that is too tough to be rolled",
-      "Meat that is pre-rolled for convenience",
-    ],
-    answer: "No Roll",
-  },
-  {
-    question: "To enhance flavor and tenderness is the primary function of?",
-    choice: [
-      "To prevent spoilage",
-      "To increase cooking speed",
-      "Intramuscular fat in meats",
-      "To reduce cooking temperature requirements",
-    ],
-    answer: "Intramuscular fat in meats",
-  },
-  {
-    question:
-      "They add flavor and have a natural texture is why what is used in sausage making?",
-    choice: [
-      "They provide a uniform shape to sausages",
-      "Natural casings",
-      "They are cheaper than synthetic casings",
-      "They increase the shelf life of sausages",
-    ],
-    answer: "Natural casings",
-  },
-  {
-    question: "Cuts derived from breaking down primal cuts are known as?",
-    choice: [
-      "The initial large sections from slaughtering",
-      "Sub-primal cuts of beef",
-      "The smallest cuts sold at retail",
-      "Unprocessed whole carcasses",
-    ],
-    answer: "Sub-primal cuts of beef",
-  },
-  {
-    question: "To enhance its flavor and tenderness is the purpose of?",
+    question: "What texture is desired for high-quality pork?",
     choice: [
-      "To comply with safety regulations",
-      "Aging beef",
-      "To increase the beef's nutrient content",
-      "To make it easier to transport and store",
+      "Firm and no P.S.E.",
+      "Soft and mushy",
+      "Tough and chewy",
+      "Grainy and dry",
     ],
-    answer: "Aging beef",
+    answer: "Firm and no P.S.E.",
   },
   {
     question:
-      "Bone-in cuts with the meat trimmed away from the bone end is known as?",
-    choice: [
-      "Meat packaged without skin or bones",
-      "Frenched meat cuts",
-      "Cuts made across the grain",
-      "Meat cuts rolled and tied for roasting",
-    ],
-    answer: "Frenched meat cuts",
-  },
-  {
-    question: "A parasitic disease potentially found in pork is called?",
-    choice: [
-      "A method of meat preservation",
-      "A nutritional deficiency in wild game",
-      "Trichinosis",
-      "A type of meat cut",
-    ],
-    answer: "Trichinosis",
-  },
-  {
-    question:
-      "Small, thick, round cuts typically from the loin for grilling or sautéing are best described as?",
-    choice: [
-      "Long, thin slices of meat for stir-frying",
-      "Medallion cuts",
-      "Large, flat pieces used for roasting",
-      "Thinly sliced meat for sandwiches",
-    ],
-    answer: "Medallion cuts",
-  },
-  {
-    question:
-      "Producing a stronger flavor without adding extra water is the main benefit of?",
-    choice: [
-      "It is faster and adds more moisture to the meat",
-      "Dry curing compared to wet curing",
-      "It reduces the risk of contamination",
-      "It extends the shelf life longer",
-    ],
-    answer: "Dry curing compared to wet curing",
-  },
-  {
-    question: "Very young pigs, often roasted whole are known as?",
-    choice: [
-      "Pigs raised on organic diets",
-      "Suckling pig",
-      "Pigs used specifically for pork chops",
-      "Genetically modified pigs",
-    ],
-    answer: "Suckling pig",
-  },
-  {
-    question: "For breakfast with eggs and toast is not a typical use for?",
-    choice: [
-      "Charcuterie",
-      "As an appetizer on meat platters",
-      "In sandwiches or on pizzas",
-      "As part of gourmet salads",
-    ],
-    answer: "Charcuterie",
-  },
-  {
-    question:
-      "Improving the flavor and texture of meat is important because of?",
-    choice: [
-      "Increasing the weight of the meat",
-      "Intramuscular fat",
-      "Decreasing cooking time",
-      "Reducing the price of the meat",
-    ],
-    answer: "Intramuscular fat",
-  },
-  {
-    question: "Meat from older sheep is referred to as?",
-    choice: [
-      "Meat from young lambs",
-      "Mutton",
-      "Meat from female sheep",
-      "Meat from male goats",
-    ],
-    answer: "Mutton",
-  },
-  {
-    question:
-      "Meat from animals slaughtered at around 12 months old is characterized as?",
-    choice: [
-      "Meat from animals older than two years",
-      "Yearling meat",
-      "Meat from newborn animals",
-      "Meat specifically used in year-end celebrations",
-    ],
-    answer: "Yearling meat",
-  },
-  {
-    question:
-      "Ensuring older stock is used before newer stock is the primary purpose of?",
-    choice: [
-      "To keep the most recently processed meat at the front",
-      "The FIFO method in meat storage",
-      "To improve the marbling of stored meat",
-      "To enhance the flavor of aged meats",
-    ],
-    answer: "The FIFO method in meat storage",
-  },
-  {
-    question: "Cutting meat perpendicular to the muscle fibers refers to?",
-    choice: [
-      "Cutting meat parallel to the muscle fibers",
-      "Cutting meat across the grain",
-      "Grinding meat into a fine texture",
-      "Marinating meat before cooking",
-    ],
-    answer: "Cutting meat across the grain",
-  },
-  {
-    question:
-      "A cut of meat that is pre-trimmed and ready to be cut into individual chops is known as?",
-    choice: [
-      "A storage method for frozen meats",
-      "Chop ready rack",
-      "A spice rack designed for meat seasonings",
-      "A kitchen tool for tenderizing meat chops",
-    ],
-    answer: "Chop ready rack",
-  },
-  {
-    question: "The meat to bone ratio refers to?",
-    choice: [
-      "The flavor profile of the meat",
-      "Conformation in meat grading",
-      "The age of the animal at the time of slaughter",
-      "The health condition of the animal",
-    ],
-    answer: "Conformation in meat grading",
-  },
-  {
-    question:
-      "A very thin cut of meat, typically veal or pork, for quick cooking is known as?",
-    choice: [
-      "A thick cut of meat for slow cooking",
-      "Scallopine",
-      "A method of smoking meats",
-      "A type of seasoning for meats",
-    ],
-    answer: "Scallopine",
-  },
-  {
-    question:
-      "A chop where the bone is left long and clean of meat is described as?",
-    choice: [
-      "A chop cut from the rib section with no bone",
-      "Frenched chop",
-      "A boneless and skinless piece of chicken",
-      "A pork chop with added French herbs",
-    ],
-    answer: "Frenched chop",
-  },
-  {
-    question: "Top round, bottom round, and knuckle are sub-primal cuts of?",
-    choice: [
-      "Shank, loin, and ribs",
-      "A leg of veal",
-      "Hind shank, top round, and sirloin",
-      "Rib, brisket, and chuck",
-    ],
-    answer: "A leg of veal",
-  },
-  {
-    question: "Veal is divided into smaller, more numerous cuts compared to?",
-    choice: [
-      "Beef carcass division",
-      "Beef is typically divided into more cuts than veal",
-      "Veal is not divided into primal cuts",
-      "Beef and veal divisions are essentially the same",
-    ],
-    answer: "Beef carcass division",
-  },
-  {
-    question: "Size, conformation, color, and muscle fiber quality determine?",
-    choice: [
-      "The grades of veal",
-      "Color and texture of the meat",
-      "Weight and age of the animal",
-      "Marbling and fat content",
-    ],
-    answer: "The grades of veal",
-  },
-  {
-    question:
-      "Pale, Soft, and Exudative appearance due to stress and handling characterizes?",
-    choice: [
-      "Prime, Select, and Excellent grades",
-      "PSE pork",
-      "Pork Specially Exported",
-      "Packed, Sealed, and Encased",
-    ],
-    answer: "PSE pork",
-  },
-  {
-    question: "To extend shelf life and change textures is the purpose of?",
-    choice: [
-      "Curing meats",
-      "To make meats suitable for raw consumption",
-      "To enhance the natural color of meats",
-      "To reduce the cost of meat production",
-    ],
-    answer: "Curing meats",
-  },
-  {
-    question:
-      "A very small, very young lamb meant to be roasted whole is known as?",
-    choice: [
-      "Lamb that is raised in a controlled, indoor environment",
-      "Hot house lamb",
-      "Lamb that is seasoned and cooked at high temperatures",
-      "Lamb processed in a greenhouse setting",
-    ],
-    answer: "Hot house lamb",
-  },
-  {
-    question:
-      "Grading assessed by a packaging plant, not regulated by the USDA, is known as?",
-    choice: [
-      "Grading performed by external inspectors at the farm",
-      "In-house grading",
-      "A standard set by meat distributors for internal quality control",
-      "Consumer grading provided in-house at grocery stores",
-    ],
-    answer: "In-house grading",
-  },
-  {
-    question:
-      "Veal from very young calves, less than one month old is referred to as?",
-    choice: [
-      "Veal from calves aged 3-5 months old",
-      "Bob veal",
-      "Veal that has been specially branded",
-      "A cut of veal used primarily for stews",
-    ],
-    answer: "Bob veal",
-  },
-  {
-    question:
-      "Ham, loin, boston butt, picnic, belly with spare ribs are primary cuts of?",
-    choice: [
-      "Market style hog",
-      "Shoulder, belly, jowl, neck bones, back ribs",
-      "Loin, shank, rib, cheek, tail",
-      "Brisket, round, chuck, plate",
-    ],
-    answer: "Market style hog",
-  },
-  {
-    question:
-      "To ensure higher quality and customization is why a chef might choose to?",
-    choice: [
-      "Fabricate portion cuts in the kitchen",
-      "To comply with local health regulations",
-      "Because it is less expensive than pre-cut portions",
-      "To reduce the need for skilled labor",
-    ],
-    answer: "Fabricate portion cuts in the kitchen",
+      "What is one characteristic that disqualifies pork from being high-quality?",
+    choice: ["Marbling", "Firm texture", "P.S.E.", "Bright pink color"],
+    answer: "P.S.E.",
   },
   {
-    question:
-      "They offer better flavor and texture is a primary benefit of using?",
-    choice: [
-      "Natural casings for sausages",
-      "They are more cost-effective than synthetic casings",
-      "They can be produced in larger quantities",
-      "They last longer on the shelf",
-    ],
-    answer: "Natural casings for sausages",
-  },
-  {
-    question: "A group of sodium-based curing agents is referred to as?",
+    question: "What are the USDA quality grades for pork?",
     choice: [
-      "Total Cured Meat",
-      "Thermal Curing Method",
-      "TCM",
-      "Treated Cured Meat",
+      "Prime, Choice, Select, Standard, Utility",
+      "1, 2, 3, 4, Utility",
+      "A, B, C, D, E",
+      "Excellent, Good, Fair, Poor, Utility",
     ],
-    answer: "TCM",
+    answer: "1, 2, 3, 4, Utility",
   },
   {
-    question:
-      "Assessing the economic value based on the amount of usable meat is the importance of?",
+    question: "What do USDA quality grades for pork depend on?",
     choice: [
-      "Yield grading in lamb purchasing",
-      "It determines the flavor profile",
-      "It is a regulatory requirement for all lamb products",
-      "It indicates the age of the lamb",
+      "Color and taste",
+      "Fat and muscle scores, length of loin",
+      "Weight and age",
+      "Breed and genetics",
     ],
-    answer: "Yield grading in lamb purchasing",
+    answer: "Fat and muscle scores, length of loin",
   },
   {
-    question:
-      "The bone ends have been trimmed and cleaned of meat is what term?",
+    question: "How does stress affect the quality of pork?",
     choice: [
-      "It has been marinated with French herbs",
-      "Frenched meat cut",
-      "The meat has been sliced thinly and layered",
-      "It has been ground and reformed into a patty",
+      "It enhances flavor and texture",
+      "It causes P.S.E., resulting in pale, soft, and exudative meat",
+      "It increases marbling",
+      "It has no effect on pork quality",
     ],
-    answer: "Frenched meat cut",
+    answer: "It causes P.S.E., resulting in pale, soft, and exudative meat",
   },
   {
-    question:
-      "To cure the meat by applying salt and other seasonings directly is the purpose of?",
+    question: "What is marbling in pork?",
     choice: [
-      "To enhance the meat's natural moisture content",
-      "Dry cure in meat processing",
-      "To add bulk to the meat",
-      "To cook the meat slowly using a dry heat method",
+      "The exterior fat layer",
+      "The fat within lean muscle tissues",
+      "The pinkish color of the meat",
+      "The firmness of the meat",
     ],
-    answer: "Dry cure in meat processing",
-  },
-  // Cattle Breeds
-  {
-    question:
-      "Which breed of cattle originated in Japan and is known for its high marbling?",
-    choice: ["Angus", "Hereford", "Wagyu", "Charolais"],
-    answer: "Wagyu",
-  },
-  {
-    question:
-      "Which breed of cattle originated in Scotland and is known for its marbling?",
-    choice: ["Hereford", "Angus", "Texas Longhorn", "Galloway"],
-    answer: "Angus",
-  },
-  {
-    question:
-      "Which breed of cattle originated in France and is known for its large size and lean meat?",
-    choice: ["Charolais", "Limousin", "Simmental", "Hereford"],
-    answer: "Charolais",
+    answer: "The fat within lean muscle tissues",
   },
   {
     question:
-      "Which versatile breed of cattle originated in Switzerland and is known for its marbling?",
-    choice: ["Simmental", "Texas Longhorn", "Galloway", "Angus"],
-    answer: "Simmental",
+      "What is the origin of the Berkshire pig breed, also known as Kurobuta in Japan?",
+    choice: ["France", "England", "Spain", "Italy"],
+    answer: "England",
   },
-
-  // Pigs
   {
     question:
-      "Which breed of pig originated in England and is known for its juicy meat?",
-    choice: ["Berkshire", "Duroc", "Yorkshire", "Tamworth"],
+      "Which pig breed is known for being fed a diet including barley, peas, oats, wheat, and fresh vegetables?",
+    choice: ["Tamworth", "Mulefoot", "Berkshire", "Iberico"],
     answer: "Berkshire",
   },
   {
     question:
-      "Which breed of pig originated in the United States and is known for its marbling?",
-    choice: ["Duroc", "Berkshire", "Gloucestershire Old Spot", "Mangalitsa"],
-    answer: "Duroc",
+      "The Tamworth pig breed is known for its origin in which country?",
+    choice: ["Ireland", "Wales", "England", "Scotland"],
+    answer: "England",
   },
   {
     question:
-      "Which breed of pig originated in Hungary and is known for its high fat content?",
-    choice: ["Landrace", "Hampshire", "Mangalitsa", "Tamworth"],
-    answer: "Mangalitsa",
+      "Which pig breed is native to the Ossabaw Island in the United States?",
+    choice: ["Berkshire", "Tamworth", "Ossabaw", "Mangalitsa"],
+    answer: "Ossabaw",
   },
   {
     question:
-      "Which breed of pig originated in the United Kingdom and is known for its lean meat?",
-    choice: ["Yorkshire", "Landrace", "Hampshire", "Duroc"],
-    answer: "Hampshire",
-  },
-
-  // Chicken
-  {
-    question:
-      "Which breed of chicken originated in England and is known for fast growth and meat production?",
-    choice: ["Cornish Cross", "Rhode Island Red", "Plymouth Rock", "Orpington"],
-    answer: "Cornish Cross",
+      "The Mangalitsa pig, known for its woolly coat, originates from which country?",
+    choice: ["Hungary", "Austria", "Germany", "Switzerland"],
+    answer: "Hungary",
   },
   {
     question:
-      "Which breed of chicken originated in the United States and is dual-purpose for meat and eggs?",
-    choice: ["Rhode Island Red", "Plymouth Rock", "Jersey Giant", "Sussex"],
-    answer: "Rhode Island Red",
+      "Which breed is recognized by its distinct solid black color and was first recorded in the United States in 1908?",
+    choice: ["Mangalitsa", "Mulefoot", "Iberico", "Berkshire"],
+    answer: "Mulefoot",
   },
   {
     question:
-      "Which breed of chicken originated in the United States and is known for its flavorful meat?",
-    choice: ["Plymouth Rock", "Orpington", "Bresse", "Cochin"],
-    answer: "Plymouth Rock",
+      "The Iberico pig, known for producing high-quality ham, originates from which region?",
+    choice: ["France", "Italy", "Portugal", "Spain"],
+    answer: "Spain",
   },
   {
     question:
-      "Which breed of chicken originated in the United States and is known for its large size?",
-    choice: ["Jersey Giant", "Orpington", "Sussex", "Cochin"],
-    answer: "Jersey Giant",
-  },
-
-  // Lamb
-  {
-    question:
-      "Which breed of lamb originated in England and is known for its lean meat?",
-    choice: ["Suffolk", "Dorset", "Merino", "Hampshire"],
-    answer: "Suffolk",
-  },
-  {
-    question:
-      "Which breed of lamb originated in England and is known for its tender meat?",
-    choice: ["Dorset", "Suffolk", "Southdown", "Katahdin"],
-    answer: "Dorset",
-  },
-  {
-    question:
-      "Which breed of lamb originated in Spain and is known for its fine wool?",
-    choice: ["Merino", "Hampshire", "Dorper", "Texel"],
-    answer: "Merino",
-  },
-  {
-    question:
-      "Which breed of lamb originated in the Netherlands and is known for its lean meat?",
-    choice: ["Texel", "Dorper", "Southdown", "Merino"],
-    answer: "Texel",
-  },
-
-  // Goat
-  {
-    question:
-      "Which breed of goat originated in South Africa and is known for its rapid growth?",
-    choice: ["Boer", "Kiko", "Spanish", "Nubian"],
-    answer: "Boer",
-  },
-  {
-    question:
-      "Which breed of goat originated in New Zealand and is known for its hardiness?",
-    choice: ["Kiko", "Boer", "Toggenburg", "Alpine"],
-    answer: "Kiko",
-  },
-  {
-    question:
-      "Which breed of goat originated in the Middle East and is known for its rich milk?",
-    choice: ["Nubian", "Saanen", "LaMancha", "Alpine"],
-    answer: "Nubian",
-  },
-  {
-    question:
-      "Which breed of goat originated in Switzerland and is known for its high milk production?",
-    choice: ["Alpine", "Toggenburg", "Saanen", "Nubian"],
-    answer: "Saanen",
-  },
-
-  // Ducks
-  {
-    question:
-      "Which breed of duck originated in China and is known for its tender meat?",
-    choice: ["Pekin", "Muscovy", "Rouen", "Khaki Campbell"],
-    answer: "Pekin",
-  },
-  {
-    question:
-      "Which breed of duck originated in South America and is known for its lean meat?",
-    choice: ["Muscovy", "Pekin", "Aylesbury", "Cayuga"],
-    answer: "Muscovy",
-  },
-  {
-    question:
-      "Which breed of duck originated in England and is known for its high egg production?",
-    choice: ["Khaki Campbell", "Indian Runner", "Swedish Blue", "Rouen"],
-    answer: "Khaki Campbell",
-  },
-  {
-    question:
-      "Which breed of duck originated in the United States and is known for its unique plumage?",
-    choice: ["Cayuga", "Aylesbury", "Indian Runner", "Swedish Blue"],
-    answer: "Cayuga",
-  },
-  {
-    question:
-      "Which breed of duck originated in Sweden and is known for its good meat quality?",
-    choice: ["Swedish Blue", "Cayuga", "Aylesbury", "Indian Runner"],
-    answer: "Swedish Blue",
-  },
-  {
-    question:
-      "Which breed of duck originated in the United States and is known for its unique color?",
-    choice: ["Cayuga", "Swedish Blue", "Indian Runner", "Khaki Campbell"],
-    answer: "Cayuga",
-  },
-  {
-    question:
-      "Which breed of duck originated in Sweden and is known for its unique color?",
-    choice: ["Swedish Blue", "Aylesbury", "Khaki Campbell", "Indian Runner"],
-    answer: "Swedish Blue",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking ground beef to ensure it is safe to eat?",
-    choice: ["145°F", "155°F", "160°F", "165°F"],
-    answer: "160°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking steaks and roasts to medium-rare?",
-    choice: ["125°F", "135°F", "145°F", "155°F"],
-    answer: "135°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking steaks and roasts to medium?",
-    choice: ["135°F", "145°F", "155°F", "165°F"],
-    answer: "145°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking steaks and roasts to well-done?",
-    choice: ["145°F", "155°F", "160°F", "170°F"],
-    answer: "160°F",
-  },
-
-  // Pork
-  {
-    question:
-      "What is the recommended internal temperature for cooking pork chops, roasts, and loins to ensure they are safe to eat?",
-    choice: ["145°F", "150°F", "155°F", "160°F"],
-    answer: "145°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking ground pork to ensure it is safe to eat?",
-    choice: ["145°F", "155°F", "160°F", "165°F"],
-    answer: "160°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking ham to reheat it?",
-    choice: ["135°F", "145°F", "155°F", "165°F"],
-    answer: "140°F",
-  },
-
-  // Chicken
-  {
-    question:
-      "What is the recommended internal temperature for cooking chicken breasts to ensure they are safe to eat?",
-    choice: ["145°F", "155°F", "160°F", "165°F"],
-    answer: "165°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking chicken thighs and drumsticks to ensure they are safe to eat?",
-    choice: ["165°F", "170°F", "175°F", "180°F"],
-    answer: "165°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking ground chicken to ensure it is safe to eat?",
-    choice: ["160°F", "165°F", "170°F", "175°F"],
-    answer: "165°F",
-  },
-
-  // Lamb
-  {
-    question:
-      "What is the recommended internal temperature for cooking lamb chops and roasts to medium-rare?",
-    choice: ["125°F", "135°F", "145°F", "155°F"],
-    answer: "135°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking lamb chops and roasts to medium?",
-    choice: ["135°F", "145°F", "155°F", "165°F"],
-    answer: "145°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking lamb chops and roasts to well-done?",
-    choice: ["145°F", "155°F", "160°F", "170°F"],
-    answer: "160°F",
-  },
-
-  // Goat
-  {
-    question:
-      "What is the recommended internal temperature for cooking goat meat to ensure it is safe to eat?",
-    choice: ["145°F", "155°F", "160°F", "165°F"],
-    answer: "160°F",
-  },
-
-  // Duck
-  {
-    question:
-      "What is the recommended internal temperature for cooking duck breasts to medium-rare?",
-    choice: ["125°F", "135°F", "145°F", "155°F"],
-    answer: "135°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking duck breasts to medium?",
-    choice: ["135°F", "145°F", "155°F", "165°F"],
-    answer: "145°F",
-  },
-  {
-    question:
-      "What is the recommended internal temperature for cooking ground duck to ensure it is safe to eat?",
-    choice: ["160°F", "165°F", "170°F", "175°F"],
-    answer: "165°F",
-  },
-  // Beef
-  {
-    question: "Which disease is commonly associated with undercooked beef?",
-    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
-    answer: "E. coli",
-  },
-  {
-    question:
-      "What disease, also known as 'Mad Cow Disease', affects cattle and can be transmitted to humans through contaminated beef?",
+      "What is the primary purpose of pumping pork with a solution of water, sodium phosphate, and flavorings?",
     choice: [
-      "Bovine Spongiform Encephalopathy (BSE)",
-      "Foot and Mouth Disease",
-      "Brucellosis",
-      "Anthrax",
+      "To increase moisture, tenderness, and weight",
+      "To reduce fat content",
+      "To enhance the color of the meat",
+      "To improve the shelf life",
     ],
-    answer: "Bovine Spongiform Encephalopathy (BSE)",
+    answer: "To increase moisture, tenderness, and weight",
   },
   {
-    question:
-      "Which disease can be caused by eating beef contaminated with bovine tuberculosis?",
+    question: "What is a potential downside of enhancing pork with a solution?",
     choice: [
-      "Salmonellosis",
-      "Tuberculosis",
-      "Campylobacteriosis",
-      "Hepatitis A",
+      "It can decrease flavor or add saltiness",
+      "It makes the meat harder to cook",
+      "It increases the cooking time",
+      "It reduces the nutritional value",
     ],
-    answer: "Tuberculosis",
-  },
-
-  // Pork
-  {
-    question: "Which disease is commonly associated with undercooked pork?",
-    choice: ["Trichinosis", "Listeriosis", "Salmonellosis", "E. coli"],
-    answer: "Trichinosis",
+    answer: "It can decrease flavor or add saltiness",
   },
   {
-    question:
-      "Which disease can be caused by pork contaminated with Yersinia enterocolitica?",
-    choice: ["Yersiniosis", "Brucellosis", "Anthrax", "Tuberculosis"],
-    answer: "Yersiniosis",
-  },
-  {
-    question:
-      "Which disease is associated with pork contaminated with hepatitis E virus?",
-    choice: ["Hepatitis E", "Hepatitis A", "Hepatitis B", "Hepatitis C"],
-    answer: "Hepatitis E",
-  },
-
-  // Chicken
-  {
-    question: "Which disease is commonly associated with undercooked chicken?",
-    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
-    answer: "Salmonella",
-  },
-  {
-    question:
-      "Which disease can be caused by eating chicken contaminated with Campylobacter jejuni?",
-    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Trichinosis"],
-    answer: "Campylobacteriosis",
-  },
-  {
-    question:
-      "Which disease is associated with chicken contaminated with avian influenza virus?",
+    question: "What does the term 'enhanced' refer to in pork processing?",
     choice: [
-      "Avian Influenza",
-      "Newcastle Disease",
-      "Marek's Disease",
-      "Fowl Cholera",
+      "Addition of an injection solution into fresh meat",
+      "Natural aging process",
+      "Reduction of fat content",
+      "Organic certification",
     ],
-    answer: "Avian Influenza",
-  },
-
-  // Duck
-  {
-    question: "Which disease is commonly associated with undercooked duck?",
-    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
-    answer: "Campylobacter",
+    answer: "Addition of an injection solution into fresh meat",
   },
   {
     question:
-      "Which disease is associated with ducks infected with the avian influenza virus?",
+      "What is the primary purpose of pumping pork with a solution of water, sodium phosphate, and flavorings?",
     choice: [
-      "Avian Influenza",
-      "Newcastle Disease",
-      "Duck Viral Enteritis",
-      "Fowl Cholera",
+      "To increase moisture, tenderness, and weight",
+      "To reduce fat content",
+      "To enhance the color of the meat",
+      "To improve the shelf life",
     ],
-    answer: "Avian Influenza",
+    answer: "To increase moisture, tenderness, and weight",
+  },
+  {
+    question: "What is a potential downside of enhancing pork with a solution?",
+    choice: [
+      "It can decrease flavor or add saltiness",
+      "It makes the meat harder to cook",
+      "It increases the cooking time",
+      "It reduces the nutritional value",
+    ],
+    answer: "It can decrease flavor or add saltiness",
+  },
+  {
+    question: "What does the term 'enhanced' refer to in pork processing?",
+    choice: [
+      "Addition of an injection solution into fresh meat",
+      "Natural aging process",
+      "Reduction of fat content",
+      "Organic certification",
+    ],
+    answer: "Addition of an injection solution into fresh meat",
+  },
+  {
+    question: "Which part of the pork carcass is labeled as 'Boston Butt'?",
+    choice: ["Upper shoulder", "Lower leg", "Belly", "Ham"],
+    answer: "Upper shoulder",
+  },
+  {
+    question: "What part of the pork carcass is used for making bacon?",
+    choice: ["Belly", "Ham", "Jowl", "Full loin"],
+    answer: "Belly",
   },
   {
     question:
-      "Which disease can be caused by eating duck contaminated with Salmonella?",
-    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
-    answer: "Salmonellosis",
+      "Which part of the pork carcass is typically used for making pulled pork?",
+    choice: ["Boston Butt", "Ham", "Full loin", "Feet"],
+    answer: "Boston Butt",
+  },
+  {
+    question: "What is a 'B.R.T. Ham' in pork processing?",
+    choice: [
+      "Boned, Rolled, and Tied Ham",
+      "Brined, Roasted, and Tender Ham",
+      "Boiled, Roasted, and Tied Ham",
+      "Breaded, Roasted, and Tender Ham",
+    ],
+    answer: "Boned, Rolled, and Tied Ham",
+  },
+  {
+    question: "Which cut is commonly used for making 'osso buco' in pork?",
+    choice: ["Hock", "Ham", "Full loin", "Belly"],
+    answer: "Hock",
+  },
+  {
+    question: "What is the typical use of a fresh ham?",
+    choice: [
+      "Roasting whole",
+      "Making bacon",
+      "Slicing into pork chops",
+      "Making sausages",
+    ],
+    answer: "Roasting whole",
+  },
+  {
+    question: "Which of the following is a dry-cured ham?",
+    choice: [
+      "Parma Prosciutto",
+      "Smoked Smithfield Ham",
+      "Sliced deli ham",
+      "Baked ham",
+    ],
+    answer: "Parma Prosciutto",
+  },
+  {
+    question: "What is a common characteristic of wet-cured ham?",
+    choice: [
+      "Cured quickly in a few days",
+      "Cured slowly over many months",
+      "Not cooked during the curing process",
+      "Contains no added flavorings",
+    ],
+    answer: "Cured quickly in a few days",
+  },
+  {
+    question:
+      "Which type of ham is typically used as a flavor agent in soups and beans?",
+    choice: [
+      "Hock cured, smoked",
+      "Dry cured ham",
+      "Wet cured ham",
+      "Boneless ham",
+    ],
+    answer: "Hock cured, smoked",
+  },
+  {
+    question: "Which cut is NOT part of the pork loin?",
+    choice: [
+      "Pork shoulder",
+      "Pork tenderloin",
+      "Baby back ribs",
+      "Pork chops",
+    ],
+    answer: "Pork shoulder",
+  },
+  {
+    question: "What is a common kitchen use for pork loin?",
+    choice: [
+      "Roast with bones",
+      "Making sausages",
+      "Slicing for bacon",
+      "Rendering lard",
+    ],
+    answer: "Roast with bones",
+  },
+  {
+    question: "What is a characteristic of the center cut of pork loin?",
+    choice: [
+      "Includes 8-11 ribs",
+      "Has no bones",
+      "Is only used for ground pork",
+      "Contains high fat content",
+    ],
+    answer: "Includes 8-11 ribs",
+  },
+  {
+    question: "What is a typical use for Boston Butt in cooking?",
+    choice: ["Pulled pork", "Making bacon", "Rendering lard", "Roasting whole"],
+    answer: "Pulled pork",
+  },
+  {
+    question:
+      "Which of the following is a processed product made from Boston Butt?",
+    choice: ["Cappacola", "Pork tenderloin", "Baby back ribs", "Ham steak"],
+    answer: "Cappacola",
+  },
+  {
+    question: "Boston Butt is commonly used for which type of dish?",
+    choice: [
+      "Stew or braise",
+      "Grilled pork chops",
+      "Pork belly slices",
+      "Sausage patties",
+    ],
+    answer: "Stew or braise",
+  },
+  {
+    question:
+      "Which cut of pork is suitable for both roasting and making pulled pork?",
+    choice: ["Picnic", "Belly", "Offal/Variety Meats", "Loin"],
+    answer: "Picnic",
+  },
+  {
+    question: "What is pancetta made from?",
+    choice: ["Picnic", "Belly", "Offal/Variety Meats", "Loin"],
+    answer: "Belly",
+  },
+  {
+    question:
+      "Which of the following is not considered an offal or variety meat?",
+    choice: ["Jowl", "Hock", "Skin", "Picnic"],
+    answer: "Picnic",
+  },
+  {
+    question: "Which of these is commonly used for making bacon?",
+    choice: ["Picnic", "Belly", "Offal/Variety Meats", "Ham"],
+    answer: "Belly",
+  },
+  {
+    question: "Which cut is often used for smoked hams and sausages?",
+    choice: ["Picnic", "Belly", "Offal/Variety Meats", "Ribs"],
+    answer: "Picnic",
+  },
+  {
+    question: "What type of meat product is 'Cracklin’' typically made from?",
+    choice: ["Skin", "Jowl", "Liver", "Caul fat"],
+    answer: "Skin",
+  },
+  {
+    question: "Which offal is used to make headcheese?",
+    choice: ["Whole Head", "Intestines", "Liver", "Neck bones"],
+    answer: "Whole Head",
   },
 
-  // Goat
+  //Section 7 Sausage
+
   {
     question:
-      "Which disease is commonly associated with undercooked goat meat?",
-    choice: ["Brucellosis", "E. coli", "Listeria", "Campylobacter"],
-    answer: "Brucellosis",
+      "Which type of sausage is made from fresh uncured meat and must be kept refrigerated?",
+    choice: [
+      "Fresh Sausage",
+      "Uncooked Smoked Sausages",
+      "Cooked Sausages",
+      "Cooked, Smoked Sausages, Cured",
+    ],
+    answer: "Fresh Sausage",
   },
   {
     question:
-      "Which disease can be caused by goat meat contaminated with Q fever?",
-    choice: ["Q fever", "Anthrax", "Tuberculosis", "Toxoplasmosis"],
-    answer: "Q fever",
+      "What is an example of an uncooked smoked sausage that needs to be cooked before eating?",
+    choice: ["Liverwurst", "Chorizo", "Pepperoni", "Frankfurter"],
+    answer: "Chorizo",
   },
   {
     question:
-      "Which disease is associated with goat meat contaminated with Listeria monocytogenes?",
-    choice: ["Listeriosis", "Salmonellosis", "Botulism", "Campylobacteriosis"],
-    answer: "Listeriosis",
+      "Which type of sausage is fully cooked, often emulsified, and smoked?",
+    choice: [
+      "Fresh Sausage",
+      "Uncooked Smoked Sausages",
+      "Cooked Sausages",
+      "Cooked, Smoked Sausages, Cured",
+    ],
+    answer: "Cooked, Smoked Sausages, Cured",
+  },
+  {
+    question: "What is a characteristic of dry and semi-dry sausages?",
+    choice: [
+      "They are made from fresh uncured meat.",
+      "They must be poached before eating.",
+      "They are produced by fermentation.",
+      "They are always fully cooked.",
+    ],
+    answer: "They are produced by fermentation.",
+  },
+  {
+    question:
+      "Which sausage product includes items like pâtés, terrines, and head cheese?",
+    choice: [
+      "Fresh Sausage",
+      "Uncooked Smoked Sausages",
+      "Cooked Meat Specialties",
+      "Dry and Semi-dry Sausages",
+    ],
+    answer: "Cooked Meat Specialties",
+  },
+  {
+    question:
+      "What is the fat content ratio for Italian or Breakfast Fresh Sausage?",
+    choice: [
+      "50% Lean, 50% Fat",
+      "70% Lean, 30% Fat",
+      "30% Lean, 70% Fat",
+      "60% Lean, 40% Fat",
+    ],
+    answer: "70% Lean, 30% Fat",
+  },
+  {
+    question:
+      "Which of the following is NOT typically included in the seasoning and cure for fresh sausage?",
+    choice: ["Salt", "Spices", "Sweetener", "Vinegar"],
+    answer: "Vinegar",
+  },
+  {
+    question:
+      "What is the primary ingredient in fresh sausage aside from pork trim?",
+    choice: ["Cold Water", "Red Wine", "Apple Cider", "Milk"],
+    answer: "Cold Water",
+  },
+  {
+    question:
+      "Which type of pork trim is used at a ratio of 30% in fresh sausage?",
+    choice: [
+      "Lean Usable Pork Trim",
+      "Fat Usable Pork Trim",
+      "Pork Belly",
+      "Pork Shoulder",
+    ],
+    answer: "Fat Usable Pork Trim",
+  },
+  {
+    question:
+      "In fresh sausage production, what purpose does adding cold water serve?",
+    choice: [
+      "To add flavor",
+      "To help bind the meat and fat",
+      "To preserve the sausage",
+      "To tenderize the meat",
+    ],
+    answer: "To help bind the meat and fat",
+  },
+  {
+    question:
+      "Which of the following casings are typically used for small link sausages such as breakfast sausages and hot dogs?",
+    choice: ["Hog Casings", "Sheep Casings", "Beef Rounds", "Plastic Casings"],
+    answer: "Sheep Casings",
+  },
+  {
+    question:
+      "What is the main reason for rinsing and rehydrating natural casings before use?",
+    choice: [
+      "To remove salt and make them pliable",
+      "To add flavor",
+      "To remove any unwanted odors",
+      "To ensure they do not tear",
+    ],
+    answer: "To remove salt and make them pliable",
+  },
+  {
+    question:
+      "What is a common ingredient in the seasoning for both Italian and breakfast sausage recipes?",
+    choice: ["Salt", "Fennel seed", "Dextrose", "Paprika"],
+    answer: "Salt",
+  },
+  {
+    question:
+      "What is the purpose of cooking a tester patty before stuffing or packaging sausage?",
+    choice: [
+      "To ensure proper seasoning and texture",
+      "To reduce the fat content",
+      "To add a smoky flavor",
+      "To make it easier to handle",
+    ],
+    answer: "To ensure proper seasoning and texture",
+  },
+  {
+    question:
+      "What is the fat to lean meat ratio typically used for fresh Italian sausage?",
+    choice: [
+      "30% fat, 70% lean",
+      "50% fat, 50% lean",
+      "20% fat, 80% lean",
+      "40% fat, 60% lean",
+    ],
+    answer: "30% fat, 70% lean",
   },
 
-  // Lamb
   {
-    question: "Which disease is commonly associated with undercooked lamb?",
-    choice: ["Toxoplasmosis", "Listeriosis", "Salmonellosis", "E. coli"],
-    answer: "Toxoplasmosis",
+    question:
+      "What is the primary function of adding ice or cold water to sausage mixes?",
+    choice: [
+      "To keep the mixture cold and improve texture",
+      "To add moisture and flavor",
+      "To help the sausage cure faster",
+      "To make the mixture easier to stuff into casings",
+    ],
+    answer: "To keep the mixture cold and improve texture",
+  },
+  {
+    question: "Which type of casing is measured in hanks (100 yards)?",
+    choice: ["Hog Casing", "Sheep Casing", "Plastic Casing", "Collagen Casing"],
+    answer: "Hog Casing",
   },
   {
     question:
-      "Which disease can be caused by lamb contaminated with Salmonella?",
-    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
-    answer: "Salmonellosis",
+      "What is a common characteristic of fresh sausage according to USDA classifications?",
+    choice: [
+      "Made from uncured meat and needs refrigeration and thorough cooking before serving",
+      "Pre-cooked and ready to eat",
+      "Smoked and air-dried",
+      "Made from cured meat, ready to eat without further cooking",
+    ],
+    answer:
+      "Made from uncured meat and needs refrigeration and thorough cooking before serving",
   },
   {
     question:
-      "Which disease is associated with lamb meat contaminated with Campylobacter?",
-    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Brucellosis"],
-    answer: "Campylobacteriosis",
+      "Which type of sausage is typically fermented, resulting in a tangy flavor and lower pH?",
+    choice: [
+      "Dry and Semi-dry Sausages",
+      "Cooked Sausages",
+      "Fresh Sausages",
+      "Uncooked Smoked Sausages",
+    ],
+    answer: "Dry and Semi-dry Sausages",
   },
+
+  // Section 8 Poultry
+
   {
-    question: "What is an adult male cattle used for breeding called?",
-    choice: ["Cow", "Steer", "Bull", "Heifer"],
-    answer: "Bull",
-  },
-  {
-    question: "What is a castrated male cattle raised for beef called?",
-    choice: ["Cow", "Steer", "Bull", "Heifer"],
-    answer: "Steer",
-  },
-  {
-    question:
-      "What is an adult female cattle that has given birth to at least one calf called?",
-    choice: ["Cow", "Steer", "Bull", "Heifer"],
-    answer: "Cow",
+    question: "What is the weight range for Cornish Game Hens?",
+    choice: ["1-2 lbs", "2.5-4.5 lbs", "6-8 lbs", "5-7 lbs"],
+    answer: "1-2 lbs",
   },
   {
     question:
-      "What is a young female cattle that has not yet given birth called?",
-    choice: ["Cow", "Steer", "Bull", "Heifer"],
-    answer: "Heifer",
+      "Which class of chicken is slightly larger than Cornish Game Hens and used similarly for roasting?",
+    choice: ["Petite Broiler/Poussin", "Broiler/Fryer", "Roaster", "Capon"],
+    answer: "Petite Broiler/Poussin",
   },
   {
-    question: "What is an adult male pig used for breeding called?",
-    choice: ["Sow", "Boar", "Barrow", "Gilt"],
-    answer: "Boar",
-  },
-  {
-    question: "What is a castrated male pig raised for meat called?",
-    choice: ["Sow", "Boar", "Barrow", "Gilt"],
-    answer: "Barrow",
+    question: "What is the weight range for Broiler/Fryer chickens?",
+    choice: ["1-2 lbs", "2.5-4.5 lbs", "6-8 lbs", "5-7 lbs"],
+    answer: "2.5-4.5 lbs",
   },
   {
     question:
-      "What is an adult female pig that has given birth to at least one litter called?",
-    choice: ["Sow", "Boar", "Barrow", "Gilt"],
-    answer: "Sow",
-  },
-  {
-    question: "What is a young female pig that has not yet given birth called?",
-    choice: ["Sow", "Boar", "Barrow", "Gilt"],
-    answer: "Gilt",
-  },
-  {
-    question: "What is an adult male chicken called?",
-    choice: ["Hen", "Pullet", "Rooster", "Cockerel"],
-    answer: "Rooster",
+      "Which class of chicken is best suited for slow cooking methods like stewing?",
+    choice: ["Roaster", "Capon", "Fowl/Stewing Hen", "Broiler/Fryer"],
+    answer: "Fowl/Stewing Hen",
   },
   {
     question:
-      "What is a young male chicken, usually less than a year old, called?",
-    choice: ["Hen", "Pullet", "Rooster", "Cockerel"],
-    answer: "Cockerel",
+      "What is the USDA Quality Grade for poultry with the best appearance and no defects?",
+    choice: ["A", "B", "C", "Utility"],
+    answer: "A",
   },
   {
-    question: "What is an adult female chicken called?",
-    choice: ["Hen", "Pullet", "Rooster", "Cockerel"],
-    answer: "Hen",
+    question: "What cooking method is suitable for Capon?",
+    choice: [
+      "Roast whole, carve",
+      "Stew, soup, moist cook dishes",
+      "Roast whole or split",
+      "Grill, broil, sauté, pan fry",
+    ],
+    answer: "Roast whole, carve",
+  },
+  {
+    question: "What are the parts of a whole chicken's leg quarter?",
+    choice: [
+      "Supremes/airline, bone in breast, cutlets, wings",
+      "Thigh, drumstick",
+      "Breast, legs, wings",
+      "Liver, gizzard, neck, heart",
+    ],
+    answer: "Thigh, drumstick",
+  },
+  {
+    question: "Which type of duck is typically 3-6 lbs and 6 weeks old?",
+    choice: ["Duckling", "Roasting Duck", "Pekin", "Moulard"],
+    answer: "Duckling",
+  },
+  {
+    question: "What is the weight range for a Tom turkey?",
+    choice: ["8-16 lbs", "16-30 lbs", "8-14 lbs", "5-7 lbs"],
+    answer: "16-30 lbs",
+  },
+  {
+    question: "Which poultry/game type includes Pheasants and Quail?",
+    choice: [
+      "Squab/Pigeon",
+      "Partridge/Woodcock",
+      "Guinea Hen",
+      "Poultry/Game",
+    ],
+    answer: "Poultry/Game",
+  },
+  {
+    question: "What is the weight range for Petite Broiler/Poussin?",
+    choice: ["1-2 lbs", "2.5-4.5 lbs", "6-8 lbs", "5-7 lbs"],
+    answer: "1-2 lbs",
   },
   {
     question:
-      "What is a young female chicken, usually less than a year old and not yet laying eggs, called?",
-    choice: ["Hen", "Pullet", "Rooster", "Cockerel"],
-    answer: "Pullet",
+      "Which class of chicken is known for their tender meat and ideal for individual servings?",
+    choice: [
+      "Cornish Game Hens",
+      "Broiler/Fryer",
+      "Roaster",
+      "Fowl/Stewing Hen",
+    ],
+    answer: "Cornish Game Hens",
   },
   {
-    question: "What is an adult male duck called?",
-    choice: ["Duck", "Drake", "Gander", "Hen"],
-    answer: "Drake",
+    question:
+      "Which class of chicken is raised specifically for meat production?",
+    choice: ["Petite Broiler/Poussin", "Broiler/Fryer", "Roaster", "Capon"],
+    answer: "Broiler/Fryer",
   },
   {
-    question: "What is an adult female duck called?",
-    choice: ["Duck", "Drake", "Gander", "Hen"],
-    answer: "Duck",
+    question: "What is the weight range for Roaster chickens?",
+    choice: ["1-2 lbs", "2.5-4.5 lbs", "6-8 lbs", "5-7 lbs"],
+    answer: "6-8 lbs",
   },
   {
-    question: "What is an adult male turkey called?",
-    choice: ["Hen", "Jenny", "Tom", "Jake"],
-    answer: "Tom",
+    question:
+      "Which class of chicken is castrated male chickens, known for their tender meat?",
+    choice: [
+      "Cornish Game Hens",
+      "Broiler/Fryer",
+      "Capon",
+      "Fowl/Stewing Hen",
+    ],
+    answer: "Capon",
   },
   {
-    question: "What is a young male turkey called?",
-    choice: ["Hen", "Jenny", "Tom", "Jake"],
-    answer: "Jake",
+    question:
+      "Which cooking method is suitable for Broiler/Fryer chicken breasts?",
+    choice: [
+      "Grill, broil, sauté, pan fry",
+      "Roast whole, carve",
+      "Stew, soup, moist cook dishes",
+      "Roast whole or split",
+    ],
+    answer: "Grill, broil, sauté, pan fry",
   },
   {
-    question: "What is an adult female turkey called?",
-    choice: ["Hen", "Jenny", "Tom", "Jake"],
-    answer: "Hen",
+    question: "What cooking method is used for Fowl/Stewing Hen?",
+    choice: [
+      "Roast whole, carve",
+      "Stew, soup, moist cook dishes",
+      "Roast whole or split",
+      "Grill, broil, sauté, pan fry",
+    ],
+    answer: "Stew, soup, moist cook dishes",
   },
   {
-    question: "What is a young female turkey called?",
-    choice: ["Hen", "Jenny", "Tom", "Jake"],
-    answer: "Jenny",
+    question:
+      "What is the USDA Quality Grade for poultry with minor defects such as slight deformities?",
+    choice: ["A", "B", "C", "Utility"],
+    answer: "B",
   },
   {
-    question: "What is the cut number for primal rib?",
-    choice: ["103", "109", "112a", "175"],
-    answer: "103",
+    question: "What are the criteria for USDA Quality Grading in poultry?",
+    choice: [
+      "Age, maturity, weight, conformation, fleshing, appearance",
+      "Tenderness, juiciness, flavor",
+      "Size, color, shape",
+      "Breed, feed, living conditions",
+    ],
+    answer: "Age, maturity, weight, conformation, fleshing, appearance",
   },
   {
-    question: "What is the cut number for roast ready rib?",
-    choice: ["103", "109", "112a", "175"],
-    answer: "109",
+    question: "Which breed of duck is known for its breast called Magret?",
+    choice: ["Pekin", "Moscovy", "Moulard", "Roasting Duck"],
+    answer: "Moulard",
   },
   {
-    question: "What is the cut number for export rib?",
-    choice: ["103", "109", "109d", "175"],
-    answer: "109d",
+    question: "At what age are Roasting Ducks typically processed?",
+    choice: ["6 weeks", "8-10 weeks", "12 weeks", "16 weeks"],
+    answer: "8-10 weeks",
   },
   {
-    question: "What is the cut number for boneless ribeye lip on?",
-    choice: ["103", "109", "112a", "175"],
-    answer: "112a",
+    question: "What is the weight range for a Hen turkey?",
+    choice: ["8-16 lbs", "16-30 lbs", "6-9 lbs", "4-8 lbs"],
+    answer: "8-16 lbs",
   },
   {
-    question: "What is the cut number for ribeye roll?",
-    choice: ["103", "109", "112", "175"],
-    answer: "112",
+    question: "What part of the turkey is processed into cutlets?",
+    choice: ["Breast", "Legs", "Drumstick", "Thighs"],
+    answer: "Thighs",
   },
   {
-    question: "What is the cut number for bone-in strip loin?",
-    choice: ["103", "175", "109", "180"],
-    answer: "175",
+    question: "Which poultry/game type includes Guinea Hen and Partridge?",
+    choice: ["Squab/Pigeon", "Pheasants", "Quail/Euroquail", "Poultry/Game"],
+    answer: "Poultry/Game",
   },
   {
-    question: "What is the cut number for boneless striploin?",
-    choice: ["103", "175", "109", "180"],
-    answer: "180",
+    question: "What are giblets typically included with a whole chicken?",
+    choice: [
+      "Liver, gizzard, neck, heart",
+      "Breast, legs, wings",
+      "Thigh, drumstick",
+      "Supremes/airline, cutlets",
+    ],
+    answer: "Liver, gizzard, neck, heart",
   },
   {
-    question: "What is the cut number for tenderloin full fat on?",
-    choice: ["103", "175", "189", "180"],
-    answer: "189",
+    question: "What does WOG stand for in poultry terminology?",
+    choice: [
+      "Without giblets",
+      "With gizzards",
+      "Whole organic",
+      "Wing off ground",
+    ],
+    answer: "Without giblets",
   },
   {
-    question: "What is the cut number for tenderloin psmo?",
-    choice: ["189", "175", "109d", "189a"],
-    answer: "189a",
+    question:
+      "Which cooking method is suitable for roasting a Roaster chicken?",
+    choice: [
+      "Roast whole, carve",
+      "Stew, soup, moist cook dishes",
+      "Roast whole or split",
+      "Grill, broil, sauté, pan fry",
+    ],
+    answer: "Roast whole, carve",
   },
   {
-    question: "What is the cut number for tenderloin denuded?",
-    choice: ["189", "175", "109d", "190a"],
-    answer: "190a",
+    question:
+      "Which breed of duck is typically 4-8 lbs and processed at 8-10 weeks old?",
+    choice: ["Duckling", "Roasting Duck", "Pekin", "Moulard"],
+    answer: "Roasting Duck",
   },
   {
-    question: "What is the cut number for tenderloin portion cut?",
-    choice: ["189", "175", "109d", "1190a"],
-    answer: "1190a",
+    question: "What is the weight range for Goose?",
+    choice: ["8-14 lbs", "14-20 lbs", "6-10 lbs", "4-8 lbs"],
+    answer: "8-14 lbs",
   },
+  {
+    question: "What are the typical parts included in a whole turkey?",
+    choice: [
+      "Breast, legs, drumstick, boneless thighs, cutlets",
+      "Breast, wings, thighs, drumstick",
+      "Legs, wings, neck, heart",
+      "Breast, thighs, gizzard, liver",
+    ],
+    answer: "Breast, legs, drumstick, boneless thighs, cutlets",
+  },
+
+  // Section 11 Lamb & Veal
+  {
+    question: "What is the weight range for a Hot House/Baby Lamb?",
+    choice: ["10 lbs", "20 lbs", "30 lbs", "40 lbs"],
+    answer: "20 lbs",
+  },
+  {
+    question: "What is the weight range for a Spring Lamb?",
+    choice: ["10-20 lbs", "20-30 lbs", "30-40 lbs", "40-50 lbs"],
+    answer: "30-40 lbs",
+  },
+  {
+    question: "What is the weight range for a standard Lamb?",
+    choice: ["40-60 lbs", "50-75 lbs", "60-80 lbs", "70-90 lbs"],
+    answer: "50-75 lbs",
+  },
+  {
+    question: "What is the weight range for a Yearling lamb?",
+    choice: ["50-75 lbs", "60-80 lbs", "60-90 lbs", "70-90 lbs"],
+    answer: "60-90 lbs",
+  },
+  {
+    question: "Which class of lamb is not seen often?",
+    choice: ["Hot House/Baby Lamb", "Spring Lamb", "Lamb", "Mutton"],
+    answer: "Mutton",
+  },
+  {
+    question: "Which class of lamb is known for being older and less common?",
+    choice: ["Hot House/Baby Lamb", "Spring Lamb", "Lamb", "Mutton"],
+    answer: "Mutton",
+  },
+  {
+    question: "Which country produces large, feedlot-fed lambs?",
+    choice: ["U.S.", "New Zealand", "Australia", "Canada"],
+    answer: "U.S.",
+  },
+  {
+    question: "Which country produces small, grass-fed lambs?",
+    choice: ["U.S.", "New Zealand", "Australia", "Canada"],
+    answer: "New Zealand",
+  },
+  {
+    question: "Which country produces both small and large varieties of lamb?",
+    choice: ["U.S.", "New Zealand", "Australia", "Canada"],
+    answer: "Australia",
+  },
+  {
+    question:
+      "Which USDA quality grade represents the highest quality for lamb?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Prime",
+  },
+  {
+    question:
+      "Which USDA quality grade represents the second highest quality for lamb?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Choice",
+  },
+  {
+    question: "Which USDA quality grade represents moderate quality for lamb?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Good",
+  },
+  {
+    question:
+      "Which USDA quality grade represents the lowest quality for lamb?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Cull",
+  },
+  {
+    question: "Which yield grade represents the leanest lamb meat?",
+    choice: ["1", "2", "3", "4", "5"],
+    answer: "1",
+  },
+  {
+    question: "Which yield grade represents the fattiest lamb meat?",
+    choice: ["1", "2", "3", "4", "5"],
+    answer: "5",
+  },
+  {
+    question: "What part of the lamb is included in the foreshank?",
+    choice: ["Chuck", "Rack", "Loin", "Leg"],
+    answer: "Chuck",
+  },
+  {
+    question: "What part of the lamb is included in the hindsaddle?",
+    choice: ["Chuck", "Rack", "Loin", "Leg"],
+    answer: "Loin",
+  },
+  {
+    question: "Which cut of lamb comes from the rack?",
+    choice: ["Neck", "Rack", "Leg", "Breast"],
+    answer: "Rack",
+  },
+  {
+    question: "Which part of the lamb is typically used for osso buco?",
+    choice: ["Neck", "Foreshank", "Breast", "Hind Shank"],
+    answer: "Hind Shank",
+  },
+  {
+    question: "What is a common kitchen use for lamb top round?",
+    choice: ["Roast whole", "Grill", "Braise", "Osso buco"],
+    answer: "Grill",
+  },
+  {
+    question:
+      "What is the term for the primal cut of lamb that includes the bone-in leg?",
+    choice: ["Frenched", "Primal", "B.R.T Roast", "Top Round"],
+    answer: "Primal",
+  },
+  {
+    question: "Which cut of lamb is typically pre-cut for kababs?",
+    choice: ["B.R.T Roast", "Top Round", "Sirloin", "Pre-cut Kababs"],
+    answer: "Pre-cut Kababs",
+  },
+  {
+    question:
+      "Which USDA quality grade for lamb would likely have the most marbling?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Prime",
+  },
+  {
+    question: "Which yield grade number indicates the fattiest lamb meat?",
+    choice: ["1", "2", "3", "4", "5"],
+    answer: "5",
+  },
+  {
+    question: "Which yield grade number indicates the leanest lamb meat?",
+    choice: ["1", "2", "3", "4", "5"],
+    answer: "1",
+  },
+  {
+    question: "Which country produces lamb that is grass-fed and small?",
+    choice: ["U.S.", "New Zealand", "Australia", "Canada"],
+    answer: "New Zealand",
+  },
+  {
+    question:
+      "Which country produces lamb that is both small and large varieties?",
+    choice: ["U.S.", "New Zealand", "Australia", "Canada"],
+    answer: "Australia",
+  },
+  {
+    question:
+      "Which USDA quality grade for lamb would you expect to find slight deformities?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Choice",
+  },
+  {
+    question:
+      "Which USDA quality grade for lamb would you expect to find more noticeable defects?",
+    choice: ["Prime", "Choice", "Good", "Utility", "Cull"],
+    answer: "Good",
+  },
+  {
+    question:
+      "What is the term for the primal cut that includes both chuck and rack?",
+    choice: ["Whole Carcass", "Foreshaddle", "Hindsaddle", "Loin"],
+    answer: "Foreshaddle",
+  },
+  {
+    question:
+      "What is a common kitchen use for a trimmed loin (saddle) of lamb?",
+    choice: ["Grill", "Braise", "Steam", "Poach"],
+    answer: "Grill",
+  },
+  {
+    question: "Which type of lamb chop can be single or double?",
+    choice: ["Shoulder Chop", "Loin Chop", "Frenched Rack", "Fore Shank"],
+    answer: "Loin Chop",
+  },
+  {
+    question: "What is a characteristic of a boneless loin?",
+    choice: ["Split-chined", "Trimmed", "Single chop", "Double chop"],
+    answer: "Trimmed",
+  },
+  {
+    question: "What are the kitchen uses for a boneless rack of lamb?",
+    choice: ["Grill", "Roast", "Broil", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question: "Which cut of lamb is also known as the hotel rack?",
+    choice: ["Fore Shank", "Loin Chop", "Shoulder Chop", "Rack"],
+    answer: "Rack",
+  },
+  {
+    question:
+      "Which of the following is NOT a kitchen use for a frenched rack of lamb?",
+    choice: ["Broil", "Roast", "Saute", "Braise"],
+    answer: "Braise",
+  },
+  {
+    question: "What is the kitchen use for a boneless BRT shoulder of lamb?",
+    choice: ["Roast", "Grill", "Braise", "All of the above"],
+    answer: "Roast",
+  },
+  {
+    question: "Which lamb cut is ideal for moist braise or osso buco?",
+    choice: ["Fore Shank", "Breast", "Denver Ribs", "Shoulder Chop"],
+    answer: "Fore Shank",
+  },
+  {
+    question: "What is the main kitchen use for lamb breast or ribs?",
+    choice: ["Grill", "Stuff", "Braise", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question:
+      "Which cut of lamb can be used for braise, roast, and grill chops?",
+    choice: [
+      "Bone in primal",
+      "Boneless BRT",
+      "Shoulder Chop",
+      "All of the above",
+    ],
+    answer: "All of the above",
+  },
+  {
+    question:
+      "What is one of the kitchen uses for a bone-in primal cut of lamb shoulder?",
+    choice: ["Grill", "Steam", "Braise", "Sauté"],
+    answer: "Braise",
+  },
+  {
+    question: "What is a boneless BRT roast in lamb cooking?",
+    choice: [
+      "Bone-in roast",
+      "Boneless, rolled, and tied roast",
+      "French trimmed roast",
+      "Stuffed roast",
+    ],
+    answer: "Boneless, rolled, and tied roast",
+  },
+  {
+    question: "Which cooking method is suitable for lamb loin chops?",
+    choice: ["Grill", "Braise", "Steam", "Poach"],
+    answer: "Grill",
+  },
+  {
+    question: "What is a common kitchen use for lamb foreshank?",
+    choice: ["Grill", "Broil", "Braise", "Sauté"],
+    answer: "Braise",
+  },
+  {
+    question: "Which lamb cut is often used for kababs?",
+    choice: ["Loin Chops", "Pre-cut Kababs", "Breast", "Fore Shank"],
+    answer: "Pre-cut Kababs",
+  },
+  {
+    question: "What is the term for a trimmed and split lamb loin?",
+    choice: ["Noisette", "Saddle", "Frenched", "Denver Ribs"],
+    answer: "Saddle",
+  },
+  {
+    question: "Which lamb cut is described as having a frenched appearance?",
+    choice: ["Rack", "Loin Chop", "Shoulder Chop", "Breast"],
+    answer: "Rack",
+  },
+  {
+    question: "What is a boneless loin roast in lamb cooking?",
+    choice: ["Bone-in loin", "Boneless loin", "Loin chop", "Shoulder chop"],
+    answer: "Boneless loin",
+  },
+  {
+    question:
+      "Which lamb cut is typically braised whole or used for osso buco?",
+    choice: ["Hind Shank", "Fore Shank", "Rack", "Shoulder Chop"],
+    answer: "Hind Shank",
+  },
+  {
+    question: "What is a characteristic kitchen use for a lamb hotel rack?",
+    choice: ["Grill", "Roast", "Broil", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question: "What is the typical weight range for a veal loin?",
+    choice: ["10-15 lbs", "15-20 lbs", "20-25 lbs", "25-30 lbs"],
+    answer: "15-20 lbs",
+  },
+  {
+    question: "Which cut is typically used for veal chops?",
+    choice: ["Loin", "Rack", "Shoulder", "Shank"],
+    answer: "Rack",
+  },
+  {
+    question: "Which cooking method is most suitable for veal loin medallions?",
+    choice: ["Grill", "Braise", "Saute", "Roast"],
+    answer: "Saute",
+  },
+  {
+    question:
+      "What is a characteristic of the veal rack when prepared 'frenched'?",
+    choice: ["Bone in", "Bone out", "Fat trimmed", "Bone cleaned"],
+    answer: "Bone cleaned",
+  },
+  {
+    question: "Which cut from the veal shoulder is suitable for braising?",
+    choice: [
+      "Primal Shoulder",
+      "Shoulder Clod",
+      "Chuck Roll",
+      "All of the above",
+    ],
+    answer: "All of the above",
+  },
+  {
+    question: "What is the primary use of the veal hotel rack?",
+    choice: ["Grilling", "Roasting", "Stewing", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question: "What part of the veal is the 'chined' cut taken from?",
+    choice: ["Loin", "Rack", "Shoulder", "Leg"],
+    answer: "Rack",
+  },
+  {
+    question: "Which veal cut is most often used for osso buco?",
+    choice: ["Shank", "Loin", "Rack", "Shoulder"],
+    answer: "Shank",
+  },
+  {
+    question: "What is the ideal cooking method for veal shoulder clod?",
+    choice: ["Grill", "Slow roast", "Broil", "Pan-sear"],
+    answer: "Slow roast",
+  },
+  {
+    question:
+      "Which veal cut is known for its high tenderness and often used for medallions?",
+    choice: ["Loin", "Rack", "Shoulder", "Leg"],
+    answer: "Loin",
+  },
+  {
+    question: "What is one of the cooking methods for Breast of Veal?",
+    choice: ["Grill", "Stuffed Roast", "Fry", "Sauté"],
+    answer: "Stuffed Roast",
+  },
+  {
+    question: "Which product can be made from Breast of Veal?",
+    choice: ["Veal bacon", "Veal sausage", "Veal steak", "Veal ham"],
+    answer: "Veal bacon",
+  },
+  {
+    question: "What dish is made from the Foreshank of Veal?",
+    choice: [
+      "Veal Osso Buco",
+      "Veal Bacon",
+      "Veal Pastrami",
+      "Veal Short Ribs",
+    ],
+    answer: "Veal Osso Buco",
+  },
+  {
+    question:
+      "Which of the following is NOT a product made from Breast of Veal?",
+    choice: ["Veal pastrami", "Veal short ribs", "Veal sausage", "Veal bacon"],
+    answer: "Veal sausage",
+  },
+  {
+    question:
+      "What is the recommended storage method for veal to avoid cross-flavoring?",
+    choice: [
+      "Freeze immediately",
+      "Store near other meats",
+      "Avoid cross-flavoring",
+      "Store in plastic bags",
+    ],
+    answer: "Avoid cross-flavoring",
+  },
+  {
+    question: "Should veal be frozen for storage?",
+    choice: ["Yes", "No"],
+    answer: "No",
+  },
+  {
+    question: "Is veal typically aged?",
+    choice: ["Yes", "No"],
+    answer: "No",
+  },
+  {
+    question: "When should veal portions be cut for best quality?",
+    choice: [
+      "A week before use",
+      "The same day",
+      "A day before use",
+      "Two days before use",
+    ],
+    answer: "The same day",
+  },
+  {
+    question: "Which statement is true about veal storage?",
+    choice: [
+      "Veal should be aged",
+      "Veal should be frozen",
+      "Veal should be portion cut same day",
+      "Veal can be stored near other meats",
+    ],
+    answer: "Veal should be portion cut same day",
+  },
+  {
+    question:
+      "What type of meat is recommended to avoid cross-flavoring in storage?",
+    choice: ["Veal", "Beef", "Chicken", "Pork"],
+    answer: "Veal",
+  },
+  {
+    question:
+      "What is one of the recommended cooking methods for Breast of Veal?",
+    choice: ["Grill", "Stuffed Roast", "Fry", "Sauté"],
+    answer: "Stuffed Roast",
+  },
+  {
+    question: "Which product can be made from Breast of Veal?",
+    choice: ["Veal bacon", "Veal sausage", "Veal steak", "Veal ham"],
+    answer: "Veal bacon",
+  },
+  {
+    question: "What dish is made from the Foreshank of Veal?",
+    choice: [
+      "Veal Osso Buco",
+      "Veal Bacon",
+      "Veal Pastrami",
+      "Veal Short Ribs",
+    ],
+    answer: "Veal Osso Buco",
+  },
+  {
+    question:
+      "Which of the following is NOT a product made from Breast of Veal?",
+    choice: ["Veal pastrami", "Veal short ribs", "Veal sausage", "Veal bacon"],
+    answer: "Veal sausage",
+  },
+  {
+    question:
+      "What is a key consideration for storing veal to maintain its quality?",
+    choice: [
+      "Freeze immediately",
+      "Avoid cross-flavoring",
+      "Store near other meats",
+      "Age for several days",
+    ],
+    answer: "Avoid cross-flavoring",
+  },
+  {
+    question: "Should veal be frozen for optimal storage?",
+    choice: ["Yes", "No"],
+    answer: "No",
+  },
+  {
+    question: "Is veal typically aged like other meats?",
+    choice: ["Yes", "No"],
+    answer: "No",
+  },
+  {
+    question: "When should veal portions be cut for the best quality?",
+    choice: [
+      "A week before use",
+      "The same day",
+      "A day before use",
+      "Two days before use",
+    ],
+    answer: "The same day",
+  },
+  {
+    question: "Which statement is true about veal storage?",
+    choice: [
+      "Veal should be aged",
+      "Veal should be frozen",
+      "Veal should be portion cut the same day",
+      "Veal can be stored near other meats",
+    ],
+    answer: "Veal should be portion cut the same day",
+  },
+  {
+    question: "Why should veal not be stored near other meats?",
+    choice: [
+      "To avoid cross-flavoring",
+      "To prevent spoilage",
+      "To keep it fresh",
+      "To avoid contamination",
+    ],
+    answer: "To avoid cross-flavoring",
+  },
+
+  // Section 13 Game Meat
+
+  {
+    question:
+      "Which meat tends to be leaner according to the nutritional comparisons?",
+    choice: ["Beef (Choice)", "Pork", "Chicken (Skinless)", "Bison"],
+    answer: "Bison",
+  },
+  {
+    question:
+      "What is a key characteristic of game birds in terms of their raising conditions?",
+    choice: [
+      "Raised with antibiotics",
+      "Raised in feedlots",
+      "Naturally raised without antibiotics",
+      "Genetically modified",
+    ],
+    answer: "Naturally raised without antibiotics",
+  },
+  {
+    question:
+      "Which of the following meats has the highest amount of protein per 100 grams?",
+    choice: ["Elk", "Lean Ham", "Ground Beef", "Chicken (Skinless)"],
+    answer: "Elk",
+  },
+  {
+    question:
+      "Which game animal is typically inspected by state regulations and not USDA?",
+    choice: ["Guinea Hen", "Rabbit", "Water Buffalo", "Venison"],
+    answer: "Venison",
+  },
+  {
+    question: "Which animal is not part of the deer family?",
+    choice: ["Elk", "Antelope", "Moose", "Yak"],
+    answer: "Yak",
+  },
+  {
+    question: "Which of the following is considered large game?",
+    choice: ["Quail", "Frog", "Water Buffalo", "Pheasant"],
+    answer: "Water Buffalo",
+  },
+  {
+    question: "What kind of environment are game meats typically raised in?",
+    choice: [
+      "Urban farms",
+      "Natural settings that resemble wild habitats",
+      "Industrial feedlots",
+      "Confined indoor spaces",
+    ],
+    answer: "Natural settings that resemble wild habitats",
+  },
+  {
+    question: "Which meat has the highest cholesterol content per 100 grams?",
+    choice: ["Ground Turkey", "Lean Beef", "Deer", "Salmon"],
+    answer: "Ground Beef",
+  },
+  {
+    question:
+      "Which of the following animals is a part of the venison/deer family?",
+    choice: ["Wild Boar", "Axis (Chital) Himalayan", "Yak", "Alligator"],
+    answer: "Axis (Chital) Himalayan",
+  },
+  {
+    question:
+      "What is the average protein content of ground beef per 100 grams?",
+    choice: ["20.7 grams", "24.8 grams", "29.4 grams", "30.2 grams"],
+    answer: "20.7 grams",
+  },
+  {
+    question: "Which meat has the lowest fat content per 100 grams?",
+    choice: ["Chicken (Skinless)", "Elk", "Bison", "Lean Ham"],
+    answer: "Elk",
+  },
+  {
+    question:
+      "Which of the following meats is raised in farms that resemble their wild habitat?",
+    choice: ["Beef", "Pork", "Game meats", "Chicken"],
+    answer: "Game meats",
+  },
+  {
+    question: "Which of the following meats requires USDA inspection?",
+    choice: ["Venison", "Bison", "Squab", "Rabbit"],
+    answer: "Squab",
+  },
+  {
+    question: "Which of the following is exempt from USDA inspection?",
+    choice: ["Guinea Hen", "Ostrich", "Wild Boar", "Antelope"],
+    answer: "Antelope",
+  },
+  {
+    question:
+      "Which type of large game is known for having a tomahawk chop cut?",
+    choice: ["Kangaroo", "Bison", "Wild Boar", "Water Buffalo"],
+    answer: "Water Buffalo",
+  },
+  {
+    question: "What is the typical environment for raising game meats?",
+    choice: [
+      "Industrial feedlots",
+      "Natural settings",
+      "Urban farms",
+      "Confined indoor spaces",
+    ],
+    answer: "Natural settings",
+  },
+  {
+    question: "Which meat is known for having less cholesterol and more iron?",
+    choice: ["Pork", "Beef", "Chicken", "Large game"],
+    answer: "Large game",
+  },
+  {
+    question: "Which meat has the highest amount of iron per 100 grams?",
+    choice: ["Bison", "Beef (Choice)", "Pork", "Chicken (Skinless)"],
+    answer: "Bison",
+  },
+  {
+    question: "Which game meat has the highest protein content per 100 grams?",
+    choice: ["Bison", "Elk", "Antelope", "Deer"],
+    answer: "Elk",
+  },
+  {
+    question:
+      "Which large game animal is typically raised in natural settings?",
+    choice: ["Yak", "Mouflon", "Wild Boar", "All of the above"],
+    answer: "All of the above",
+  },
+  {
+    question: "What is a common feature of game meats regarding antibiotics?",
+    choice: [
+      "Raised with antibiotics",
+      "Raised without antibiotics",
+      "Genetically modified",
+      "None of the above",
+    ],
+    answer: "Raised without antibiotics",
+  },
+  {
+    question:
+      "Which of the following meats is inspected by FDA instead of USDA?",
+    choice: ["Squab", "Rabbit", "Ostrich", "Venison"],
+    answer: "Venison",
+  },
+  {
+    question: "Which type of meat has the highest calories per 100 grams?",
+    choice: ["Lean Ham", "Ground Beef", "Salmon", "Elk"],
+    answer: "Ground Beef",
+  },
+  {
+    question:
+      "What is a characteristic of game birds in terms of raising conditions?",
+    choice: [
+      "Raised in confined spaces",
+      "Naturally raised without antibiotics",
+      "Fed with antibiotics",
+      "Raised in urban farms",
+    ],
+    answer: "Naturally raised without antibiotics",
+  },
+  {
+    question:
+      "Which meat is typically raised on farms that resemble their wild habitat?",
+    choice: ["Beef", "Game meats", "Pork", "Chicken"],
+    answer: "Game meats",
+  },
+  {
+    question:
+      "Which of the following meats has the least amount of fat per 100 grams?",
+    choice: ["Bison", "Elk", "Chicken (Skinless)", "Lean Ham"],
+    answer: "Elk",
+  },
+  {
+    question: "What type of game animal is a Red Tail?",
+    choice: ["Deer", "Bison", "Wild Boar", "Yak"],
+    answer: "Deer",
+  },
+  {
+    question:
+      "Which large game animal is known for having a tomahawk chop cut?",
+    choice: ["Kangaroo", "Bison", "Wild Boar", "Water Buffalo"],
+    answer: "Water Buffalo",
+  },
+  {
+    question: "Which of the following animals is a part of the deer family?",
+    choice: ["Yak", "Red Tail", "Mouflon", "Alligator"],
+    answer: "Red Tail",
+  },
+  {
+    question: "What is the typical weight range for a fryer rabbit?",
+    choice: ["3-5 lbs", "5-7 lbs", "10-15 lbs", "15-20 lbs"],
+    answer: "3-5 lbs",
+  },
+  {
+    question: "How should a hare typically be cooked due to its very red meat?",
+    choice: [
+      "Grilled quickly",
+      "Roasted at high heat",
+      "Low and slow cooking",
+      "Fried",
+    ],
+    answer: "Low and slow cooking",
+  },
+  {
+    question: "Which part of the alligator is primarily sold as a filet?",
+    choice: ["Leg", "Tail", "Ribs", "Head"],
+    answer: "Tail",
+  },
+  {
+    question: "What does turtle meat look like?",
+    choice: [
+      "Light white meat",
+      "Dark meat resembling beef and turkey thigh mixed",
+      "Red meat",
+      "Pale pink meat",
+    ],
+    answer: "Dark meat resembling beef and turkey thigh mixed",
+  },
+  {
+    question: "How is snake meat commonly described in terms of taste?",
+    choice: [
+      "Tastes like beef",
+      "Tastes like pork",
+      "Tastes like chicken",
+      "Tastes like fish",
+    ],
+    answer: "Tastes like chicken",
+  },
+  {
+    question: "What flavor profile do frog's legs have?",
+    choice: [
+      "Sweet and sour",
+      "Light but earthy",
+      "Bitter and tangy",
+      "Rich and buttery",
+    ],
+    answer: "Light but earthy",
+  },
+  {
+    question: "What is the average weight of an ostrich or emu carcass?",
+    choice: ["100 lbs", "150 lbs", "200 lbs", "250 lbs"],
+    answer: "250 lbs",
+  },
+  {
+    question:
+      "Which of the following is NOT a characteristic of ostrich and emu meat?",
+    choice: [
+      "Large flightless birds",
+      "Alternative cutting",
+      "Very lean",
+      "High fat content",
+    ],
+    answer: "High fat content",
+  },
+  {
+    question: "Which part of the ostrich is NOT included in the listed cuts?",
+    choice: ["Outside drum", "Back fillet", "Wings", "Neck"],
+    answer: "Wings",
+  },
+  {
+    question:
+      "What is the preferred cooking method for small and tender rabbits?",
+    choice: ["Fried", "Slow-cooked", "Roasted", "Grilled"],
+    answer: "Fried",
+  },
+
+  // Cattle Breeds
+
+  {
+    question: "Which country is the origin of the Angus cattle breed?",
+    choice: ["Scotland", "United States", "Australia", "Ireland"],
+    answer: "Scotland",
+  },
+  {
+    question: "What is Angus cattle known for in the culinary world?",
+    choice: [
+      "High-quality beef with marbling",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "High-quality beef with marbling",
+  },
+  {
+    question: "Where did the Belted Galloway cattle breed originate?",
+    choice: ["Scotland", "England", "Ireland", "Wales"],
+    answer: "Scotland",
+  },
+  {
+    question: "What is the Belted Galloway cattle breed primarily known for?",
+    choice: [
+      "Lean and flavorful beef",
+      "High milk production",
+      "Leather production",
+      "Wool production",
+    ],
+    answer: "Lean and flavorful beef",
+  },
+  {
+    question: "From which country does the Brahman cattle breed originate?",
+    choice: ["India", "Brazil", "Mexico", "United States"],
+    answer: "India",
+  },
+  {
+    question: "What is Brahman cattle known for in the culinary world?",
+    choice: [
+      "Resistant beef suitable for tropical climates",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Resistant beef suitable for tropical climates",
+  },
+  {
+    question: "Where did the Charolais cattle breed originate?",
+    choice: ["France", "Germany", "United States", "Canada"],
+    answer: "France",
+  },
+  {
+    question: "What is Charolais cattle known for in the culinary world?",
+    choice: [
+      "High-quality beef with rapid growth",
+      "High milk production",
+      "Wool production",
+      "Draught work",
+    ],
+    answer: "High-quality beef with rapid growth",
+  },
+  {
+    question: "Which country is the origin of the Dexter cattle breed?",
+    choice: ["Ireland", "Scotland", "England", "Wales"],
+    answer: "Ireland",
+  },
+  {
+    question: "What is the Dexter cattle breed primarily known for?",
+    choice: [
+      "Dual-purpose for beef and milk",
+      "High wool yield",
+      "Draught work",
+      "Leather production",
+    ],
+    answer: "Dual-purpose for beef and milk",
+  },
+  {
+    question: "From which country does the Gelbvieh cattle breed originate?",
+    choice: ["Germany", "Switzerland", "Austria", "Poland"],
+    answer: "Germany",
+  },
+  {
+    question: "What is Gelbvieh cattle known for in the culinary world?",
+    choice: [
+      "Dual-purpose for beef and milk",
+      "High wool yield",
+      "Draught work",
+      "Low-fat beef",
+    ],
+    answer: "Dual-purpose for beef and milk",
+  },
+  {
+    question: "Where did the Hereford cattle breed originate?",
+    choice: ["England", "United States", "Australia", "Canada"],
+    answer: "England",
+  },
+  {
+    question: "What is Hereford cattle known for in the culinary world?",
+    choice: [
+      "Beef production with high marbling",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Beef production with high marbling",
+  },
+  {
+    question: "Which country is the origin of the Holstein cattle breed?",
+    choice: ["Netherlands", "Germany", "Denmark", "France"],
+    answer: "Netherlands",
+  },
+  {
+    question: "What is Holstein cattle primarily known for?",
+    choice: [
+      "High milk production",
+      "Beef production",
+      "Wool production",
+      "Draught work",
+    ],
+    answer: "High milk production",
+  },
+  {
+    question: "From which country does the Limousin cattle breed originate?",
+    choice: ["France", "Italy", "Spain", "Portugal"],
+    answer: "France",
+  },
+  {
+    question:
+      "What is the Limousin cattle breed primarily known for in the culinary world?",
+    choice: [
+      "Lean beef with high yield",
+      "High milk production",
+      "Wool production",
+      "Draught work",
+    ],
+    answer: "Lean beef with high yield",
+  },
+  {
+    question: "Where did the Piedmontese cattle breed originate?",
+    choice: ["Italy", "France", "Switzerland", "Spain"],
+    answer: "Italy",
+  },
+  {
+    question: "What is Piedmontese cattle known for in the culinary world?",
+    choice: [
+      "Lean beef with low-fat content",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Lean beef with low-fat content",
+  },
+  {
+    question: "Which country is the origin of the Red Angus cattle breed?",
+    choice: ["Scotland", "United States", "Australia", "Ireland"],
+    answer: "Scotland",
+  },
+  {
+    question: "What is Red Angus cattle known for in the culinary world?",
+    choice: [
+      "High-quality beef with marbling",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "High-quality beef with marbling",
+  },
+  {
+    question:
+      "From which country does the Scottish Highland cattle breed originate?",
+    choice: ["Scotland", "Ireland", "England", "Wales"],
+    answer: "Scotland",
+  },
+  {
+    question: "What is the Scottish Highland cattle breed primarily known for?",
+    choice: [
+      "Lean beef with unique flavor",
+      "High milk production",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Lean beef with unique flavor",
+  },
+  {
+    question: "Where did the Shorthorn cattle breed originate?",
+    choice: ["England", "Scotland", "Ireland", "Wales"],
+    answer: "England",
+  },
+  {
+    question: "What is Shorthorn cattle known for in the culinary world?",
+    choice: [
+      "High-quality beef and milk production",
+      "High wool yield",
+      "Draught work",
+      "Leather production",
+    ],
+    answer: "High-quality beef and milk production",
+  },
+  {
+    question: "Which country is the origin of the Simmental cattle breed?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+  {
+    question: "What is Simmental cattle known for in the culinary world?",
+    choice: [
+      "Dual-purpose for beef and milk",
+      "High wool yield",
+      "Draught work",
+      "Low-fat beef",
+    ],
+    answer: "Dual-purpose for beef and milk",
+  },
+  {
+    question:
+      "From which country does the Texas Longhorn cattle breed originate?",
+    choice: ["United States", "Mexico", "Canada", "Spain"],
+    answer: "United States",
+  },
+  {
+    question: "What is Texas Longhorn cattle known for in the culinary world?",
+    choice: [
+      "Lean beef with unique flavor",
+      "High milk production",
+      "Wool production",
+      "Draught work",
+    ],
+    answer: "Lean beef with unique flavor",
+  },
+  {
+    question: "Where did the Watusi cattle breed originate?",
+    choice: ["Africa", "South America", "Asia", "Europe"],
+    answer: "Africa",
+  },
+  {
+    question: "What is Watusi cattle known for in the culinary world?",
+    choice: [
+      "Lean beef with high protein content",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Lean beef with high protein content",
+  },
+  {
+    question: "Which country is the origin of the Wagyu cattle breed?",
+    choice: ["Japan", "China", "South Korea", "Vietnam"],
+    answer: "Japan",
+  },
+  {
+    question: "What is Wagyu cattle known for in the culinary world?",
+    choice: [
+      "Highly marbled, luxurious beef",
+      "High milk yield",
+      "Wool production",
+      "Leather production",
+    ],
+    answer: "Highly marbled, luxurious beef",
+  },
+
+  // Lamb Breeds
+
+  {
+    question: "Which country is the origin of the Merino sheep breed?",
+    choice: ["Spain", "Australia", "New Zealand", "United States"],
+    answer: "Spain",
+  },
+  {
+    question: "Where did the Suffolk sheep breed originate?",
+    choice: ["England", "Ireland", "Scotland", "Wales"],
+    answer: "England",
+  },
+  {
+    question: "From which country does the Dorper sheep breed originate?",
+    choice: ["South Africa", "Australia", "New Zealand", "United States"],
+    answer: "South Africa",
+  },
+  {
+    question: "Which country is the origin of the Dorset sheep breed?",
+    choice: ["England", "Ireland", "Scotland", "Wales"],
+    answer: "England",
+  },
+  {
+    question: "Where did the Katahdin sheep breed originate?",
+    choice: ["United States", "Canada", "Australia", "New Zealand"],
+    answer: "United States",
+  },
+  {
+    question: "From which country does the Texel sheep breed originate?",
+    choice: ["Netherlands", "Belgium", "Germany", "France"],
+    answer: "Netherlands",
+  },
+  {
+    question: "Which country is the origin of the Romney sheep breed?",
+    choice: ["England", "New Zealand", "Australia", "United States"],
+    answer: "England",
+  },
+  {
+    question: "Where did the Cheviot sheep breed originate?",
+    choice: ["Scotland", "Ireland", "England", "Wales"],
+    answer: "Scotland",
+  },
+  // Goat Breeds
+  {
+    question: "Which country is the origin of the Boer goat breed?",
+    choice: ["South Africa", "Australia", "United States", "New Zealand"],
+    answer: "South Africa",
+  },
+  {
+    question: "Where did the Alpine goat breed originate?",
+    choice: ["France", "Switzerland", "Italy", "Germany"],
+    answer: "France",
+  },
+  {
+    question: "Which country is the origin of the Saanen goat breed?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+  {
+    question: "Where did the Nigerian Dwarf goat breed originate?",
+    choice: ["West Africa", "South Africa", "East Africa", "North Africa"],
+    answer: "West Africa",
+  },
+  {
+    question: "From which country does the Kiko goat breed originate?",
+    choice: ["New Zealand", "Australia", "United States", "Canada"],
+    answer: "New Zealand",
+  },
+  {
+    question: "Which country is the origin of the LaMancha goat breed?",
+    choice: ["United States", "Mexico", "Canada", "Spain"],
+    answer: "United States",
+  },
+  {
+    question: "Where did the Nubian goat breed originate?",
+    choice: ["United Kingdom", "India", "Egypt", "South Africa"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "From which country does the Oberhasli goat breed originate?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+  {
+    question: "Which country is the origin of the Toggenburg goat breed?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+
+  // Goat Breeds
+
+  {
+    question: "Which country is the origin of the Boer goat breed?",
+    choice: ["South Africa", "Australia", "United States", "New Zealand"],
+    answer: "South Africa",
+  },
+  {
+    question: "Where did the Alpine goat breed originate?",
+    choice: ["France", "Switzerland", "Italy", "Germany"],
+    answer: "France",
+  },
+  {
+    question: "Which country is the origin of the Saanen goat breed?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+  {
+    question: "Where did the Nigerian Dwarf goat breed originate?",
+    choice: ["West Africa", "South Africa", "East Africa", "North Africa"],
+    answer: "West Africa",
+  },
+  {
+    question: "From which country does the Kiko goat breed originate?",
+    choice: ["New Zealand", "Australia", "United States", "Canada"],
+    answer: "New Zealand",
+  },
+  {
+    question: "Which country is the origin of the LaMancha goat breed?",
+    choice: ["United States", "Mexico", "Canada", "Spain"],
+    answer: "United States",
+  },
+  {
+    question: "Where did the Nubian goat breed originate?",
+    choice: ["United Kingdom", "India", "Egypt", "South Africa"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "From which country does the Oberhasli goat breed originate?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+  {
+    question: "Which country is the origin of the Toggenburg goat breed?",
+    choice: ["Switzerland", "Germany", "France", "Italy"],
+    answer: "Switzerland",
+  },
+
+  // Chicken Breeds
+
+  {
+    question: "Which country is the origin of the Leghorn chicken breed?",
+    choice: ["Italy", "United States", "France", "United Kingdom"],
+    answer: "Italy",
+  },
+  {
+    question: "Where did the Rhode Island Red chicken breed originate?",
+    choice: ["United States", "Canada", "United Kingdom", "Australia"],
+    answer: "United States",
+  },
+  {
+    question: "From which country does the Orpington chicken breed originate?",
+    choice: ["United Kingdom", "United States", "France", "Germany"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "Which country is the origin of the Plymouth Rock chicken breed?",
+    choice: ["United States", "Canada", "United Kingdom", "Australia"],
+    answer: "United States",
+  },
+  {
+    question: "Where did the Sussex chicken breed originate?",
+    choice: ["United Kingdom", "United States", "France", "Germany"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "From which country does the Australorp chicken breed originate?",
+    choice: ["Australia", "United States", "United Kingdom", "New Zealand"],
+    answer: "Australia",
+  },
+  {
+    question: "Which country is the origin of the Silkie chicken breed?",
+    choice: ["China", "Japan", "India", "Thailand"],
+    answer: "China",
+  },
+  {
+    question: "Where did the Cornish chicken breed originate?",
+    choice: ["United Kingdom", "United States", "France", "Germany"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "From which country does the Brahma chicken breed originate?",
+    choice: ["United States", "China", "India", "Thailand"],
+    answer: "United States",
+  },
+  {
+    question: "Which country is the origin of the Wyandotte chicken breed?",
+    choice: ["United States", "Canada", "United Kingdom", "Australia"],
+    answer: "United States",
+  },
+
+  // Duck Breeds
+
+  {
+    question: "Which country is the origin of the Pekin duck breed?",
+    choice: ["China", "United States", "France", "United Kingdom"],
+    answer: "China",
+  },
+  {
+    question: "Where did the Muscovy duck breed originate?",
+    choice: ["South America", "North America", "Europe", "Asia"],
+    answer: "South America",
+  },
+  {
+    question:
+      "From which country does the Khaki Campbell duck breed originate?",
+    choice: ["United Kingdom", "United States", "France", "Germany"],
+    answer: "United Kingdom",
+  },
+  {
+    question: "Which country is the origin of the Indian Runner duck breed?",
+    choice: ["Indonesia", "China", "India", "Thailand"],
+    answer: "Indonesia",
+  },
+  {
+    question: "Where did the Rouen duck breed originate?",
+    choice: ["France", "United States", "United Kingdom", "Germany"],
+    answer: "France",
+  },
+  {
+    question: "From which country does the Cayuga duck breed originate?",
+    choice: ["United States", "Canada", "United Kingdom", "Australia"],
+    answer: "United States",
+  },
+  {
+    question: "Which country is the origin of the Swedish Blue duck breed?",
+    choice: ["Sweden", "Norway", "Denmark", "Finland"],
+    answer: "Sweden",
+  },
+  {
+    question: "Where did the Welsh Harlequin duck breed originate?",
+    choice: ["Wales", "Scotland", "Ireland", "England"],
+    answer: "Wales",
+  },
+
+  // Meat Cut #'s and Processing
   {
     question: "What cut is numbered 103?",
     choice: [
@@ -2257,123 +2410,522 @@ const questions = [
     answer: "Tenderloin portion cut",
   },
   {
-    question: "What is the highest grade for lamb?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Prime",
+    question: "What is the NAMP for Primal rib?",
+    choice: ["103", "109", "109d", "112a"],
+    answer: "103",
   },
   {
-    question: "What is the highest grade for veal?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Prime",
+    question: "What is the NAMP for Roast ready rib?",
+    choice: ["103", "109", "109d", "112a"],
+    answer: "109",
   },
   {
-    question: "What is the highest grade for poultry?",
-    choice: ["A", "B", "C"],
-    answer: "A",
+    question: "What is the NAMP for Export rib?",
+    choice: ["103", "109", "109d", "112a"],
+    answer: "109d",
   },
   {
-    question: "What is the highest grade for pork?",
-    choice: ["1", "2", "3", "4"],
-    answer: "1",
+    question: "What is the NAMP for Boneless ribeye lip on?",
+    choice: ["103", "109", "109d", "112a"],
+    answer: "112a",
   },
   {
-    question: "What grade is not assigned to game meat?",
-    choice: ["A", "Prime", "Utility", "Not Graded"],
-    answer: "Not Graded",
+    question: "What is the NAMP for Ribeye roll?",
+    choice: ["103", "109", "112", "175"],
+    answer: "112",
   },
   {
-    question: "What is the second highest grade for beef?",
-    choice: ["Choice", "Select", "Prime", "Standard"],
-    answer: "Choice",
+    question: "What is the NAMP for Bone-in strip loin?",
+    choice: ["103", "109", "175", "180"],
+    answer: "175",
   },
   {
-    question: "What is the second highest grade for lamb?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Choice",
+    question: "What is the NAMP for Boneless striploin?",
+    choice: ["103", "109", "175", "180"],
+    answer: "180",
   },
   {
-    question: "What is the second highest grade for veal?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Choice",
+    question: "What is the NAMP for Tenderloin full fat on?",
+    choice: ["103", "175", "189", "180"],
+    answer: "189",
   },
   {
-    question: "What is the second highest grade for poultry?",
-    choice: ["A", "B", "C"],
-    answer: "B",
+    question: "What is the NAMP for Tenderloin psmo?",
+    choice: ["189", "175", "109d", "189a"],
+    answer: "189a",
   },
   {
-    question: "What is the second highest grade for pork?",
-    choice: ["1", "2", "3", "4"],
-    answer: "2",
+    question: "What is the NAMP for Tenderloin denuded?",
+    choice: ["189", "175", "109d", "190a"],
+    answer: "190a",
   },
   {
-    question: "What is the third highest grade for beef?",
-    choice: ["Choice", "Select", "Prime", "Standard"],
-    answer: "Select",
+    question: "What is the NAMP for Tenderloin portion cut?",
+    choice: ["189", "175", "109d", "1190a"],
+    answer: "1190a",
+  },
+
+  // Food Safety and Diseases
+  {
+    question: "Which disease is commonly associated with undercooked beef?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "E. coli",
   },
   {
-    question: "What is the third highest grade for lamb?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Good",
+    question:
+      "What disease, also known as 'Mad Cow Disease', affects cattle and can be transmitted to humans through contaminated beef?",
+    choice: [
+      "Bovine Spongiform Encephalopathy (BSE)",
+      "Foot and Mouth Disease",
+      "Brucellosis",
+      "Anthrax",
+    ],
+    answer: "Bovine Spongiform Encephalopathy (BSE)",
   },
   {
-    question: "What is the third highest grade for veal?",
-    choice: ["Good", "Utility", "Prime", "Choice"],
-    answer: "Good",
+    question:
+      "Which disease can be caused by eating beef contaminated with bovine tuberculosis?",
+    choice: [
+      "Salmonellosis",
+      "Tuberculosis",
+      "Campylobacteriosis",
+      "Hepatitis A",
+    ],
+    answer: "Tuberculosis",
   },
   {
-    question: "What is the third highest grade for poultry?",
-    choice: ["A", "B", "C"],
-    answer: "C",
+    question: "Which disease is commonly associated with undercooked pork?",
+    choice: ["Trichinosis", "Listeriosis", "Salmonellosis", "E. coli"],
+    answer: "Trichinosis",
   },
   {
-    question: "What is the third highest grade for pork?",
-    choice: ["1", "2", "3", "4"],
-    answer: "3",
+    question:
+      "Which disease can be caused by pork contaminated with Yersinia enterocolitica?",
+    choice: ["Yersiniosis", "Brucellosis", "Anthrax", "Tuberculosis"],
+    answer: "Yersiniosis",
   },
   {
-    question: "What is the fourth highest grade for beef?",
-    choice: ["Choice", "Select", "Prime", "Standard"],
-    answer: "Standard",
+    question:
+      "Which disease is associated with pork contaminated with hepatitis E virus?",
+    choice: ["Hepatitis E", "Hepatitis A", "Hepatitis B", "Hepatitis C"],
+    answer: "Hepatitis E",
   },
   {
-    question: "What is the fourth highest grade for veal?",
-    choice: ["Good", "Utility", "Prime", "Standard"],
-    answer: "Standard",
+    question: "Which disease is commonly associated with undercooked chicken?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Salmonella",
   },
   {
-    question: "What is the fourth highest grade for pork?",
-    choice: ["1", "2", "3", "4"],
-    answer: "4",
+    question:
+      "Which disease can be caused by eating chicken contaminated with Campylobacter jejuni?",
+    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Trichinosis"],
+    answer: "Campylobacteriosis",
   },
   {
-    question: "What is the fifth highest grade for beef?",
-    choice: ["Choice", "Select", "Standard", "Commercial"],
-    answer: "Commercial",
+    question:
+      "Which disease is associated with chicken contaminated with avian influenza virus?",
+    choice: [
+      "Avian Influenza",
+      "Newcastle Disease",
+      "Marek's Disease",
+      "Fowl Cholera",
+    ],
+    answer: "Avian Influenza",
   },
   {
-    question: "What is the fifth highest grade for veal?",
-    choice: ["Good", "Utility", "Prime", "Standard"],
-    answer: "Utility",
+    question: "Which disease is commonly associated with undercooked duck?",
+    choice: ["Salmonella", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Campylobacter",
   },
   {
-    question: "What is the sixth highest grade for beef?",
-    choice: ["Utility", "Choice", "Cutter", "Canner"],
-    answer: "Utility",
+    question:
+      "Which disease is associated with ducks infected with the avian influenza virus?",
+    choice: [
+      "Avian Influenza",
+      "Newcastle Disease",
+      "Duck Viral Enteritis",
+      "Fowl Cholera",
+    ],
+    answer: "Avian Influenza",
   },
   {
-    question: "What is the seventh highest grade for beef?",
-    choice: ["Utility", "Choice", "Cutter", "Canner"],
-    answer: "Cutter",
+    question:
+      "Which disease can be caused by eating duck contaminated with Salmonella?",
+    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
+    answer: "Salmonellosis",
   },
   {
-    question: "What is the eighth highest grade for beef?",
-    choice: ["Utility", "Choice", "Cutter", "Canner"],
-    answer: "Canner",
+    question:
+      "Which disease is commonly associated with undercooked goat meat?",
+    choice: ["Brucellosis", "E. coli", "Listeria", "Campylobacter"],
+    answer: "Brucellosis",
   },
   {
-    question: "What is the lowest grade for lamb?",
-    choice: ["Cull", "Utility", "Good", "Choice"],
-    answer: "Cull",
+    question:
+      "Which disease can be caused by goat meat contaminated with Q fever?",
+    choice: ["Q fever", "Anthrax", "Tuberculosis", "Toxoplasmosis"],
+    answer: "Q fever",
+  },
+  {
+    question:
+      "Which disease is associated with goat meat contaminated with Listeria monocytogenes?",
+    choice: ["Listeriosis", "Salmonellosis", "Botulism", "Campylobacteriosis"],
+    answer: "Listeriosis",
+  },
+  {
+    question: "Which disease is commonly associated with undercooked lamb?",
+    choice: ["Toxoplasmosis", "Listeriosis", "Salmonellosis", "E. coli"],
+    answer: "Toxoplasmosis",
+  },
+  {
+    question:
+      "Which disease can be caused by lamb contaminated with Salmonella?",
+    choice: ["Salmonellosis", "Listeriosis", "Botulism", "Campylobacteriosis"],
+    answer: "Salmonellosis",
+  },
+  {
+    question:
+      "Which disease is associated with lamb meat contaminated with Campylobacter?",
+    choice: ["Campylobacteriosis", "Listeriosis", "Botulism", "Brucellosis"],
+    answer: "Campylobacteriosis",
+  },
+  {
+    question: "What does E. coli infection do to a person?",
+    choice: [
+      "Causes severe stomach cramps, diarrhea (often bloody), and vomiting",
+      "Leads to high fever and pneumonia",
+      "Results in a skin rash and joint pain",
+      "Causes neurological symptoms like confusion and seizures",
+    ],
+    answer:
+      "Causes severe stomach cramps, diarrhea (often bloody), and vomiting",
+  },
+  {
+    question:
+      "What does Bovine Spongiform Encephalopathy (BSE) do to a person?",
+    choice: [
+      "Causes rapid mental deterioration and movement problems",
+      "Leads to chronic fatigue and muscle weakness",
+      "Results in severe respiratory distress and coughing",
+      "Causes severe joint pain and arthritis",
+    ],
+    answer: "Causes rapid mental deterioration and movement problems",
+  },
+  {
+    question: "What does Tuberculosis (TB) do to a person?",
+    choice: [
+      "Causes persistent cough, chest pain, and coughing up blood",
+      "Leads to severe headaches and vision problems",
+      "Results in sudden weight gain and bloating",
+      "Causes intense itching and skin lesions",
+    ],
+    answer: "Causes persistent cough, chest pain, and coughing up blood",
+  },
+  {
+    question: "What does Trichinosis do to a person?",
+    choice: [
+      "Causes muscle pain, fever, swelling around the eyes, and gastrointestinal issues",
+      "Leads to hair loss and brittle nails",
+      "Results in chronic liver damage and jaundice",
+      "Causes severe allergic reactions and anaphylaxis",
+    ],
+    answer:
+      "Causes muscle pain, fever, swelling around the eyes, and gastrointestinal issues",
+  },
+  {
+    question: "What does Yersiniosis do to a person?",
+    choice: [
+      "Causes fever, abdominal pain, and diarrhea, which may be bloody",
+      "Leads to persistent dizziness and balance problems",
+      "Results in severe dehydration and kidney failure",
+      "Causes chronic back pain and spinal issues",
+    ],
+    answer: "Causes fever, abdominal pain, and diarrhea, which may be bloody",
+  },
+  {
+    question: "What does Hepatitis E do to a person?",
+    choice: [
+      "Causes liver inflammation, jaundice, fatigue, and nausea",
+      "Leads to severe acne and skin infections",
+      "Results in joint degeneration and osteoporosis",
+      "Causes chronic bronchitis and persistent cough",
+    ],
+    answer: "Causes liver inflammation, jaundice, fatigue, and nausea",
+  },
+  {
+    question: "What does Salmonellosis do to a person?",
+    choice: [
+      "Causes diarrhea, fever, stomach cramps, and vomiting",
+      "Leads to severe migraines and vision loss",
+      "Results in heart palpitations and arrhythmia",
+      "Causes chronic insomnia and anxiety",
+    ],
+    answer: "Causes diarrhea, fever, stomach cramps, and vomiting",
+  },
+  {
+    question: "What does Campylobacteriosis do to a person?",
+    choice: [
+      "Causes diarrhea (often bloody), fever, and abdominal cramps",
+      "Leads to severe joint inflammation and arthritis",
+      "Results in significant weight loss and malnutrition",
+      "Causes severe respiratory issues and shortness of breath",
+    ],
+    answer: "Causes diarrhea (often bloody), fever, and abdominal cramps",
+  },
+  {
+    question: "What does Avian Influenza do to a person?",
+    choice: [
+      "Causes flu-like symptoms, severe respiratory distress, and can be fatal",
+      "Leads to loss of appetite and chronic fatigue",
+      "Results in severe neurological issues like paralysis",
+      "Causes intense skin itching and rashes",
+    ],
+    answer:
+      "Causes flu-like symptoms, severe respiratory distress, and can be fatal",
+  },
+  {
+    question: "What does Brucellosis do to a person?",
+    choice: [
+      "Causes fever, sweats, malaise, anorexia, headache, and muscle pain",
+      "Leads to chronic kidney infections and urinary issues",
+      "Results in severe hair loss and skin ulcers",
+      "Causes intense abdominal pain and digestive problems",
+    ],
+    answer:
+      "Causes fever, sweats, malaise, anorexia, headache, and muscle pain",
+  },
+  {
+    question: "What does Q fever do to a person?",
+    choice: [
+      "Causes high fever, severe headache, fatigue, and muscle pain",
+      "Leads to chronic coughing and chest pain",
+      "Results in significant weight gain and obesity",
+      "Causes persistent diarrhea and dehydration",
+    ],
+    answer: "Causes high fever, severe headache, fatigue, and muscle pain",
+  },
+  {
+    question: "What does Listeriosis do to a person?",
+    choice: [
+      "Causes fever, muscle aches, nausea, and can lead to meningitis",
+      "Leads to severe vision problems and blindness",
+      "Results in chronic liver damage and cirrhosis",
+      "Causes severe allergic reactions and swelling",
+    ],
+    answer: "Causes fever, muscle aches, nausea, and can lead to meningitis",
+  },
+  {
+    question: "What does Toxoplasmosis do to a person?",
+    choice: [
+      "Causes flu-like symptoms, muscle pain, and can affect the brain",
+      "Leads to severe joint pain and swelling",
+      "Results in chronic lung infections and bronchitis",
+      "Causes intense headaches and migraines",
+    ],
+    answer: "Causes flu-like symptoms, muscle pain, and can affect the brain",
+  },
+
+  // Questions about the primal cut each sub-primal belongs to
+  {
+    question: "Which primal cut does the Chuck Roll belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Chuck Shoulder Clod belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Chuck Tender belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Shoulder Top Blade belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question:
+      "Which primal cut does the Shoulder Center (Ranch) Cut belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Under Blade Pot Roast belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Shoulder Arm Roast belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Ground Chuck belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which primal cut does the Ribeye Roll belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Rib",
+  },
+  {
+    question: "Which primal cut does the Ribeye, Lip-On belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Rib",
+  },
+  {
+    question: "Which primal cut do the Back Ribs belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Rib",
+  },
+  {
+    question: "Which primal cut do the Short Ribs belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Rib",
+  },
+  {
+    question:
+      "Which primal cut does the Ribeye Cap (Spinalis Dorsi) belong to?",
+    choice: ["Chuck", "Rib", "Short Loin", "Round"],
+    answer: "Rib",
+  },
+  {
+    question: "Which primal cut does the Strip Loin belong to?",
+    choice: ["Short Loin", "Chuck", "Rib", "Round"],
+    answer: "Short Loin",
+  },
+  {
+    question: "Which primal cut does the T-Bone Steak belong to?",
+    choice: ["Short Loin", "Chuck", "Rib", "Round"],
+    answer: "Short Loin",
+  },
+  {
+    question: "Which primal cut does the Porterhouse Steak belong to?",
+    choice: ["Short Loin", "Chuck", "Rib", "Round"],
+    answer: "Short Loin",
+  },
+  {
+    question: "Which primal cut does the Tenderloin belong to?",
+    choice: ["Short Loin", "Chuck", "Rib", "Round"],
+    answer: "Short Loin",
+  },
+  {
+    question: "Which primal cut does the Filet Mignon belong to?",
+    choice: ["Short Loin", "Chuck", "Rib", "Round"],
+    answer: "Short Loin",
+  },
+  {
+    question: "Which primal cut does the Top Sirloin Butt belong to?",
+    choice: ["Sirloin", "Chuck", "Rib", "Round"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which primal cut does the Bottom Sirloin Butt belong to?",
+    choice: ["Sirloin", "Chuck", "Rib", "Round"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which primal cut does the Tri-Tip belong to?",
+    choice: ["Sirloin", "Chuck", "Rib", "Round"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which primal cut does the Ball Tip belong to?",
+    choice: ["Sirloin", "Chuck", "Rib", "Round"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which primal cut does the Sirloin Bavette (Flap) belong to?",
+    choice: ["Sirloin", "Chuck", "Rib", "Round"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which primal cut does the Top Round belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Bottom Round belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Eye of Round belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Round Tip belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Knuckle belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Sirloin Tip belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Rump Roast belong to?",
+    choice: ["Round", "Chuck", "Rib", "Short Loin"],
+    answer: "Round",
+  },
+  {
+    question: "Which primal cut does the Brisket Point belong to?",
+    choice: ["Brisket", "Chuck", "Rib", "Short Loin"],
+    answer: "Brisket",
+  },
+  {
+    question: "Which primal cut does the Brisket Flat belong to?",
+    choice: ["Brisket", "Chuck", "Rib", "Short Loin"],
+    answer: "Brisket",
+  },
+  {
+    question: "Which primal cut does the Skirt Steak belong to?",
+    choice: ["Plate", "Chuck", "Rib", "Short Loin"],
+    answer: "Plate",
+  },
+  {
+    question: "Which primal cut do the Short Ribs belong to?",
+    choice: ["Plate", "Chuck", "Rib", "Short Loin"],
+    answer: "Plate",
+  },
+  {
+    question: "Which primal cut does the Hanger Steak belong to?",
+    choice: ["Plate", "Chuck", "Rib", "Short Loin"],
+    answer: "Plate",
+  },
+  {
+    question: "Which primal cut does the Inside Skirt belong to?",
+    choice: ["Plate", "Chuck", "Rib", "Short Loin"],
+    answer: "Plate",
+  },
+  {
+    question: "Which primal cut does the Outside Skirt belong to?",
+    choice: ["Plate", "Chuck", "Rib", "Short Loin"],
+    answer: "Plate",
+  },
+  {
+    question: "Which primal cut does the Flank Steak belong to?",
+    choice: ["Flank", "Chuck", "Rib", "Short Loin"],
+    answer: "Flank",
+  },
+  {
+    question: "Which primal cut does the Fore Shank belong to?",
+    choice: ["Shank", "Chuck", "Rib", "Short Loin"],
+    answer: "Shank",
+  },
+  {
+    question: "Which primal cut does the Hind Shank belong to?",
+    choice: ["Shank", "Chuck", "Rib", "Short Loin"],
+    answer: "Shank",
   },
 ];
