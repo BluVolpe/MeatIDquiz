@@ -1,4 +1,127 @@
 const questions = [
+  // Primal Cuts with image
+  {
+    question: "Which beef primal cut is section number 1?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Chuck", "Brisket", "Rib", "Plate"],
+    answer: "Chuck",
+  },
+  {
+    question: "Which beef primal cut is section number 2?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Chuck", "Brisket", "Rib", "Plate"],
+    answer: "Brisket",
+  },
+  {
+    question: "Which beef primal cut is section number 3?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Rib", "Loin", "Flank", "Shank"],
+    answer: "Rib",
+  },
+  {
+    question: "Which beef primal cut is section number 4?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Plate", "Sirloin", "Round", "Flank"],
+    answer: "Plate",
+  },
+  {
+    question: "Which beef primal cut is section number 5?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Loin", "Rib", "Chuck", "Round"],
+    answer: "Loin",
+  },
+  {
+    question: "Which beef primal cut is section number 6?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Flank", "Plate", "Rib", "Shank"],
+    answer: "Flank",
+  },
+  {
+    question: "Which beef primal cut is section number 7?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Sirloin", "Loin", "Round", "Chuck"],
+    answer: "Sirloin",
+  },
+  {
+    question: "Which beef primal cut is section number 8?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Round", "Chuck", "Shank", "Brisket"],
+    answer: "Round",
+  },
+  {
+    question: "Which beef primal cut is section number 9?",
+    image: "Images/Beef Cuts.png",
+    choice: ["Shank", "Brisket", "Flank", "Rib"],
+    answer: "Shank",
+  },
+  {
+    question: "Which part of the pig is labeled as 1 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Head", "Cheek", "Clear Plate", "Boston Shoulder"],
+    answer: "Head",
+  },
+  {
+    question: "Which part of the pig is labeled as 2 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Cheek", "Picnic", "Ribs", "Loin"],
+    answer: "Cheek",
+  },
+  {
+    question: "Which part of the pig is labeled as 3 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Clear Plate", "Back Fat", "Belly", "Leg Ham"],
+    answer: "Clear Plate",
+  },
+  {
+    question: "Which part of the pig is labeled as 4 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Boston Shoulder/Butt", "Hock", "Loin", "Ribs"],
+    answer: "Boston Shoulder/Butt",
+  },
+  {
+    question: "Which part of the pig is labeled as 5 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Picnic", "Head", "Cheek", "Clear Plate"],
+    answer: "Picnic",
+  },
+  {
+    question: "Which part of the pig is labeled as 6 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Back Fat", "Boston Shoulder/Butt", "Hock", "Leg Ham"],
+    answer: "Back Fat",
+  },
+  {
+    question: "Which part of the pig is labeled as 7 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Loin", "Clear Plate", "Cheek", "Ribs"],
+    answer: "Loin",
+  },
+  {
+    question: "Which part of the pig is labeled as 8 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Ribs", "Head", "Back Fat", "Belly"],
+    answer: "Ribs",
+  },
+  {
+    question: "Which part of the pig is labeled as 9 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Belly/Bacon", "Clear Plate", "Hock", "Leg Ham"],
+    answer: "Belly/Bacon",
+  },
+  {
+    question: "Which part of the pig is labeled as 10 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Leg Ham", "Cheek", "Loin", "Picnic"],
+    answer: "Leg Ham",
+  },
+  {
+    question: "Which part of the pig is labeled as 11 in the image?",
+    image: "Images/Pig Cuts.png",
+    choice: ["Hock", "Clear Plate", "Back Fat", "Boston Shoulder/Butt"],
+    answer: "Hock",
+  },
+  
+  
   // Section 1-2
   // Composition of Lean Muscle Tissue
   {
