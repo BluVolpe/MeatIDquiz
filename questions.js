@@ -2744,7 +2744,7 @@ const questions = [
     choice: ["Wales", "Scotland", "Ireland", "England"],
     answer: "Wales",
   },
-
+*/
   // Meat Cut #'s and Processing
   {
     question: "What cut is numbered 103?",
@@ -2911,7 +2911,7 @@ const questions = [
     choice: ["189", "175", "109d", "1190a"],
     answer: "1190a",
   },
-
+/*
   // Food Safety and Diseases
   {
     question: "Which disease is commonly associated with undercooked beef?",
