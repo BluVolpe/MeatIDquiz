@@ -9,7 +9,7 @@ body {
   justify-content: center; /* Center items vertically */
   height: 100vh; /* Full viewport height */
   margin: 0; /* Remove default margin */
-  padding: 0 20px; /* Padding for smaller screens */
+  padding: 0 10px; /* Padding for smaller screens */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
@@ -42,9 +42,9 @@ footer {
   display: flex; /* Flexbox for layout */
   flex-direction: column; /* Vertical alignment */
   align-items: center; /* Center items horizontally */
-  padding: 20px; /* Padding for spacing */
-  margin-top: 60px; /* Margin for header */
-  margin-bottom: 60px; /* Margin for footer */
+  padding: 10px; /* Padding for spacing */
+  margin-top: 50px; /* Margin for header */
+  margin-bottom: 50px; /* Margin for footer */
   width: 100%; /* Full width */
   max-width: 600px; /* Limit width for large screens */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
@@ -60,9 +60,9 @@ footer {
 
 /* Question text styling */
 #question {
-  font-size: 24px; /* Font size for questions */
+  font-size: 22px; /* Font size for questions */
   text-align: center; /* Center text alignment */
-  margin-bottom: 20px; /* Space below the question */
+  margin-bottom: 10px; /* Space below the question */
 }
 
 /* Image styling within question */
@@ -83,10 +83,10 @@ footer {
   background-color: #444; /* Dark background for choices */
   color: #fff; /* White text */
   border: none; /* No border */
-  padding: 12px; /* Padding for buttons */
-  margin: 10px 0; /* Space between choices */
+  padding: 10px; /* Padding for buttons */
+  margin: 8px 0; /* Space between choices */
   cursor: pointer; /* Pointer cursor on hover */
-  font-size: 18px; /* Font size for choices */
+  font-size: 16px; /* Font size for choices */
   width: 100%; /* Full width */
   box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
@@ -114,26 +114,26 @@ footer {
   display: flex; /* Flexbox for layout */
   flex-direction: column; /* Vertical alignment */
   align-items: center; /* Center items horizontally */
-  margin-bottom: 20px; /* Space below the tracker */
+  margin-bottom: 10px; /* Space below the tracker */
 }
 
 /* Question counter styling */
 #question-counter {
-  font-size: 14px; /* Smaller font size for question counter */
-  margin-bottom: 10px; /* Space below the counter */
+  font-size: 12px; /* Smaller font size for question counter */
+  margin-bottom: 5px; /* Space below the counter */
 }
 
 /* Question tally container styling */
 #question-tally {
   display: grid; /* Grid layout for tally */
   grid-template-columns: repeat(5, 1fr); /* Five columns */
-  gap: 3px; /* Space between tally items */
+  gap: 2px; /* Space between tally items */
 }
 
 /* Individual tally item styling */
 #question-tally span {
-  width: 12px; /* Smaller width for tally items */
-  height: 12px; /* Smaller height for tally items */
+  width: 10px; /* Smaller width for tally items */
+  height: 10px; /* Smaller height for tally items */
   display: inline-block; /* Inline block layout */
   background-color: #444; /* Dark background for tally items */
 }
@@ -150,7 +150,7 @@ footer {
 
 /* Timer styling */
 #timer {
-  font-size: 24px; /* Font size for timer */
+  font-size: 22px; /* Font size for timer */
   font-weight: bold; /* Bold font for emphasis */
 }
 
@@ -159,8 +159,8 @@ footer {
   background-color: #007bff; /* Blue background for button */
   color: #fff; /* White text */
   border: none; /* No border */
-  padding: 10px 20px; /* Padding for button */
-  font-size: 18px; /* Font size for button */
+  padding: 8px 16px; /* Padding for button */
+  font-size: 16px; /* Font size for button */
   border-radius: 5px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
   transition: background-color 0.3s ease; /* Smooth background color transition */
@@ -174,7 +174,7 @@ footer {
 
 /* Big score text styling */
 .big-score {
-  font-size: 48px; /* Large font size for score */
+  font-size: 36px; /* Large font size for score */
   margin-top: 20px; /* Space above the score */
 }
 
@@ -191,17 +191,17 @@ footer {
   }
 
   #question {
-    font-size: 22px; /* Increase font size for questions */
+    font-size: 20px; /* Increase font size for questions */
   }
 
   #choices button {
-    font-size: 16px; /* Smaller font size for choices */
-    padding: 8px; /* Less padding for buttons */
-    margin: 12px 0; /* More space between choices */
+    font-size: 14px; /* Smaller font size for choices */
+    padding: 6px; /* Less padding for buttons */
+    margin: 8px 0; /* More space between choices */
   }
 
   #timer {
-    font-size: 20px; /* Smaller font size for timer */
+    font-size: 18px; /* Smaller font size for timer */
   }
 
   header,
@@ -210,16 +210,16 @@ footer {
   }
 
   #question-tally span {
-    width: 10px; /* Smaller width for tally items */
-    height: 10px; /* Smaller height for tally items */
+    width: 8px; /* Smaller width for tally items */
+    height: 8px; /* Smaller height for tally items */
   }
 
   .modern-button {
-    font-size: 16px; /* Smaller font size for button */
-    padding: 8px 16px; /* Less padding for button */
+    font-size: 14px; /* Smaller font size for button */
+    padding: 6px 12px; /* Less padding for button */
   }
 
   .big-score {
-    font-size: 36px; /* Smaller font size for score */
+    font-size: 30px; /* Smaller font size for score */
   }
 }
