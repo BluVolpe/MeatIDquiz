@@ -107,7 +107,7 @@ function selectAnswer(button, correctAnswer) {
 // Function to play sound
 function playSound(soundFile) {
   const audio = new Audio(soundFile); // Create a new audio element
-  audio.volume = 0.5; // Set the volume to half
+  audio.volume = 0.2; // Set the volume to half
   audio.play(); // Play the audio
 }
 

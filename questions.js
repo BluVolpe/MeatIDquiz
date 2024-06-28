@@ -120,7 +120,337 @@ const questions = [
     choice: ["Hock", "Clear Plate", "Back Fat", "Boston Shoulder/Butt"],
     answer: "Hock",
   },
-
+  {
+    question: "What dish is made from Beef Top Round?",
+    choice: [
+      "Slicing Roast Beef for Sandwich",
+      "Spicy Green Pork Chili/Stew",
+      "Fajitas or Stir Fry",
+      "Cowboy Rib Steak",
+      "Beef Stew"
+    ],
+    answer: "Slicing Roast Beef for Sandwich"
+  },
+  {
+    question: "What dish is made from Pork Boston Butt?",
+    choice: [
+      "Slicing Roast Beef for Sandwich",
+      "Spicy Green Pork Chili/Stew",
+      "Fajitas or Stir Fry",
+      "Corned Beef or Barbeque Beef",
+      "Canadian Bacon"
+    ],
+    answer: "Spicy Green Pork Chili/Stew"
+  },
+  {
+    question: "What dish is made from Beef Skirt Steaks?",
+    choice: [
+      "Slicing Roast Beef for Sandwich",
+      "Spicy Green Pork Chili/Stew",
+      "Fajitas or Stir Fry",
+      "Cowboy Rib Steak",
+      "Flat Iron Steak"
+    ],
+    answer: "Fajitas or Stir Fry"
+  },
+  {
+    question: "What dish is made from Beef Export Rib?",
+    choice: [
+      "Cowboy Rib Steak",
+      "Chateaubriand",
+      "Pancetta",
+      "Flat Iron Steak",
+      "House Made Smoked Ham"
+    ],
+    answer: "Cowboy Rib Steak"
+  },
+  {
+    question: "What dish is made from Pork Loin?",
+    choice: [
+      "Canadian Bacon",
+      "Dry Aged NY Steak",
+      "Split Pea Soup",
+      "Flat Iron Steak",
+      "Chicken Soup"
+    ],
+    answer: "Canadian Bacon"
+  },
+  {
+    question: "What dish is made from Beef Tenderloin PSMO?",
+    choice: [
+      "Chateaubriand",
+      "Beef Stew",
+      "Pancetta",
+      "Corned Beef or Barbeque Beef",
+      "House Made Smoked Ham"
+    ],
+    answer: "Chateaubriand"
+  },
+  {
+    question: "What dish is made from Pork Belly?",
+    choice: [
+      "Pancetta",
+      "Fajitas or Stir Fry",
+      "Spicy Green Pork Chili/Stew",
+      "Flat Iron Steak",
+      "Canadian Bacon"
+    ],
+    answer: "Pancetta"
+  },
+  {
+    question: "What dish is made from Beef Top Blade?",
+    choice: [
+      "Flat Iron Steak",
+      "Chateaubriand",
+      "Pancetta",
+      "Beef Stew",
+      "Split Pea Soup"
+    ],
+    answer: "Flat Iron Steak"
+  },
+  {
+    question: "What dish is made from Beef Bone In Striploin?",
+    choice: [
+      "Dry Aged NY Steak",
+      "Canadian Bacon",
+      "Chateaubriand",
+      "Pancetta",
+      "Chicken Soup"
+    ],
+    answer: "Dry Aged NY Steak"
+  },
+  {
+    question: "What dish is made from Beef Brisket?",
+    choice: [
+      "Corned Beef or Barbeque Beef",
+      "House Made Smoked Ham",
+      "Canadian Bacon",
+      "Slicing Roast Beef for Sandwich",
+      "Chicken Soup"
+    ],
+    answer: "Corned Beef or Barbeque Beef"
+  },
+  {
+    question: "What dish is made from Beef Bottom Round?",
+    choice: [
+      "Large Beef Pot Roast",
+      "Flat Iron Steak",
+      "House Made Smoked Ham",
+      "Corned Beef or Barbeque Beef",
+      "Beef Stew"
+    ],
+    answer: "Large Beef Pot Roast"
+  },
+  {
+    question: "What dish is made from Pork Hock Smoked?",
+    choice: [
+      "Split Pea Soup",
+      "Chicken Soup",
+      "Canadian Bacon",
+      "Fajitas or Stir Fry",
+      "Corned Beef or Barbeque Beef"
+    ],
+    answer: "Split Pea Soup"
+  },
+  {
+    question: "What dish is made from Pork Fresh Ham?",
+    choice: [
+      "House Made Smoked Ham",
+      "Pancetta",
+      "Chateaubriand",
+      "Flat Iron Steak",
+      "Beef Stew"
+    ],
+    answer: "House Made Smoked Ham"
+  },
+  {
+    question: "What dish is made from Fowl/Layer Hen?",
+    choice: [
+      "Chicken Soup",
+      "Flat Iron Steak",
+      "Canadian Bacon",
+      "Split Pea Soup",
+      "Dry Aged NY Steak"
+    ],
+    answer: "Chicken Soup"
+  },
+  {
+    question: "What dish is made from Beef Shank?",
+    choice: [
+      "Beef Stew",
+      "Pancetta",
+      "Corned Beef or Barbeque Beef",
+      "Split Pea Soup",
+      "Chateaubriand"
+    ],
+    answer: "Beef Stew"
+  },
+  {
+    question: "Which cut of meat is used for Slicing Roast Beef for Sandwich?",
+    choice: [
+      "Beef Top Round",
+      "Pork Boston Butt",
+      "Beef Skirt Steaks",
+      "Beef Export Rib",
+      "Beef Bone In Striploin"
+    ],
+    answer: "Beef Top Round"
+  },
+  {
+    question: "Which cut of meat is used for Spicy Green Pork Chili/Stew?",
+    choice: [
+      "Pork Boston Butt",
+      "Beef Skirt Steaks",
+      "Pork Loin",
+      "Beef Tenderloin PSMO",
+      "Pork Fresh Ham"
+    ],
+    answer: "Pork Boston Butt"
+  },
+  {
+    question: "Which cut of meat is used for Fajitas or Stir Fry?",
+    choice: [
+      "Beef Skirt Steaks",
+      "Beef Export Rib",
+      "Pork Belly",
+      "Beef Top Blade",
+      "Beef Brisket"
+    ],
+    answer: "Beef Skirt Steaks"
+  },
+  {
+    question: "Which cut of meat is used for Cowboy Rib Steak?",
+    choice: [
+      "Beef Export Rib",
+      "Pork Loin",
+      "Beef Tenderloin PSMO",
+      "Beef Bone In Striploin",
+      "Pork Fresh Ham"
+    ],
+    answer: "Beef Export Rib"
+  },
+  {
+    question: "Which cut of meat is used for Canadian Bacon?",
+    choice: [
+      "Pork Loin",
+      "Beef Skirt Steaks",
+      "Beef Top Round",
+      "Pork Boston Butt",
+      "Pork Belly"
+    ],
+    answer: "Pork Loin"
+  },
+  {
+    question: "Which cut of meat is used for Chateaubriand?",
+    choice: [
+      "Beef Tenderloin PSMO",
+      "Beef Export Rib",
+      "Beef Top Blade",
+      "Pork Hock Smoked",
+      "Beef Bottom Round"
+    ],
+    answer: "Beef Tenderloin PSMO"
+  },
+  {
+    question: "Which cut of meat is used for Pancetta?",
+    choice: [
+      "Pork Belly",
+      "Beef Skirt Steaks",
+      "Pork Loin",
+      "Beef Top Round",
+      "Pork Fresh Ham"
+    ],
+    answer: "Pork Belly"
+  },
+  {
+    question: "Which cut of meat is used for Flat Iron Steak?",
+    choice: [
+      "Beef Top Blade",
+      "Pork Boston Butt",
+      "Beef Tenderloin PSMO",
+      "Beef Bone In Striploin",
+      "Pork Hock Smoked"
+    ],
+    answer: "Beef Top Blade"
+  },
+  {
+    question: "Which cut of meat is used for Dry Aged NY Steak?",
+    choice: [
+      "Beef Bone In Striploin",
+      "Beef Brisket",
+      "Fowl/Layer Hen",
+      "Beef Shank",
+      "Pork Fresh Ham"
+    ],
+    answer: "Beef Bone In Striploin"
+  },
+  {
+    question: "Which cut of meat is used for Corned Beef or Barbeque Beef?",
+    choice: [
+      "Beef Brisket",
+      "Beef Top Round",
+      "Pork Boston Butt",
+      "Beef Skirt Steaks",
+      "Beef Bottom Round"
+    ],
+    answer: "Beef Brisket"
+  },
+  {
+    question: "Which cut of meat is used for Large Beef Pot Roast?",
+    choice: [
+      "Beef Bottom Round",
+      "Beef Tenderloin PSMO",
+      "Pork Loin",
+      "Beef Top Blade",
+      "Beef Brisket"
+    ],
+    answer: "Beef Bottom Round"
+  },
+  {
+    question: "Which cut of meat is used for Split Pea Soup?",
+    choice: [
+      "Pork Hock Smoked",
+      "Beef Export Rib",
+      "Fowl/Layer Hen",
+      "Beef Top Blade",
+      "Pork Belly"
+    ],
+    answer: "Pork Hock Smoked"
+  },
+  {
+    question: "Which cut of meat is used for House Made Smoked Ham?",
+    choice: [
+      "Pork Fresh Ham",
+      "Pork Loin",
+      "Beef Brisket",
+      "Beef Bottom Round",
+      "Pork Boston Butt"
+    ],
+    answer: "Pork Fresh Ham"
+  },
+  {
+    question: "Which cut of meat is used for Chicken Soup?",
+    choice: [
+      "Fowl/Layer Hen",
+      "Beef Brisket",
+      "Beef Shank",
+      "Pork Hock Smoked",
+      "Beef Export Rib"
+    ],
+    answer: "Fowl/Layer Hen"
+  },
+  {
+    question: "Which cut of meat is used for Beef Stew?",
+    choice: [
+      "Beef Shank",
+      "Beef Top Round",
+      "Beef Bottom Round",
+      "Pork Fresh Ham",
+      "Pork Belly"
+    ],
+    answer: "Beef Shank"
+  },
+/*
   // Section 1-2
   // Composition of Lean Muscle Tissue
   {
@@ -3044,5 +3374,5 @@ const questions = [
     question: "Which primal cut does the Hind Shank belong to?",
     choice: ["Shank", "Chuck", "Rib", "Short Loin"],
     answer: "Shank",
-  },
+  },*/
 ];
